@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-align-last = Metnin son satırının ve metnin justify değeri atanmış olan satırlarının yatay hizalama özelliklerini belirler.
+		Değerler 		= auto | left | right | center | justify | start | end | initial | inherit
+		auto	 		= Otomatik değer alır. (Varsayılan değer)
+		left	 		= Sol.
+		right	 		= Sağ.
+		center	 		= Orta.
+		justify			= Sağa ve sola eşit.
+		start			= Başlangıç.
+		end 			= Bitiş.
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 750px;
+		height: auto;
+		border: 1px solid blue;
+		margin-bottom: 50px;
+	}
+	div.right{
+		-webkit-text-align-last: right; 
+		-moz-text-align-last: right; 
+		-o-text-align-last: right; 	
+		-ms-text-align-last: right; 	
+		text-align-last: right; 
+	}
+	div.start{
+		-webkit-text-align-last: start; 
+		-moz-text-align-last: start; 
+		-o-text-align-last: start; 	
+		-ms-text-align-last: start; 	
+		text-align-last: start; 
+	}
+	div.end{
+		-webkit-text-align-last: end; 
+		-moz-text-align-last: end; 
+		-o-text-align-last: end; 	
+		-ms-text-align-last: end; 	
+		text-align-last: end; 
+	}
+	div.inherit{
+		-webkit-text-align-last: inherit;
+		-moz-text-align-last: inherit;
+		-o-text-align-last: inherit;
+		-ms-text-align-last: inherit;
+		text-align-last: inherit;
+		width: 200px;
+	}
+	
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<div class="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eos dolore possimus similique non numquam, dolor amet perspiciatis beatae natus illum reiciendis voluptate nulla. Eveniet modi molestiae, nisi nostrum ullam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam id, reiciendis delectus debitis harum, sunt cupiditate quo accusamus velit dolorum tempora aliquam minus, officia omnis dolore!</div>	
+	<div class="start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eos dolore possimus similique non numquam, dolor amet perspiciatis beatae natus illum reiciendis voluptate nulla. Eveniet modi molestiae, nisi nostrum ullam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam id, reiciendis delectus debitis harum, sunt cupiditate quo accusamus velit dolorum tempora aliquam minus, officia omnis dolore!</div>	
+	<div class="end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eos dolore possimus similique non numquam, dolor amet perspiciatis beatae natus illum reiciendis voluptate nulla. Eveniet modi molestiae, nisi nostrum ullam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam id, reiciendis delectus debitis harum, sunt cupiditate quo accusamus velit dolorum tempora aliquam minus, officia omnis dolore!</div>	
+	<div class="right" style="text-align-last: initial;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eos dolore possimus similique non numquam, dolor amet perspiciatis beatae natus illum reiciendis voluptate nulla. Eveniet modi molestiae, nisi nostrum ullam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores numquam id, reiciendis delectus debitis harum, sunt cupiditate quo accusamus velit dolorum tempora aliquam minus, officia omnis dolore!</div>
+	<div class="right">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eos dolore possimus similique non numquam, dolor amet perspiciatis beatae natus illum reiciendis voluptate nulla. Eveniet modi molestiae, nisi nostrum ullam
+		<div class="inherit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eos dolore possimus similique non numquam, dolor amet perspiciatis beatae natus illum reiciendis voluptate nulla. Eveniet modi molestiae, nisi nostrum ullam
+		</div>
+	</div>
+</body>
+</html>

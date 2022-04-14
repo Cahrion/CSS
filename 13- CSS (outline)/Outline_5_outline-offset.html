@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		outline-offset		= HTML elementinin anahat ile kenarlık / çerçeve arasındaki mesafeyi belirler.
+		style değerleri		= length & initial & inherit
+		length 				= Uzunluk değeri.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 1000px;
+		height: 100px;
+		outline: 2px solid red;
+		border: 4px dotted blue;
+		outline-offset: 5px;
+	}
+	div#negatif{
+		width: 1000px;
+		height: 100px;
+		outline: 2px solid red;
+		border: 4px dotted blue;
+		outline-offset: -5px;
+	}
+	p.bir{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		border: 4px dotted blue; 
+		outline-offset: 5px; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		border: 4px dotted blue;
+		outline-offset: 5px;
+		padding: 5px;
+	}
+	p#iki{
+
+		width: 1000px;
+		height: 50px;
+		outline: 4px solid red;
+		border: 4px dotted blue;
+		outline-offset: inherit;	 /* inherit üstekinin rengini alır.*/
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div></div>	<br><br>
+	<div id="negatif"></div> <br><br>
+	<p class="bir"></p>
+	<p class="bir" style="outline-color:initial"></p>
+	<div>
+		<p id="iki"></p>
+	</div>
+</body>
+</html>

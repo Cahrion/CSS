@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-shadow			= Metnin gölgelendirme özelliklerini belirler.
+		Parametreler 		= horizontal shadow (yatay gölge) | vertical shadow (dikey gölge) | blur radius (bulanıklık yarıçapı) | color
+		Değerler			= none & length & initial & inherit | blur-radius | color
+		none				= Değer yok.
+		length				= Uzunluk değeri.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+		blur-radius			= Bulanıklık yarıçapı değeri.
+		color				= Renk.
+	*/
+	div.ikili{
+		text-shadow: 0px 0px 4px red,2px 2px 4px blue; /* İkili yazılabilir. */
+	}
+	div.atesgibi{
+		background-color:black;
+		width: 500px;
+		height: 300px;
+		border: 1px solid white;
+		text-align: center;
+		padding-top: 250px;
+		text-shadow: -2px -2px 4px blue;
+		font-size: 30px;
+		color: white;
+		text-shadow: 0px 0px 4px #CCCCCC,0px -5px 4px #FFFF33,2px -10px 6px #ffdd33,-2px -15px 10px #FF8800, 2px -20px 20px #FF2200;
+
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="ikili">Icabi Kırgız</div><br><br>
+	<div class="atesgibi">Icabi Kırgız</div>
+
+</body>
+</html>

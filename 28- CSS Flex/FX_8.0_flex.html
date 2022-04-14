@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	flex	 	= Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranını yada küçüklük / büzülme oranını yada başalangıç uzunluğu değerini belirler.
+		Değerler 	= flex-grow | flex-shrink | flex-basis | initial
+		flex-grow 	= Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranını 
+		flex-shrink = Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre küçüklük / büzülme oranını 
+		flex-basis 	= Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre büyüklük oranını 
+		auto 		= Otomatik değer alır. 
+		initial	 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 400px;
+		height: 100px;
+		border: thin solid red;
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		-webkit-flex: 1; 	
+		-moz-flex: 1; 		
+		-o-flex: 1; 		
+		-ms-flex: 1; 		
+		flex: 1; 	
+		/* flex yapısı herşeyi aynı ortanda dağıtıyor. (flex-grow'da olmaz.)*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">Icabi Kırgız</div>
+		<div class="IcElemanlar">CSS Ders Notları</div>
+		<div class="IcElemanlar">Özel yapım ders notları</div>
+	</div>
+</body>
+</html>

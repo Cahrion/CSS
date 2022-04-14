@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		vertical-align  = Metnin son satırının ve metnin justify değeri atanmış olan satırlarının yatay hizalama özelliklerini belirler.
+		Değerler 		= baseline | length | % | sub | super | top | text-top | middle | bottom | text-bottom | initial | inherit
+		baseline	 	= Alt koşeden başlar.
+		length	 		= Uzuluk değeri
+		%	 			= Yüzde değeri
+		sub	 			= Alt simge
+		super	 		= Üst simge
+		top				= En üstten.
+		text-top		= Metnin veya içeriğin üst hizasından.
+		middle 			= Ortadan.
+		text-bottom 	= Metnin veya içeriğin alt hizasından
+		bottom 			= En alttan.
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 750px;
+		height: auto;
+		border: 1px solid blue;
+		margin-bottom: 20px;
+	}
+	.baseline{
+		vertical-align: baseline; /* varsayılan değer. */
+	}
+	.length{
+		vertical-align: 50px;	/* Alttan başlar belirtilen sayı kadar yukarı gider (-) değer alabilir.*/
+	}
+	.length2{
+		vertical-align: -50px;	/* Alttan başlar belirtilen sayı kadar yukarı gider (-) değer alabilir.*/
+	}
+	.yuzde{
+		vertical-align: 50%;	/* Alttan başlar belirtilen yuzde kadar yukarı gider (-) değer alabilir.*/
+	}
+	.yuzde2{
+		vertical-align: -50%;	/* Alttan başlar belirtilen yuzde kadar yukarı gider (-) değer alabilir.*/
+	}
+	.sub{
+		vertical-align: sub;	/* Alt simge */
+	}
+	.super{
+		vertical-align: super;	/* Üst simge */
+	}
+	
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>CSS - </span><span class="baseline">Icabi Kırgız</span>
+	</div>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>CSS - </span><span class="length">Icabi</span><span class="length2">Kırgız</span>
+	</div>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>CSS - </span><span class="yuzde">Icabi</span><span class="yuzde2">Kırgız</span>
+	</div>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>X</span><span class="super">2</span><span class="sub">y</span>
+	</div>
+</body>
+</html>

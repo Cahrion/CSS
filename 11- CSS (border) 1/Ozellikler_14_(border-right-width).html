@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		border-right-width  = HTML elementinin sağ kenarlık / çerçeve genişliğini belirler.
+		Değerler			= length & initial & inherit & thin & medium & thick
+		length 				= uzunluk değeri.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+		thin  				= Ince.
+		medium 				= Orta.
+		thick 				= Kalın.
+	*/
+	p#bir{
+		border: solid red;
+		border-right-width: 2px; 				/* Belirtilen bölge 2px olur.*/
+	}	
+	p#iki{
+		border: solid red;
+		border-right-width: 2px 3px; 			/* 2'li parametre çalışmaz */
+	}	
+	p#uc{
+		border: solid red;
+		border-right-width: 2px 3px 5px; 		/* 3'lü parametre çalışmaz */
+	}		
+	p#dort{
+		border: solid red;
+		border-right-width: 2px 3px 4px 20px; /* 4'lü parametre çalışmaz */
+	}	
+	p#bes{
+		border: solid blue;
+		border-right-width: thin; 			/* Küçük bir kenarlık çizer. */
+	}	
+	p#alti{
+		border: solid blue;
+		border-right-width: medium; 			/* Orta bir kenarlık çizer. */
+	}	
+	p#yedi{
+		border: solid blue;
+		border-right-width: thick; 			/* Kalın bir kenarlık çizer. */
+	}
+	p.sekiz{
+		border: solid green;
+		border-right-width: 2px; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		border: solid green;
+		border-right-width: 4px;
+		padding: 5px;
+	}
+	p#dokuz{
+		border: solid green;
+		border-right-width: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p id="bes">Extra Eğitim - Volkan Alakent</p>
+	<p id="alti">Extra Eğitim - Volkan Alakent</p>
+	<p id="yedi">Extra Eğitim - Volkan Alakent</p>
+	<p class="sekiz">Extra Eğitim - Volkan Alakent</p>
+	<p class="sekiz" style="border-right-width:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="dokuz">Extra Eğitim - Volkan Alakent</p>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-decoration 		= Metne eklenecek olan dekorasyon / süsleme özeliklerini belirler.
+		Prametreler 			= Decoration (Dekorasyon / süsleme )| Style (Stil) | Color (Renk)
+		Degerleri 				= none & underline & overline & line-through & initial & inherit | solid & dashed & dotted & double & wavy | color
+		none	 				= Değer yok.
+		underline				= Metnin alt tarafına çizgi ekler
+		line-through			= Metnin Üzerine çizgi ekler
+		overline				= Metnin Üst tarafına çizgi ekler
+		initial 				= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 				= HTML elementi üst elementinin biçimlendirme değerini alır.
+		solid 					= Düz çizgi.
+		dashed 					= Kesikli çizgi.
+		dotted 					= Noktalı çizgi.
+		double 					= Çift çizgi.
+		wavy 					= Dalgalı çizgi.
+		color 					= Renk.
+	*/
+	div{
+		margin-bottom: 10px;
+	}
+	.turuncu{
+		text-decoration: underline wavy #FF9900; 
+	}
+	
+	p{
+		text-decoration:initial;
+		/* Eğer üst elementi varsa kaldırma işlemi bir işe yaramaz. */
+	}
+	div#inherit{
+		text-decoration: inherit;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="turuncu">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="turuncu" style="text-decoration:initial;">Icabi KIRGIZ ~ CSS ders notları (initial)</div>
+	
+	<div class="turuncu">
+		<p>HTML</p>
+		<p>CSS</p>
+		<p>JS</p>
+		<p>PHP</p>
+	</div>
+	<div style="text-decoration: overline wavy purple">
+		Üst bilgi dekorasyonu
+		<div id="inherit">Bu değer üstten aldığı bilgiyi taşır.</div>
+	</div>
+</body>
+</html>

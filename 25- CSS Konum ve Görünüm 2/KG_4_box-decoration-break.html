@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		box-decoration-break 	= HTML elementinin kenarlık / çerçeve özelliklerinin, kutu parçalandığındaki satır veya sayfa sonları için davranış özelliklerini belirler.
+		Değerler 				= slice | clone | initial |
+		slice 					= Dilimle.
+		clone 					= Klonla.
+		initial 				= HTML elementi varsayılan biçimlendirme değerine döner.
+	
+	*/
+	span.slice{
+		border: 2px solid red;
+		line-height: 25px;
+		-webkit-box-decoration-break: slice; /* Varsayilan değer. */
+		-moz-box-decoration-break: slice; /* Varsayilan değer. */
+		-o-box-decoration-break: slice; /* Varsayilan değer. */
+		-ms-box-decoration-break: slice; /* Varsayilan değer. */
+		box-decoration-break: slice; /* Varsayilan değer. */
+	}
+	span.clone{
+		border: 2px solid red;
+		line-height: 25px;
+		-webkit-box-decoration-break: clone;
+		-moz-box-decoration-break: clone; 	
+		-o-box-decoration-break: clone; 	
+		-ms-box-decoration-break: clone; 	
+		box-decoration-break: clone; 		
+	}
+	span#initial{
+		border: 2px solid red;
+		line-height: 25px;
+		-webkit-box-decoration-break: initial;-moz-box-decoration-break: initial;-o-box-decoration-break: initial;-ms-box-decoration-break: initial;box-decoration-break: initial; 		
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<span class="slice">Extra Eğitim <br>-<br> Volkan Alakent</span>
+	<br><br>
+	<span class="clone">Extra Eğitim <br>-<br> Volkan Alakent</span>
+	<br><br>
+	<span class="clone" style="-webkit-box-decoration-break: initial;-moz-box-decoration-break: initial;-o-box-decoration-break: initial;-ms-box-decoration-break: initial;box-decoration-break: initial;">Extra Eğitim <br>-<br> Volkan Alakent</span>
+</body>
+</html>

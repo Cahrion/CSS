@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-origin 	= HTML elementine atanmış olan arkaplan resimlerinin karıştırma modu özelliklerini belirler.
+		Değerler 			= normal | multiply | screen | overlay | darken | lighten | color-dodge - color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity
+	
+		normal				= Normal.
+		multiply			= Çoğaltma.
+		screen				= Ekran.
+		overlay				= Kaplama.
+		darken				= Karartma.
+		lighten				= Hafifletme.
+		color-dodge			= Renk kaçırma.
+		color-burn			= Renk yakma.
+		hard-light			= Sert ışık.
+		soft-light			= Yumuşak ışık.
+		difference			= Fark.
+		exclusion			= Hariç tutma.
+		hue					= Renk.
+		saturation			= Doyma.
+		color				= Renk.
+		luminosity			= Parlaklık.
+	*/
+	div{
+		width: 600px;
+		height: 350px;
+		border: 2px double black;
+		background-size: 100%, 100%;
+		background-repeat: no-repeat , no-repeat;
+		background-image: url("Dokuman/Resim.jpg") , url("Dokuman/Renkler.jpg");
+
+	}
+	div#varsayilan{
+		background-blend-mode: normal;
+	}
+	div#multiply{
+		background-blend-mode: multiply;
+	}
+	div#screen{
+		background-blend-mode: screen;
+	}
+	div#overlay{
+		background-blend-mode: overlay;
+	}
+	div#darken{
+		background-blend-mode: darken;
+	}
+	div#lighten{
+		background-blend-mode: lighten;
+	}
+	div#color-dodge{
+		background-blend-mode: color-dodge;
+	}
+	div#color-burn{
+		background-blend-mode: color-burn;
+	}
+	div#hard-light{
+		background-blend-mode: hard-light;
+	}
+	div#soft-light{
+		background-blend-mode: soft-light;
+	}
+	div#difference{
+		background-blend-mode: difference;
+	}
+	div#exclusion{
+		background-blend-mode: exclusion;
+	}
+	div#hue{
+		background-blend-mode: hue;
+	}
+	div#saturation{
+		background-blend-mode: saturation;
+	}
+	div#color{
+		background-blend-mode: color;
+	}
+	div#luminosity{
+		background-blend-mode: luminosity;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="varsayilan"></div><br><br>
+	<div id="multiply"></div><br><br>
+	<div id="screen"></div><br><br>
+	<div id="overlay"></div><br><br>
+	<div id="darken"></div><br><br>
+	<div id="lighten"></div><br><br>
+	<div id="color-dodge"></div><br><br>
+	<div id="color-burn"></div><br><br>
+	<div id="hard-light"></div><br><br>
+	<div id="soft-light"></div><br><br>
+	<div id="difference"></div><br><br>
+	<div id="exclusion"></div><br><br>
+	<div id="hue"></div><br><br>
+	<div id="saturation"></div><br><br>
+	<div id="color"></div><br><br>
+	<div id="luminosity"></div><br><br>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		tab-size 		= HTML elementi içerisinde bulunan metnin sekem karakterininin genişliğini belirler.
+		Değerler 		= number | length | initial |inherit
+		number	 		= Rakam (X karakter.)
+		length			= Uzunluk değeri.
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	pre#number{
+		-webkit-tab-size: 30;
+		-moz-tab-size: 30;
+		-o-tab-size: 30;
+		-ms-tab-size: 30;
+		tab-size: 30;
+		/* Belli bir karakter yapısı veriri ve bütün boşlukları tam bir yapı giri alır.*/
+	}
+	.length{
+		-webkit-tab-size: 150px;
+		-moz-tab-size: 150px;
+		-o-tab-size: 150px;
+		-ms-tab-size: 150px;
+		tab-size: 150px;
+		/* Belli bir karakter yapısı veriri ve bütün boşlukları tam bir yapı giri alır.*/
+	}
+	div{
+		white-space: pre-wrap;
+		-webkit-tab-size: 150px;
+		-moz-tab-size: 150px;
+		-o-tab-size: 150px;
+		-ms-tab-size: 150px;
+		tab-size: 150px;
+	}
+	div#inherit{
+		-webkit-tab-size: inherit;
+		-moz-tab-size: inherit;
+		-o-tab-size: inherit;
+		-ms-tab-size: inherit;
+		tab-size: inherit;
+		background: blue;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<pre id="number">~~~~	Icabi Kırgız 	- 	CSS notları		~~~~</pre>	
+	<pre class="length">~~~~	Icabi Kırgız 	- 	CSS notları		~~~~</pre>	
+	<div>~~~~	Icabi Kırgız 	- 	CSS notları		~~~~</div>	
+	<div style="tab-size:initial">~~~~	Icabi Kırgız 	- 	CSS notları		~~~~</div>	
+	<div id="length" style="background-color: aliceblue">
+		~~~~	Icabi Kırgız 	- 	CSS notları		~~~~<br>
+		<div id="inherit">
+		~~~~	Icabi Kırgız 	- 	CSS notları		~~~~
+		</div>
+	</div>	
+	
+</body>
+</html>

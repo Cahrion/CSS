@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-decoration-style 	= Metne eklenecek olan dekorasyon / süsleme çizgisi stilini belirler.
+		Prametreler 			= Decoration (Dekorasyon / süsleme )| Style (Stil) | Color (Renk)
+		Degerleri 				= solid | dashed | dotted | double | wavy | initial | inherit
+		solid 					= Düz çizgi.
+		dashed 					= Kesikli çizgi.
+		dotted 					= Noktalı çizgi.
+		double 					= Çift çizgi.
+		wavy 					= Dalgalı çizgi.
+		initial 				= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 				= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		margin-bottom: 50px;
+	}
+	.solid{
+		text-decoration: underline;
+		-webkit-text-decoration-style: solid; 
+		-moz-text-decoration-style: solid; 
+		-o-text-decoration-style: solid; 
+		-ms-text-decoration-style: solid; 
+		text-decoration-style: solid; 
+	}
+	.dashed{
+		text-decoration: underline;
+		-webkit-text-decoration-style: dashed; 
+		-moz-text-decoration-style: dashed; 
+		-o-text-decoration-style: dashed; 
+		-ms-text-decoration-style: dashed; 
+		text-decoration-style: dashed; 
+	}
+	.dotted{
+		text-decoration: underline;
+		-webkit-text-decoration-style: dotted; 
+		-moz-text-decoration-style: dotted; 
+		-o-text-decoration-style: dotted; 
+		-ms-text-decoration-style: dotted; 
+		text-decoration-style: dotted; 
+	}
+	.double{
+		text-decoration: underline;
+		-webkit-text-decoration-style: double; 
+		-moz-text-decoration-style: double; 
+		-o-text-decoration-style: double; 
+		-ms-text-decoration-style: double; 
+		text-decoration-style: double; 
+	}
+	.wavy{
+		text-decoration: underline;
+		-webkit-text-decoration-style: wavy; 
+		-moz-text-decoration-style: wavy; 
+		-o-text-decoration-style: wavy; 
+		-ms-text-decoration-style: wavy; 
+		text-decoration-style: wavy; 
+	}
+	.inherit{
+		text-decoration: underline;
+		-webkit-text-decoration-style: inherit; 
+		-moz-text-decoration-style: inherit; 
+		-o-text-decoration-style: inherit; 
+		-ms-text-decoration-style: inherit; 
+		text-decoration-style: inherit; 
+	}
+	.initial{
+		text-decoration: underline;
+		-webkit-text-decoration-style: initial; 
+		-moz-text-decoration-style: initial; 
+		-o-text-decoration-style: initial; 
+		-ms-text-decoration-style: initial; 
+		text-decoration-style: initial; 
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="solid">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="dashed">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="dotted">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="double">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="wavy">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="wavy" style="text-decoration-style: initial">Icabi KIRGIZ ~ CSS ders notları</div>
+	<!-- Önceki değerlerde olduğu gibi üst değer varsa initial çalışmaz. -->
+	<div class="wavy">
+		<p class="initial">CSS</p>
+		<p>HTML</p>
+		<p class="initial">JavaScript</p>
+	</div>
+	
+	
+	<div class="wavy">
+		HTML
+		<div id="inherit">CSS</div>
+	</div>
+</body>
+</html>

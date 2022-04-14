@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-size 	= HTML elementinin atanmış olan arkaplan resminin boyutunu belirler.
+		Değerler 			= auto | lenfth | % | cover | contain | initial | inherit
+		auto 				= Otomatik değer alır.
+		length 	 			= Uzunluk Değeri.
+		%	 	 			= Yüzde değeri..
+		cover 	 			= Kapak.
+		contain 			= İçerme.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 800px;
+		height: 500px;
+		border: 1px solid red;
+		background-image: url("Dokuman/Resim.jpg");
+		background-repeat: no-repeat;
+		background-size: auto; 			/* Varsayılan değer. */
+	}
+	div#length{
+		background-image: url("Dokuman/Resim.jpg");
+		background-repeat: no-repeat;
+		background-size: 800px;  		/* Genişlik */
+	}
+	div#lengthiki{
+		background-image: url("Dokuman/Resim.jpg");
+		background-repeat: no-repeat;
+		background-size: 800px 300px; 	/* (Genişlik) ve (Uzunluk)*/ 
+	}
+	div#yuzde{
+		background-image: url("Dokuman/Resim.jpg");
+		background-repeat: no-repeat;
+		background-size: 50%;  /* Genişlik */
+	}
+	div#yuzdeiki{
+		background-image: url("Dokuman/Resim.jpg");
+		background-repeat: no-repeat;
+		background-size: 50% 75%;  /* (Genişlik) ve (Uzunluk)*/ 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div><br><br>
+	<div id="length"></div><br><br>
+	<div id="lengthiki"></div><br><br>
+	<div id="varsayilan"></div><br><br>
+	<div id="yuzde"></div><br><br>
+	<div id="yuzdeiki"></div><br><br>
+</body>
+</html>

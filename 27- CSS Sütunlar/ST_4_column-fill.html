@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		column-fill 	= HTML elementinin çok sütunlu düzeni için bölünen sütunların nasıl dolduralacağı durumunu belirler.
+		Değerler 		= balance | auto | initial | inherit
+		balance 	 	= Dengeli.
+		auto 			= Otomatik değer alır.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.	
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/	
+	p#balence{
+		height: 200px;
+		border: 2px solid red;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-fill: balence; /* varsayılan değer. */
+		-moz-column-fill: balence; /* varsayılan değer. */
+		-o-column-fill: balence; /* varsayılan değer. */
+		-ms-column-fill: balence; /* varsayılan değer. */
+		column-fill: balence; /* varsayılan değer. */
+	}
+	p[name="auto"]{
+		height: 200px;
+		border: 2px solid red;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-fill: auto;
+		-moz-column-fill: auto;
+		-o-column-fill: auto; 
+		-ms-column-fill: auto;
+		column-fill: auto;
+	}
+	
+	p.initial{
+		border: 2px solid red;
+		padding: 10px;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-fill: initial;
+		-moz-column-fill: initial;
+		-o-column-fill: initial; 
+		-ms-column-fill: initial;
+		column-fill: initial;
+	}
+	div.alan{
+		border: 2px solid red;
+		padding: 10px;
+		-webkit-column-fill: auto;
+		-moz-column-fill: auto;
+		-o-column-fill: auto; 
+		-ms-column-fill: auto;
+		column-fill: auto;
+	}
+	div#inherit{
+		margin-bottom: 40px;
+		height: 200px;
+		border: 2px solid blue;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-fill: inherit;
+		-moz-column-fill: inherit;
+		-o-column-fill: inherit; 
+		-ms-column-fill: inherit;
+		column-fill: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+		<h1 style="text-align: center;">balence</h1>
+	<p id="balence">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae ducimus fugit hic culpa, ut accusantium nesciunt nobis soluta nemo harum, deleniti esse, quasi eaque consequatur tempora quam repellendus. Maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis amet ipsum sed accusantium neque possimus laboriosam non repellendus quod ad, culpa asperiores nam id consequatur doloribus, dolore, iure totam!</p>
+		<br>
+		<h1 style="text-align: center;">auto</h1>
+	<p name="auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae ducimus fugit hic culpa, ut accusantium nesciunt nobis soluta nemo harum, deleniti esse, quasi eaque consequatur tempora quam repellendus. Maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis amet ipsum sed accusantium neque possimus laboriosam non repellendus quod ad, culpa asperiores nam id consequatur doloribus, dolore, iure totam!</p>
+		<br>
+		<h1 style="text-align: center;">initial</h1>
+	<p name="auto" class="initial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae ducimus fugit hic culpa, ut accusantium nesciunt nobis soluta nemo harum, deleniti esse, quasi eaque consequatur tempora quam repellendus. Maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis amet ipsum sed accusantium neque possimus laboriosam non repellendus quod ad, culpa asperiores nam id consequatur doloribus, dolore, iure totam!</p>
+	<br>
+	<h1 style="text-align: center;">inherit (auto)</h1>
+	
+	<div class="alan">
+		<div id="inherit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae ducimus fugit hic culpa, ut accusantium nesciunt nobis soluta nemo harum, deleniti esse, quasi eaque consequatur tempora quam repellendus. Maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis amet ipsum sed accusantium neque possimus laboriosam non repellendus quod ad, culpa asperiores nam id consequatur doloribus, dolore, iure totam!
+		</div>
+		<div class="alan">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat libero numquam quia, dolorem quas, ab eos minus ducimus reprehenderit debitis repellat doloribus aut labore ea aliquid corporis, recusandae harum. Sunt.
+		</div>
+	</div>
+	
+</body>
+</html>

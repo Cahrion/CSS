@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	flex-flow	 	= Esnek kutuların dizilim yönü ve satır kırılma özelliklerini belirler.
+		Parametreler 	= flex-direction | flex-wrap
+		Değerler 		= row & row-reverse & column & colum-reverse | nowrap & wrap & wrap-reverse | initial
+		row 			= Satır.
+		row-reverse 	= Ters Satır.
+		column 			= Sütun.
+		column-reverse	= Ters Sütun.
+		nowrap 			= Kırılma yok.
+		wrap			= Kırılma
+		wrap-reverse 	= Ters kırılma.
+		initial		 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 250px;
+		height: 250px;
+		border: thin solid grey;
+		-webkit-flex-flow: column-reverse wrap; 	
+		-moz-flex-flow: column-reverse wrap; 	
+		-o-flex-flow: column-reverse wrap; 		
+		-ms-flex-flow: column-reverse wrap; 	 	
+		flex-flow: column-reverse wrap; 		 	
+	}
+	#AnaElemaniki{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 250px;
+		height: 250px;
+		border: thin solid grey;
+		-webkit-flex-flow: initial;
+		-moz-flex-flow: initial;
+		-o-flex-flow: initial;
+		-ms-flex-flow: initial;
+		flex-flow: initial;
+	}
+	.IcElemanlar{
+		width: 50px;
+		height: 50px;
+		border: thin solid black;
+		
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlar">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlar">D</div>
+		<div class="IcElemanlar">E</div>
+		<div class="IcElemanlar">F</div>
+		<div class="IcElemanlar">G</div>
+		<div class="IcElemanlar">H</div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<div id="AnaElemaniki" class="AnaEleman">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlar">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlar">D</div>
+		<div class="IcElemanlar">E</div>
+		<div class="IcElemanlar">F</div>
+		<div class="IcElemanlar">G</div>
+		<div class="IcElemanlar">H</div>
+	</div>
+</body>
+</html>

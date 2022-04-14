@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* ::after  =  Belirtilen HTML elementinin sonrasına içerik atayarak stil tanımlar. */
+	/* Seçilemiyor. */
+	p::after{
+		content: "CSS";
+		color:red;
+		font-size: 25px;
+	}
+	div::after{
+		content: "\2600 \2601 \2602 \2603";
+		color:red;
+		font-size: 25px;	
+	}	
+	button::after{
+		content: "\2600";
+		color:red;
+		font-size: 15px;	
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p>Görsel Eğitim Seti: </p>
+	<br>
+	<div>Hava Durumu</div>
+	<br>
+	<button>Hava Durumu</button>
+	
+</body>
+</html>

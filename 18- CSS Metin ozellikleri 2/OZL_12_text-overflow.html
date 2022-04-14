@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-overflow		= HTML elementinin boyutlandırılmış alana sığmayacak kadar büyük metnin taşma özelliklerini belirler.
+		Değerler			= clip | ellipsis | initial | inherit 
+		clip				= Metni kırpar
+		ellipsis			= Metni kırpar ve ... ekler.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 250px;
+		height: 18px;
+		border: thin solid red;
+		white-space: nowrap;
+		margin-bottom: 10px;
+	}
+	div.clip{
+		overflow: hidden; /* Bu olmadan çalışmaz. */
+		text-overflow: clip; /* Varsayılan değer */
+	}
+	div.elipsis{
+		overflow: hidden; /* Bu olmadan çalışmaz. */
+		text-overflow: ellipsis; 
+	}
+	#inherit{
+		overflow: hidden;
+		text-overflow: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="clip">Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</div>
+	<div class="elipsis">Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</div>
+	<div class="elipsis" style="text-overflow: initial;">Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</div>
+	<br><br>
+	<div class="elipsis">
+		<div id="inherit">
+			Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti
+		</div>
+	</div>
+
+</body>
+</html>

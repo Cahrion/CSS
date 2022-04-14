@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	border-image  	=	HTML elementinin kenarlık / çerçeve resim özelliklerini belirler. 
+		Parametreler 	= 	image | slice | repeat
+		İmage Değerleri =	image & initial & inherit 
+		Slice Değerleri =	lenfth & % 
+		repeat Değerleri=	repeat & round & stretch 
+	 	image 			= 	resim değeri.
+		initial 		= 	html elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= 	html elementi üst elementinin biçimlendirme değerini alır.
+		length 			= 	Uzunluk Değeri.
+		% 				= 	Yüzde Değeri.
+		repeat 			= 	Tekrarla.
+		round 			= 	Yuvarla.
+		stretch 		= 	Uzat & Gerdir & Esnet. (Varsayılan değer.)
+	*/
+	div#stretch{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png") 30 stretch;
+		-mox-border-image: url("Dokuman/Resim.png") 30 stretch;
+		-o-border-image: url("Dokuman/Resim.png") 30 stretch;
+		-ms-border-image: url("Dokuman/Resim.png") 30 stretch;
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png") 30 stretch; 
+
+	}
+	div#repeat{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png") 30 repeat;
+		-mox-border-image: url("Dokuman/Resim.png") 30 repeat;
+		-o-border-image: url("Dokuman/Resim.png") 30 repeat;
+		-ms-border-image: url("Dokuman/Resim.png") 30 repeat;
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png") 30 repeat; 
+
+	}
+	div#round{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png") 30 round;
+		-mox-border-image: url("Dokuman/Resim.png") 30 round;
+		-o-border-image: url("Dokuman/Resim.png") 30 round;
+		-ms-border-image: url("Dokuman/Resim.png") 30 round;
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png") 30 round; 
+
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="stretch"></div>
+	<br>
+	<div id="repeat"></div>	
+	<br>
+	<div id="round"></div>
+
+	
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* ::after  =  Belirtilen HTML elementinin kullanıcı tarafından seçilen kısmına stil tanımlar. */
+	/* Seçilemiyor. */
+	li::-webkit-selection{
+		color: antiquewhite;
+		background-color: black; 
+	}	
+	li::-moz-selection{
+		color: antiquewhite;
+		background-color: black; 
+	}
+	li::-o-selection{
+		color: antiquewhite;
+		background-color: black; 
+	}	
+	li::-ms-selection{
+		color: antiquewhite;
+		background-color: black; 
+	}
+	/* Prefix'e gerek artık yok (07.03.2021)*/
+	li::selection{
+		color: antiquewhite;
+		background-color: black;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<h3>Görsel Eğitim Seti: </h3>
+	<div>Hava Durumu</div>
+	<ul>
+		<li>A'dan Z'ye HTML Görsel Eğitim Seti</li>
+		<li>A'dan Z'ye JAVASCRIPT Görsel Eğitim Seti</li>
+		<li>A'dan Z'ye CSS Görsel Eğitim Seti</li>
+		<li>A'dan Z'ye PHP Görsel Eğitim Seti</li>
+	</ul>	
+</body>
+</html>

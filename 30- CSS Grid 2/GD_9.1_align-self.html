@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		align-self = Izgara düzeni içersinde bulunan seçili element veya elementlerin, dikey hizalama özelliklerini belirler.
+		Değerler 	= auto | stretch | center | start | end | initial
+		auto 		= Otomatik değer alır.
+		stretch	 	= Uzat / esne.
+		center	 	= Orta.
+		start	 	= Başlangıç.
+		end	 		= Bitiş.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: grid;
+		height:300px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-gap: 10px;
+		grid-template-columns: repeat(5,auto);
+		-webkit-align-items: start;
+		-moz-align-items: start;
+		-o-align-items: start;
+		-ms-align-items: start;
+		align-items: start;
+	}
+	.IcEleman{
+		border: 1px solid red;
+		padding: 10px;
+	}
+	.Degerbir{
+		-webkit-align-self: center; 
+		-moz-align-self: center; 	
+		-o-align-self: center; 		
+		-ms-align-self: center; 	
+		align-self: center; 		
+	}
+	#initial{
+		-webkit-align-self: initial; 
+		-moz-align-self: initial; 	
+		-o-align-self: initial; 		
+		-ms-align-self: initial; 	
+		align-self: initial; 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<h1>(1) Center</h1>
+	<div class="AnaEleman">
+		<div class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman Degeriki">2</div>	
+		<div class="IcEleman Degeruc">3</div>	
+		<div class="IcEleman Degerdort">4</div>	
+		<div class="IcEleman Degerbes">5</div>	
+	</div>
+	<br>
+	<h1>Initial</h1>
+	<br>
+	<div class="AnaEleman">
+		<div id="initial" class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman Degeriki">2</div>	
+		<div class="IcEleman Degeruc">3</div>	
+		<div class="IcEleman Degerdort">4</div>	
+		<div class="IcEleman Degerbes">5</div>	
+	</div>
+</body>
+</html>

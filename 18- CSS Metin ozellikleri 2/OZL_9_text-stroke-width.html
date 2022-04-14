@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-stroke-width	= Metne eklenecek olan dış çizgisi genişliğini belirler.
+		Degerleri 			= length | initial | inherit
+		length				= Uzunluk değeri
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		margin-bottom: 10px;
+	}
+	.yapi{
+		-webkit-text-stroke-width: 1px;
+		-moz-text-stroke-width: 1px;
+		-o-text-stroke-width: 1px;
+		-ms-text-stroke-width: 1px;
+		text-stroke-width: 1px;
+	}
+	#initial{
+		-webkit-text-stroke-width: initial;
+		-moz-text-stroke-width: initial;
+		-o-text-stroke-width: initial;
+		-ms-text-stroke-width: initial;
+		text-stroke-width: initial;
+		/* Eğer üst elementi varsa kaldırma işlemi bir işe yaramaz. */
+	}
+	div#inherit{		
+		-webkit-text-stroke-width: inherit;
+		-moz-text-stroke-width: inherit;
+		-o-text-stroke-width: inherit;
+		-ms-text-stroke-width: inherit;
+		text-stroke-width: inherit;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="yapi">Yapı</div>
+	<div id="initial" class="yapi" >Yeniden varsayılana döndürülmüş</div>
+	
+	<div class="yapi">
+		Üst bilgi dekorasyonu
+		<div id="inherit">Bu değer üstten aldığı bilgiyi taşır.</div>
+	</div>
+</body>
+</html>

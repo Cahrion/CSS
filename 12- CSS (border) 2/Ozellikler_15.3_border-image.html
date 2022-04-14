@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	border-image  	=	HTML elementinin kenarlık / çerçeve resim özelliklerini belirler. 
+		Parametreler 	= 	image | slice | repeat
+		İmage Değerleri =	image & initial & inherit 
+		Slice Değerleri =	lenfth & % 
+		repeat Değerleri=	repeat & round & stretch 
+	 	image 			= 	resim değeri.
+		initial 		= 	html elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= 	html elementi üst elementinin biçimlendirme değerini alır.
+		length 			= 	Uzunluk Değeri.
+		% 				= 	Yüzde Değeri.
+		repeat 			= 	Tekrarla.
+		round 			= 	Yuvarla.
+		stretch 		= 	Uzat & Gerdir & Esnet. (Varsayılan değer.)
+	*/
+	div{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png") 30 stretch;
+		-mox-border-image: url("Dokuman/Resim.png") 30 stretch;
+		-o-border-image: url("Dokuman/Resim.png") 30 stretch;
+		-ms-border-image: url("Dokuman/Resim.png") 30 stretch;
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png") 30 stretch; 
+
+	}
+	div#initials{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: initial;
+		-mox-border-image: initial;
+		-o-border-image: initial;
+		-ms-border-image: initial;
+		/* 11:03:2021 */
+		border-image: initial; 
+
+	}
+	div#inherit{
+		width: 300px;
+		height: 100px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: inherit;
+		-mox-border-image: inherit;
+		-o-border-image: inherit;
+		-ms-border-image: inherit;
+		/* 11:03:2021 */
+		border-image: inherit; 
+
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div>
+	<div id="initials">
+		Icabi Kırgız
+	</div>
+	<div style="padding: 5px;">
+		<div id="inherit"></div>
+	</div>
+	
+</body>
+</html>

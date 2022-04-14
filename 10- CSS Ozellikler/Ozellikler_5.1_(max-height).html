@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	
+		max-height 	= HTML elementinin maksimum uzunluğu belirler.
+	 	Değerler	= none / length / % / initial / inherit
+		none 		= Değer yok.
+		length 		= Uzunluk değeri. (İstenilen türden sayı ile uzunluk verilir.)
+		% 			= Yüzde Değeri.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+
+
+	div{
+		background-color: blue;
+		max-height: 50%; /* Yüzdelik. */ /* Yüzdelik değer normalin altına inmez. */
+	}
+	div#Bir{
+		background-color: yellow;
+		height: 100px; /* length. */
+	}	
+	div#Iki{
+		background-color: black;
+		max-height: 80%; /* Yüzdelik */
+	}
+	div#uc{
+		background-color: green;
+		max-height: inherit; /* inherit --> %80 (Üstekinin genişliğini miras alır.)*/
+	}	
+	div#dort{
+		background-color: red;
+		max-height: 50%; 
+	}	
+	div#bes{
+		background-color: purple;
+		max-height: inherit; /* inherit --> %50 (Üstekinin genişliğini miras alır.)*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div>Volkan Alakent</div><br>
+	<div style="max-height:initial;">CSS</div> <!-- initial -->
+	<br><br>
+	<div id="Bir">
+		<div id="Iki">
+			<div id="uc">
+				<div id="dort">
+					<div id="bes">
+						Extra Eğitim
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	
+</body>
+</html>

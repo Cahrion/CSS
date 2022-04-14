@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		animation-fill-mode	= HTML elementinin tanımlanmış olan animasyonun oynatma işlemi tamamlandığında, HTML elementinin konum özelliklerini belirler.
+		Değerler 			= none | forwards | backwards | both | initial
+		none 				= Değer yok.
+		forwards	 		= İleride.
+		backwards	 		= Geride.
+		both				= Her ikiside.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 75px;
+		height: 75px;
+		margin: 50px;
+		background-color: skyblue;
+		border: 4px double violet;
+		-webkit-border-radius: 50%; 
+		-o-border-radius: 50%; 
+		-ms-border-radius: 50%; 
+		-ms-border-radius: 50%; 
+		border-radius: 50%; 
+		-webkit-animation: ExtraEgitim 1s linear 0s;
+		-moz-animation: ExtraEgitim 1s linear 0s;
+		-o-animation: ExtraEgitim 1s linear 0s;
+		-ms-animation: ExtraEgitim 1s linear 0s;
+		animation: ExtraEgitim 1s linear 0s;
+		-webkit-animation-fill-mode: none; 	
+		-moz-animation-fill-mode: none; 		
+		-o-animation-fill-mode: none; 		
+		-ms-animation-fill-mode: none; 		
+		animation-fill-mode: none; 			
+	}
+	@keyframes ExtraEgitim{
+		from{
+			-webkit-transform: translateX(0px); 
+			-moz-transform: translateX(0px); 
+			-o-transform: translateX(0px); 
+			-ms-transform: translateX(0px); 
+			transform: translateX(0px); 
+		}
+		to{
+			-webkit-transform: translateX(1000px); 
+			-moz-transform: translateX(1000px); 
+			-o-transform: translateX(1000px); 
+			-ms-transform: translateX(1000px); 
+			transform: translateX(1000px); 
+		}
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div>
+</body>
+</html>

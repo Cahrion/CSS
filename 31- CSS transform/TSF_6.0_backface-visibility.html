@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		backface-visibility 	= Belirtilen HTML elementinin dönüştürme, geçiş veya anismasyon işlemlerinde arka yüzeyin görüntülenme veya gizlenme özelliklerini belirler.
+		Değerler 			= visible / hidden / initial
+		visible 			= Göster. 
+		hidden 				= Gizle.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.Islem1a{
+		width: 87px;
+		padding: 25px;
+		border: 1px solid red;	
+		background-color: red;	
+	}
+	.Islem1b{
+		width: 87px;
+		padding: 25px;
+		border: 1px solid red;	
+		background-color: red;	
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+		-o-transform: rotateY(180deg);
+		-ms-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+		
+		-webkit-backface-visibility: visible;
+		-moz-backface-visibility: visible;
+		-o-backface-visibility: visible;
+		-ms-backface-visibility: visible;
+		backface-visibility: visible;
+	}
+	.Islem2a{
+		width: 102px;
+		padding: 25px;
+		border: 1px solid blue;
+		background-color: blue;
+	}
+	.Islem2b{
+		width: 102px;
+		padding: 25px;
+		border: 1px solid blue;
+		background-color: blue;	
+		-webkit-transform: rotateX(180deg);
+		-moz-transform: rotateX(180deg);
+		-o-transform: rotateX(180deg);
+		-ms-transform: rotateX(180deg);
+		transform: rotateX(180deg);
+		
+		-webkit-backface-visibilty: visible;
+		-moz-backface-visibilty: visible;
+		-o-backface-visibilty: visible;
+		-ms-backface-visibilty: visible;
+		backface-visibilty: visible;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<div class="Islem1a">Extra Eğitim</div><br>
+	<div class="Islem1b">Extra Eğitim</div><br>
+	<div class="Islem2a">Volkan Alakent</div><br>
+	<div class="Islem2b">Volkan Alakent</div>
+	
+</body>
+</html>

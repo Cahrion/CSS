@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	align-items	= Esnek kutu içerisinde bulunan elementlerin hizalama özelliklerini belirler.
+		Değerler 	= stretch | center | flex-start | flex-end | baseline | initial
+		stretch 	= Uzat / esne
+		center 		= Orta.
+		flex-start 	= Esnek başlangıç.
+		flex-end 	= Esnek bitiş.
+		baseline 	= Başlangıç.
+		initial	 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 500px;
+		height: 250px;
+		border: thin solid red;
+		-webkit-align-items: stretch; 	/* Varsayılan değer */	
+		-moz-align-items: stretch; 		/* Varsayılan değer */	
+		-o-align-items: stretch; 		/* Varsayılan değer */	
+		-ms-align-items: stretch; 		/* Varsayılan değer */	
+		align-items: stretch; 			/* Varsayılan değer */	
+	}
+	.AnaElemaniki{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 500px;
+		height: 250px;
+		border: thin solid red;
+		-webkit-align-items: center;
+		-moz-align-items: center; 	
+		-o-align-items: center; 	
+		-ms-align-items: center; 	
+		align-items: center; 		
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		-webkit-flex: 1; 	
+		-moz-flex: 1; 		
+		-o-flex: 1; 		
+		-ms-flex: 1; 		
+		flex: 1; 	
+		/* flex yapısı herşeyi aynı ortanda dağıtıyor. (flex-grow'da olmaz.)*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlar">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlar">D</div>
+		<div class="IcElemanlar">E</div>
+	</div>
+	<div class="AnaElemaniki">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlar">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlar">D</div>
+		<div class="IcElemanlar">E</div>
+	</div>
+</body>
+</html>

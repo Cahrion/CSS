@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		z-index 	= Konumlandırılmış bir HTML elementinin katman / yığın sırasını belirler.
+		Değerler 	= auto | number | initial
+		auto 		= Otomatik değer alır.
+		number 		= Rakam değeri. (En büyük rakam değeri daima en üstte yer alır.)
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		position: absolute;
+		font-size: 40px;
+	}
+	div#bir:hover{
+		z-index: 1;
+	}
+	#bir{
+		background-color: yellow;
+		z-index: 3;
+	}
+	#iki{
+		background-color: blue;
+		z-index: 2;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="bir">Extra Eğitim</div>
+	<div id="iki">Extra Eğitim</div>
+	<div id="uc">Extra Eğitim</div>
+	<div id="dort">Extra Eğitim</div>
+	<div id="bes">Extra Eğitim</div>
+	
+</body>
+</html>

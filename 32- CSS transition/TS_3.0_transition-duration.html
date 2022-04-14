@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		transition-duration	= HTML elementinin tanımlanmış olan geçiş özellikliğinin kaç saniye veya kaç milisaniye sonunda tamamlanacağını belirler.
+		Değerler 			= time | initial
+		time	 			= Zaman.(Saniye : s, Milisaniye : ms)
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 200px;
+		height: 200px;
+		margin: 50px;
+		border: 4px double black;
+		background-color: skyblue;
+		font-size: 25px;
+		line-height: 200px;
+		color: grey;
+		text-align: center;
+		-webkit-transition-duration: 3s;
+		-moz-transition-duration: 3s;
+		-o-transition-duration: 3s;
+		-ms-transition-duration: 3s;
+		transition-duration: 3s;
+		-webkit-transition-property: all; 	
+		-moz-transition-property: all; 		
+		-o-transition-property: all; 		
+		-ms-transition-property: all; 		
+		transition-property: all; 			
+	}
+	div:hover{
+		transform: rotate(360deg);
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div>CSS</div>
+	
+</body>
+</html>

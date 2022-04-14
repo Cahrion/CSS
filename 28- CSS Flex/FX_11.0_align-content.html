@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	align-content	= Esnek kutu içerisinde bulunan elementlerin tüm alanı kullanmadığında ve satır kırılma olduğunda, elementlerin hizalama özelliklerini belirler.
+		Değerler 		= stretch | center | flex-start | flex-end | space-between | space-around | initial
+		stretch 		= Uzat / esne.
+		center 			= Orta.
+		flex-start 		= Esnek başlangıç.
+		flex-end 		= Esnek bitiş.
+		space-between 	= Boşluk arasında.
+		space-around 	= Boşluk etrafında.
+		initial	 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 500px;
+		height: 500px;
+		border: thin solid red;
+		-webkit-flex-wrap: wrap; 	
+		-moz-flex-wrap: wrap; 		
+		-o-flex-wrap: wrap; 		
+		-ms-flex-wrap: wrap; 		
+		flex-wrap: wrap;
+		-webkit-align-content: stretch; /* Varsayılan hal */
+		-moz-align-content: stretch; 	/* Varsayılan hal */
+		-o-align-content: stretch; 		/* Varsayılan hal */
+		-ms-align-content: stretch; 	/* Varsayılan hal */
+		align-content: stretch; 		/* Varsayılan hal */
+	}
+	.AnaElemaniki{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 500px;
+		height: 500px;
+		border: thin solid red;
+		-webkit-flex-wrap: wrap; 	
+		-moz-flex-wrap: wrap; 		
+		-o-flex-wrap: wrap; 		
+		-ms-flex-wrap: wrap; 		
+		flex-wrap: wrap;
+		-webkit-align-content: center; 
+		-moz-align-content: center; 	
+		-o-align-content: center; 		
+		-ms-align-content: center; 	
+		align-content: center; 		
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		width: 125px;
+		height: 125px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar"></div>
+		<div class="IcElemanlar"></div>
+		<div class="IcElemanlar"></div>
+		<div class="IcElemanlar"></div>
+		<div class="IcElemanlar"></div>
+	</div>
+	<div class="AnaElemaniki">
+		<div class="IcElemanlar"></div>
+		<div class="IcElemanlar"></div>
+		<div class="IcElemanlar"></div>
+		<div class="IcElemanlar"></div>
+		<div class="IcElemanlar"></div>
+	</div>
+</body>
+</html>

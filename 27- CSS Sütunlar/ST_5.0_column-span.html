@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		column-span 	= HTML elementinin çok sütunlu düzeni için bölünen sütunların içerisindeki bir elementin sutun veya sutunlara ayırmasını belirler.
+		Değerler 		= none | all | initial | inherit
+		none 	 		= Değer yok. (Varsayilan değer)
+		all 			= Tümü.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.	
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/	
+	div.none{
+		border: 2px solid red;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+	}
+	h1#bir{
+		-webkit-column-span: none; /* varsayılan değer. */
+		-moz-column-span: none; /* varsayılan değer. */
+		-o-column-span: none; /* varsayılan değer. */
+		-ms-column-span: none; /* varsayılan değer. */
+		column-span: none; /* varsayılan değer. */
+	}
+	h1.iki{
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		-o-column-span: all; 
+		-ms-column-span: all;
+		column-span: all;
+	}
+	h1.initial{
+		-webkit-column-span: initial;
+		-moz-column-span: initial;
+		-o-column-span: initial; 
+		-ms-column-span: initial;
+		column-span: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+		<h1 style="text-align: center;">none</h1>
+	<div class="none">
+		<h1 id="bir">Icabi Kırgız - CSS (150SAAT) ders notları</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?
+	</div>
+		<br>
+		<h1 style="text-align: center;">all</h1>
+	<div class="none">
+		<h1 id="iki">Icabi Kırgız - CSS (150SAAT) ders notları</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?
+	</div>
+		<br>
+		<h1 style="text-align: center;">initial</h1>
+	<div class="none">
+		<h1 class="iki initial">Icabi Kırgız - CSS (150SAAT) ders notları</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?
+	</div>
+</body>
+</html>

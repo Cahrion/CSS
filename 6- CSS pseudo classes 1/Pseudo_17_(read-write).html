@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* :read-write		=	Belirtilen HTML elementi okunabilir ve yazılabilir (düzenlenebilir) olduğunda stil tanımlar. */
+		
+	input:read-write{
+		background-color: #CCCCCC;
+		color: red;
+	}	
+	textarea:read-write{
+		background-color: #CCCCCC;
+		color: red;
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<table>
+		<tr>
+			<td>Adınız :</td>
+			<td><input type="text" value="Volkan" readonly></td>
+			<!-- Sadece okunabilir bir veri için verilir (readonly)-->
+		</tr>
+		<tr>
+			<td>Soyadınız :</td>
+			<td><input type="text" placeholder="Yazınız.."></td>
+		</tr>
+		<tr>
+			<td>Diğer:</td>
+			<td><textarea readonly>Kapalı metin</textarea></td>
+		</tr>		
+		<tr>
+			<td>Diğer 2</td>
+			<td><textarea>Açık Metin</textarea></td>
+		</tr>
+		
+	</table>
+</body>
+</html>

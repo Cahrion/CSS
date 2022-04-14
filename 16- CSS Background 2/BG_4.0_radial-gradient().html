@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		radial-gradient() 	= HTML elementinin dairesel renk geçişi özelliklerini belirler. 
+		Parametreler 		= Shape (Şekil) | Size(Boyut) | Direction (Yön) | Colors (Renkler)
+		Değerler 			= Ellipse (elips) & Cricle (Daire) |farthest-corner (En uzak koşe) & closest-corner & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece |Başlangıç rengi - bitiş rengi 
+	*/
+	div{
+		width: 600px;
+		height: 450px;
+		border: 2px solid black;
+		margin-bottom: 50px;
+	}
+	div#varsayilan{
+		background: -webkit-radial-gradient(Ellipse, red, yellow, black); /* Varsayılan değer. */
+		background: -moz-radial-gradient(Ellipse, red, yellow, black); 	/* Varsayılan değer. */
+		background: -o-radial-gradient(Ellipse, red, yellow, black); 		/* Varsayılan değer. */
+		background: -ms-radial-gradient(Ellipse, red, yellow, black); 	/* Varsayılan değer. */
+		background: radial-gradient(Ellipse, red, yellow, black);	 		/* Varsayılan değer. */
+	}
+	div#daire{
+		background: -webkit-radial-gradient(circle, red, yellow, black);
+		background: -moz-radial-gradient(circle,red, yellow, black);
+		background: -o-radial-gradient(circle,red, yellow, black);
+		background: -ms-radial-gradient(circle,red, yellow, black);
+		background: radial-gradient(circle,red, yellow, black);	
+	}
+	div#yuzde{
+		background: -webkit-radial-gradient(circle, red, yellow 20%, black);
+		background: -moz-radial-gradient(circle,red, yellow 20%, black);
+		background: -o-radial-gradient(circle,red, yellow 20%, black);
+		background: -ms-radial-gradient(circle,red, yellow 20%, black);
+		background: radial-gradient(circle,red, yellow 20%, black);	
+	}
+	div#yuzdedevam{
+		background: -webkit-radial-gradient(circle, red, yellow 20%, yellow 60%, black);
+		background: -moz-radial-gradient(circle,red, yellow 20%, yellow 60%, black);
+		background: -o-radial-gradient(circle,red, yellow 20%, yellow 60%, black);
+		background: -ms-radial-gradient(circle,red, yellow 20%, yellow 60%, black);
+		background: radial-gradient(circle,red, yellow 20%, yellow 60%, black);	
+	}
+	div#konum{
+		background: -webkit-radial-gradient(circle at 100% 100%, red, yellow, black);
+		background: -moz-radial-gradient(circle at 100% 100%,red, yellow, black);
+		background: -o-radial-gradient(circle at 100% 100%,red, yellow, black);
+		background: -ms-radial-gradient(circle at 100% 100%,red, yellow, black);
+		background: radial-gradient(circle at 100% 100%,red, yellow, black);	
+		/* Genişlik ve Yükseklik değerleri girilir sırasıyla.*/
+		/* (Genişlik) (%0 = Sol) (%100 = Sağ)*/
+		/* (Yükseklik) (%0 = Üst) (%100 = Alt)*/
+	}
+	div#boyut{
+		background: -webkit-radial-gradient(100px 200px ellipse at 50%, red, yellow, black);
+		background: -moz-radial-gradient(100px 200px ellipse at 50%,red, yellow, black);
+		background: -o-radial-gradient(100px 200px ellipse at 50%,red, yellow, black);
+		background: -ms-radial-gradient(100px 200px ellipse at 50%,red, yellow, black);
+		background: radial-gradient(100px 200px ellipse at 50%,red, yellow, black);	
+		/* Yüzdelik değer tek girilirse (Genişlik - Yükseklik) girilen değeri alır. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+		<div id="varsayilan"></div>
+		<div id="daire"></div>
+		<div id="yuzde"></div>
+		<div id="yuzdedevam"></div>
+		<div id="konum"></div>
+		<div id="boyut"></div>
+	
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	
+		min-width 	= HTML elementinin minimum genişliğini belirler.
+	 	Değerler	= length / % / initial / inherit
+	
+		length 		= Uzunluk değeri. (İstenilen türden sayı ile uzunluk verilir.)
+		% 			= Yüzde Değeri.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div#bir{
+		background-color: green;
+		min-width: 500px;
+	}
+	div{
+		background-color: blue;
+		width: 100%;
+	}
+	div#iki{
+		background-color: black;
+		width: 800px;
+	}
+	div#uc{
+		background-color: red;
+		min-width: 500px;	
+		opacity: 0.5;
+
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div>Extra Eğitim</div>
+	<p>Volkan Alakent</p>
+	
+	<div>
+		<div id="bir">Icabi</div> <!-- İçerdeki element belli bir noktaya kadar küçülür ama belirtilen sayının altına inince scroll (Kaydırma cubugu)çıkar.-->
+	</div>	<br><br>
+	<div id="iki">
+		<div id="uc">Icabi</div> <!-- Eğer minimum değer içinde olduğu yerden büyükse min width değeri taşar.-->
+	</div>
+	
+</body>
+</html>

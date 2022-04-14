@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		border-spacing = HTML table (tablo) elementinin kenarlık / çerçeve birleştirme durumunu belirler.
+		Değerler		= length | initial | inherit
+		length	 		= Uzunluk değeri
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	
+	
+	NOT: border-collapse: collapse; olduğu durumlarda pasif kalıcaktır.
+	
+	*/
+	table{
+		border:  2px dashed blue;
+	}
+	.length{
+		border-spacing: 4px; /* Hepsi */
+	}
+	.lengthikili{
+		border-spacing: 4px 30px; /* Genişik ve yükseklik (G-Y)*/
+	}
+	.lengthcollapse{
+		border-spacing: 4px 30px; /* Genişik ve yükseklik (G-Y)*/
+		border-collapse: collapse
+	}
+	th, td{
+		border: 2px solid red;
+		border-collapse: 
+	}
+	#inherit{
+		border-spacing: inherit;
+	}
+	#initial{
+		border-spacing: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<table class="length">
+		<tr>
+			<th>1</th>
+			<th>1</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</table>	
+	<br><br>
+	<table class="lengthikili">
+		<tr>
+			<th>1</th>
+			<th>1</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</table>	
+	<br><br>
+	<table class="lengthcollapse">
+		<tr>
+			<th>1</th>
+			<th>1</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</table>	
+	<br><br>
+	<table class="length" style="border-spacing: initial;">
+		<tr>
+			<th>2</th>
+			<th>2</th>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+	</table>
+	<br><br>
+
+	<table class="length">
+		<tr>
+			<th>3</th>
+			<th>3</th>
+			<th>Dersler</th>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>
+				<table id="inherit">
+					<tr>
+						<td>HTML</td>
+						<td>CSS</td>
+						<td>JAVASCRIPT</td>
+						<td>PHP</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>
+				<table id="initial">
+					<tr>
+						<td>HTML</td>
+						<td>CSS</td>
+						<td>JAVASCRIPT</td>
+						<td>PHP</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* Büyük Harf küçük harf duyarlıdır (Düzenli ifadeler kullanılırsa düzelebilir.)*/
+	li[name="Yazılım Dili"]{
+		color:blue
+			
+	}
+	*[ICABI="deger"]{
+		color: red;
+		/* Böyle bir özellik olmasa bile istenirse koyulabilir ve bu algılanabilir.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<h2 name="Baslik">Extra Eğitim</h2>
+	<p name="">Volkan Alakent</p>
+	<div>A'dan Z'ye CSS Eğitim Seti</div>
+	<ul>
+		<li>HTML</li>
+		<li ICABI="degerX">CSS</li>
+		<!-- Tam değer alındığından dolayı eğer (degerX) gibi bir farklı bir şey olursa yine çalışmaz.-->
+		<li ICABI="deger">JAVASCRIPT</li>
+		<li name="Programlama">PHP</li>
+		<li name="Yazılım Dili">ASP</li>
+		<li name="Yazılım DiliX">JAVA</li>
+		<!-- Yazılım DiliX'de tam bir yazıyla eşleşmediği için çalışmaz.-->
+		<li name="Yazılım DiLi">PYTHON</li>
+		<li name="Yazılım Dili">C / C++</li>
+		<li>C#</li>
+		<li name="Foto programlama">Photoshop</li>
+		<li>3Ds Max</li>
+		<li>Cinema 4D</li>
+	</ul>
+</body>
+</html>

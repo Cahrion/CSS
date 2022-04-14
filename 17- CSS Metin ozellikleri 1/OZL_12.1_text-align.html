@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-align  	= Metnin veya içeriğin yatay hizalam özelliklerini belirler.
+		Değerler 		= left | right | center | justify | initial |inherit
+		left	 		= Sol.
+		right	 		= Sağ.
+		center	 		= Orta.
+		justify			= Sağa ve sola eşit.
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 750px;
+		height: auto;
+		border: 1px solid blue;
+		margin-bottom: 50px;
+	}
+	div.right{
+		text-align: right;
+	}
+	div.inherit{
+		text-align: inherit;
+		width: 100px;;
+	}
+	
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<div class="right">Icabi Kırgız</div>	
+	<div class="right" style="text-align: initial;">Icabi Kırgız</div>
+	<div class="right">
+		Icabi Kırgız
+		<div class="inherit">
+			Icabi Kırgız <br>
+			CSS Notları
+		</div>
+	</div>
+</body>
+</html>

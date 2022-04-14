@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		calc() 		= Değer hesaplama işlemleri için kullanılır. 
+		Değerler	=	+ | - | * | /
+		+			= Toplama
+		-			= Çıkarma
+		*			= Çarpma
+		/			= Bölme
+	*/
+	div#toplam{
+		background-color: yellow;
+		
+		/* Prefix */
+		width: -webkit-calc(50% + 100px);
+		width: -moz-calc(50% + 100px);
+		width: -o-calc(50% + 100px);
+		width: -ms-calc(50% + 100px);
+		/* Prefix gerekli değil lakin (w3) kullanın diyor. (09.03.2021)*/
+		width: calc(50% + 100px);
+	}	
+	div#cikarma{
+		background-color: red;
+		
+		/* Prefix */
+		width: -webkit-calc(50% - 100px);
+		width: -moz-calc(50% - 100px);
+		width: -o-calc(50% - 100px);
+		width: -ms-calc(50% - 100px);
+		/* Prefix gerekli değil lakin (w3) kullanın diyor. (09.03.2021)*/
+		width: calc(50% - 100px);
+	}	
+	div#carpma{
+		background-color: green;
+		
+		/* Prefix */
+		width: -webkit-calc(25% * 2);
+		width: -moz-calc(25% * 2);
+		width: -o-calc(25% * 2);
+		width: -ms-calc(25% * 2);
+		/* Prefix gerekli değil lakin (w3) kullanın diyor. (09.03.2021)*/
+		width: calc(25% * 2);
+	}	
+	div#bolme{
+		background-color: blue;
+		
+		/* Prefix */
+		width: -webkit-calc(100% / 2);
+		width: -moz-calc(100% / 2);
+		width: -o-calc(100% / 2);
+		width: -ms-calc(100% / 2);
+		/* Prefix gerekli değil lakin (w3) kullanın diyor. (09.03.2021)*/
+		width: calc(100% / 2);
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="toplam">Extra Eğitim</div>
+	<div id="cikarma">Extra Eğitim</div>
+	<div id="carpma">Extra Eğitim</div>
+	<div id="bolme">Extra Eğitim</div>
+	
+</body>
+</html>

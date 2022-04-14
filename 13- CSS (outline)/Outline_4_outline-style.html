@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	
+	/* 
+		outline-style		= HTML elementinin anahat stilini belirler.
+		style değerleri		= none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset & initial & inherit
+		none 				= Değer yok..
+		hidden 				= Gizli.
+		solid 				= Düz çizgi.
+		double 				= Çift çizgi
+		dashed 				= Kesikli çizgi..
+		dotted 				= Noktalı çizgi.
+		groove 				= İçe dönük gölgeli çizgi.
+		ridge 				= Dışa dönük gölgeli çizgi.
+		inset 				= İçe dönük derin çizgi.
+		outset 				= Dışa dönük derin çizgi.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	p#bir{
+		outline: 4px solid red;
+		outline-style: none; 				/* Bir stil ataması yapmaz. (outline yok)*/
+	}	
+	p#iki{
+		outline: 4px solid red;
+		outline-style: hidden; 			/* outline tanımlandıktak sonra gizli yapmak istenirse gizli yapılamaz.*/
+	}	
+	p#uc{
+		outline: 4px solid black;
+		outline-style:solid; 	/* Düz çizgi cizer. */
+	}	
+	p#dort{
+		outline: 4px solid black;
+		outline-style:double; 	/* Çift çizgi çizer. Aralarında boşluklarla beraber toplam 4px olur.*/
+	}	
+	p#bes{
+		outline: 4px solid black;
+		outline-style: 2px dashed;	/* Kesikli çizgi çizer. */
+	}	
+	p#alti{
+		outline: 4px solid black;
+		outline-style:dotted; 	/* Noktalı çizgi çizer */
+	}	
+	p#yedi{
+		outline: 4px solid grey;
+		outline-style:groove; 	/* İçe dönük gölgeli yapı yapar*/
+	}	
+	p#sekiz{
+		outline: 4px solid grey;
+		outline-style:ridge; 	/* Dışa dönük gölgeli yapı yapar. */
+	}	
+	p#dokuz{
+		outline: 4px solid grey;
+		outline-style:inset ; 	/* İçe dönük derin bir yapı yapar. */
+	}	
+	p#on{
+		outline: 4px solid grey;
+		outline-style:outset; 	/* Dışa dönük derin bir yapı yapar.. */
+	}
+	p.onbir{
+		outline: 4px solid red;
+		outline-style: double; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		outline: 4px solid red;
+		outline-style: dotted;
+		padding: 5px;
+	}
+	p#oniki{
+		width: 1000px;
+		height: 50px;
+		outline: 4px solid red;
+		outline-style: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p id="bes">Extra Eğitim - Volkan Alakent</p>
+	<p id="alti">Extra Eğitim - Volkan Alakent</p>
+	<p id="yedi">Extra Eğitim - Volkan Alakent</p>
+	<p id="sekiz">Extra Eğitim - Volkan Alakent</p>	
+	<p id="dokuz">Extra Eğitim - Volkan Alakent</p>
+	<p id="on">Extra Eğitim - Volkan Alakent</p>
+	<p class="onbir">Extra Eğitim - Volkan Alakent</p>
+	<p class="onbir" style="outline-style:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="oniki">Extra Eğitim - Volkan Alakent</p>
+	</div>
+
+	
+</body>
+</html>

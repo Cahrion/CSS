@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		table-layout 	= HTML'in table (tablo) elementinde bulunan sütunların genişlikleri için düzen algoritması özelliklerini belirler.
+		Değerler		= auto | fixed | initial
+		auto	 		= Otomatik değer alır..
+		fixed	 		= Sabit.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	table{
+		border:  2px dashed blue;
+		width: 100%;
+		table-layout: fixed;
+		white-space: nowrap;
+	}
+	th,td{
+		border:  2px solid red;
+	}
+	#Bir{
+		width: 10%;
+	}
+	#Iki{
+		width: 90%;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<table>
+		<tr>
+			<td id="Bir">ExtraEğitimVolkanAlakent</td>
+			<td id="Iki">Extra Eğitim Volkan Alakent</td>
+		</tr>
+	</table>	
+	<br><br>
+</body>
+</html>

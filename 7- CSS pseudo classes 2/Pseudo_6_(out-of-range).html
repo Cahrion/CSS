@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* :in-range  = 	Belirtilen HTML elementi bilgi girişi, belirtilen aralıklar dışında bir değer olduğunda stil tanımlar. Belirtilen HTML elementi bilgi girişi, belirtilen aralıklar dahilinde bir değer olduğunda stil normale döner.*/
+	input[type="number"]:in-range{
+		color: darkgreen;
+		font-weight:bold;
+	}	
+	input[type="number"]:out-of-range{
+		color: darkred;
+		font-weight:bold;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<table>
+		<tr>
+			<td>Adınız Soyadınız: </td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td>Yaşınız: </td>
+			<td><input type="number" min="18" max="100"></td>
+		</tr>
+		
+	</table>
+
+		
+	
+</body>
+</html>

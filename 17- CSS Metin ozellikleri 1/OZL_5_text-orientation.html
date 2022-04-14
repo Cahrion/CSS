@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-orientation 	= Metnin writing-mode özelliği ile belirtilmiş hizalama yönü özelliğinin döndürme durumunu belirler.
+		Değerler 			= mixed | upright | initial |inherit
+		mixed 				= Karışık
+		upright 			= Dik.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 200px;
+		height: 150px;
+		padding: 4px;
+		border: thin solid red;
+		-webkit-writing-mode:vertical-lr;
+		-moz-writing-mode:vertical-lr;
+		-o-writing-mode:vertical-lr;
+		-ms-writing-mode:vertical-lr;
+		writing-mode:vertical-lr;
+	}
+	div#varsayilan{
+		-webkit-text-orientation:mixed;  	/* Varsayilan değer */
+		-moz-text-orientation:mixed; 		/* Varsayilan değer */
+		-o-text-orientation:mixed; 			/* Varsayilan değer */
+		-ms-text-orientation:mixed; 		/* Varsayilan değer */
+		text-orientation:mixed; 			/* Varsayilan değer */
+	}
+	div.UP{
+		-webkit-text-orientation:upright;	
+		-moz-text-orientation:upright;		
+		-o-text-orientation:upright;		
+		-ms-text-orientation:upright;		
+		text-orientation:upright;			
+	}
+	div#inherits{
+		width: 100px;
+		height: 130px;
+		-webkit-text-orientation:inherit;	
+		-moz-text-orientation:inherit;		
+		-o-text-orientation:inherit;		
+		-ms-text-orientation:inherit;		
+		text-orientation:inherit;			
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="varsayilan">Volkan Alakent - Extra Eğitim</div>	
+	<div class="UP">Volkan Alakent - Extra Eğitim</div>	
+	<div class="UP" style="text-orientation: initial;">Volkan Alakent - Extra Eğitim</div>	
+	<div class="UP">
+		Volkan Alakent - Extra Eğitim
+		<div id="inherits">Volkan Alakent - Extra Eğitim</div>
+	</div>	
+		
+	
+</body>
+</html>

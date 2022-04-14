@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		clip 		= absolute (mutlak / kesin) ddeğeri ile konumlandırılmış bir HTML elementinin kırpma / maskeleme özelliklerini belirler.
+		Değerler 	= auto | shape | initial
+		auto 		= Otomatik değer alır.
+		shape 		= Şekil. rect() fonksiyonu kullanılır. (Rectangle : Dikdörtgen)
+		initial 	= HTML elementi varsayılan biçimlendirme değerine geri döner.
+	*/
+	div{
+		position: relative;
+		width: 500px;
+	}
+	#elemanbir{
+		float: left;
+	}
+	#elemaniki{
+		float: right;
+	}
+	img#bir{
+		position: absolute;
+		clip: rect(190px,500px,370px,0px) /* (1).Üst (2).Sağ (3).Alt (4).Sol*/
+	}
+	img#iki{
+		position: absolute;
+		clip: rect(190px,500px,370px,0px) /* (1).Üst (2).Sağ (3).Alt (4).Sol*/
+	}
+	#iki{
+		clip: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+<div id="elemanbir">
+	<img id="bir" src="Dokuman/Mustang.jpg" alt="Mustang" title="Mustang" width="500" height="500">
+</div>
+	<br><br>
+<div id="elemaniki">
+	<img id="iki" style="clip: initial;" src="Dokuman/Mustang.jpg" alt="Mustang" title="Mustang" width="500" height="500">
+</div>
+</body>
+</html>

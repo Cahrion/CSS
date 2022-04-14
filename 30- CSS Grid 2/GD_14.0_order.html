@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		order 		= Izgara içerisindeki element veya elementlerin, diğer elementlere göre sıralama özelliklerini belirler.
+		Değerler 	= number |initial
+		number 		= Rakam.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	/* En büyük sayı her zaman en sondadır. */
+	#AnaEleman{
+		display: grid;
+		width: 400px;
+		height:300px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(3,auto);
+	}
+	.IcElemanlar{
+		border: 1px solid red;
+		padding: 10px;
+	}
+	.birsira{
+		-webkit-order: 1;
+		-moz-order: 1;
+		-o-order: 1;
+		-ms-order: 1;
+		order: 1; 
+	}
+	.ikisira{
+		-webkit-order: 2;
+		-moz-order: 2;
+		-o-order: 2;
+		-ms-order: 2;
+		order: 2; 
+	}
+	.eksibirsira{
+		-webkit-order: -1;
+		-moz-order: -1;
+		-o-order: -1;
+		-ms-order: -1;
+		order: -1;
+	}
+	.eksiikisira{
+		-webkit-order: -2;
+		-moz-order: -2;
+		-o-order: -2;
+		-ms-order: -2;
+		order: -2;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="AnaEleman">
+		<div class="IcElemanlar">1</div>
+		<div class="IcElemanlar eksiikisira">2</div>
+		<div class="IcElemanlar">3</div>
+		<div class="IcElemanlar ikisira">4</div>
+		<div class="IcElemanlar eksibirsira">5</div>
+		<div class="IcElemanlar">6</div>
+		<div class="IcElemanlar">7</div>
+		<div class="IcElemanlar">8</div>
+		<div class="IcElemanlar birsira">9</div>
+		<div class="IcElemanlar">10</div>
+	</div>
+</body>
+</html>

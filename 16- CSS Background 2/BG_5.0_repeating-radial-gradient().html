@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		repeating-radial-gradient() 	= HTML elementinin dairesel renk geçişi özelliklerini belirler. 
+		Parametreler 		= Shape (Şekil) | Size(Boyut) | Direction (Yön) | Colors (Renkler)
+		Değerler 			= Ellipse (elips) & Cricle (Daire) |farthest-corner (En uzak koşe) & closest-corner & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece |Başlangıç rengi - bitiş rengi - dilimle 
+	*/
+	div{
+		width: 600px;
+		height: 450px;
+		border: 2px solid black;
+		margin-bottom: 50px;
+	}
+	div#varsayilan{
+		background: -webkit-repeating-radial-gradient(red, yellow); 
+		background: -moz-repeating-radial-gradient(red, yellow); 	
+		background: -o-repeating-radial-gradient(red, yellow); 	
+		background: -ms-repeating-radial-gradient(red, yellow); 	
+		background: repeating-radial-gradient(red, yellow );		
+	}
+	div#tekrarli{
+		background: -webkit-repeating-radial-gradient(red 0%, yellow 25%); 
+		background: -moz-repeating-radial-gradient(red 0%, yellow 25%); 	
+		background: -o-repeating-radial-gradient(red 0%, yellow 25%); 	
+		background: -ms-repeating-radial-gradient(red 0%, yellow 25%); 	
+		background: repeating-radial-gradient(red 0%, yellow 25% );		
+	}
+	div#tekrarliucyuzde{
+		background: -webkit-repeating-radial-gradient(circle, yellow 10%, blue, red 25%);
+		background: -moz-repeating-radial-gradient(circle,yellow 10%, blue, red 25%);
+		background: -o-repeating-radial-gradient(circle,yellow 10%, blue, red 25%);
+		background: -ms-repeating-radial-gradient(circle,yellow 10%, blue, red 25%);
+		background: repeating-radial-gradient(circle,yellow 10%, blue, red 25%);	
+	}
+	div#tekrarliucuzun{
+		background: -webkit-repeating-radial-gradient(circle, yellow 10px, blue, red 50px);
+		background: -moz-repeating-radial-gradient(circle,yellow 10px, blue, red 50px);
+		background: -o-repeating-radial-gradient(circle,yellow 10px, blue, red 50px);
+		background: -ms-repeating-radial-gradient(circle,yellow 10px, blue, red 50px);
+		background: repeating-radial-gradient(circle,yellow 10px, blue, red 50px);	
+	}
+	div#alayi{
+		background: -webkit-repeating-radial-gradient(circle, yellow 0px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+		background: -moz-repeating-radial-gradient(circle, yellow 0px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+		background: -o-repeating-radial-gradient(circle, yellow 0px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+		background: -ms-repeating-radial-gradient(circle, yellow 0px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+		background: repeating-radial-gradient(circle, yellow 0px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);	
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+		<div id="varsayilan"></div>
+		<div id="tekrarli"></div>
+		<div id="tekrarliucyuzde"></div>
+		<div id="tekrarliucuzun"></div>
+		<div id="alayi"></div>
+	
+</body>
+</html>

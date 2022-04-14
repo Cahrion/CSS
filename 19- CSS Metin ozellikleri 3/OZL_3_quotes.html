@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		attr() 		= HTML'in q tag'ı (etiketi) için tırnak işareti türü değerini belirler.
+		Değerler	= none | string |initial | inherit
+		none  		= Değer yok.
+		string		= Harf - rakam - simge vs.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	q.yok{
+		quotes: none;
+	}
+	q.str{
+		quotes: "X" "X";
+	}
+	q.ikili{
+		quotes: "X" "X" "Q" "q";
+	}
+	div.quotes{
+		quotes: "~" "~";
+	}
+	.inherits{
+		quotes: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<q>Icabi Kırgız - www.icabikrgz.com</q><br><br>
+	<q class="yok">Icabi Kırgız - www.icabikrgz.com</q><br><br>
+	<q class="str">Icabi Kırgız - www.icabikrgz.com</q><br><br>
+	<q class="ikili">Icabi Kırgız - <q>www.icabikrgz.com</q> - CSS dersi notları</q><br><br>
+	<q class="yok" style="quotes: initial;">Icabi Kırgız - www.icabikrgz.com</q><br><br>
+	
+	<div class="quotes">
+		<q id="inherits">Icabi Kırgız - www.icabikrgz.com</q>
+	</div>
+	
+</body>
+</html>

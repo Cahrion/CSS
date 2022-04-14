@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		radial-gradient() 	= HTML elementinin dairesel renk geçişi özelliklerini belirler. 
+		Parametreler 		= Shape (Şekil) | Size(Boyut) | Direction (Yön) | Colors (Renkler)
+		Değerler 			= Ellipse (elips) & Cricle (Daire) |farthest-corner (En uzak koşe) & closest-corner & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece |Başlangıç rengi - bitiş rengi 
+	*/
+	div{
+		width: 600px;
+		height: 450px;
+		border: 2px solid black;
+		margin-bottom: 50px;
+	}
+	div#Fcorner{
+		background: -webkit-radial-gradient(farthest-corner at 65% 55%, red, yellow, black);
+		background: -moz-radial-gradient(farthest-corner at 65% 55%,red, yellow, black); 	
+		background: -o-radial-gradient(farthest-corner at 65% 55%,red, yellow, black); 	
+		background: -ms-radial-gradient(farthest-corner at 65% 55%,red, yellow, black); 	
+		background: radial-gradient(farthest-corner at 65% 55%,red, yellow, black);	
+		/* En uzak koşeye kadar kayar. */
+	}
+	div#Ccorner{
+		background: -webkit-radial-gradient(closest-corner at 65% 55%, red, yellow, black);
+		background: -moz-radial-gradient(closest-corner at 65% 55%,red, yellow, black); 	
+		background: -o-radial-gradient(closest-corner at 65% 55%,red, yellow, black); 	
+		background: -ms-radial-gradient(closest-corner at 65% 55%,red, yellow, black); 	
+		background: radial-gradient(closest-corner at 65% 55%,red, yellow, black);
+		/* En yakın koşeye kadar kayar. */
+	}
+	div#Fside{
+		background: -webkit-radial-gradient(farthest-side at 65% 55%, red, yellow, black);
+		background: -moz-radial-gradient(farthest-side at 65% 55%,red, yellow, black); 	
+		background: -o-radial-gradient(farthest-side at 65% 55%,red, yellow, black); 	
+		background: -ms-radial-gradient(farthest-side at 65% 55%,red, yellow, black); 	
+		background: radial-gradient(farthest-side at 65% 55%,red, yellow, black);
+		/* En uzak kenara kadar kayar. */
+	}
+	div#Cside{
+		background: -webkit-radial-gradient(closest-side at 65% 55%, red, yellow, black);
+		background: -moz-radial-gradient(closest-side at 65% 55%,red, yellow, black); 	
+		background: -o-radial-gradient(closest-side at 65% 55%,red, yellow, black); 	
+		background: -ms-radial-gradient(closest-side at 65% 55%,red, yellow, black); 	
+		background: radial-gradient(closest-side at 65% 55%,red, yellow, black);	 	
+		/* En yakın kenara kadar kayar. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="Fcorner"></div>
+	<div id="Ccorner"></div>
+	<div id="Fside"></div>
+	<div id="Cside"></div>
+	
+</body>
+</html>

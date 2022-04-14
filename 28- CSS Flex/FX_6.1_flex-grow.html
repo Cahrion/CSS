@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	flex-grow	 	= Esnek kutuların içerisindeki element veya elementlerin diğer elementlere göre büyüklük oranının ne şekilde olması gerektiğini belirler.
+		Değerler 		= number | initial
+		number 			= Rakam. (Varsayılan değer = 0)
+		initial		 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 500px;
+		height: 500px;
+		border: thin solid grey;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		-webkit-flex-grow: 0; 	/* varsayilan değer */
+		-moz-flex-grow: 0; 		/* varsayilan değer */
+		-o-flex-grow: 0; 		/* varsayilan değer */
+		-ms-flex-grow: 0; 		/* varsayilan değer */
+		flex-grow: 0; 			/* varsayilan değer */
+	}
+	.IcElemanlariki{
+		border: thin solid black;
+		-webkit-flex-grow: 1;
+		-moz-flex-grow: 1;
+		-o-flex-grow: 1;
+		-ms-flex-grow: 1;
+		flex-grow: 1;
+	}
+	.IcElemanlaruc{
+		border: thin solid black;
+		-webkit-flex-grow: 2;
+		-moz-flex-grow: 2;
+		-o-flex-grow: 2;
+		-ms-flex-grow: 2;
+		flex-grow: 2;
+	}
+	#initial{
+		border: thin solid black;
+		-webkit-flex-grow: initial;
+		-moz-flex-grow: initial;
+		-o-flex-grow: initial;
+		-ms-flex-grow: initial;
+		flex-grow: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlariki">B</div>
+		<div class="IcElemanlaruc">C</div>
+		<div id="initial" class="IcElemanlariki">D</div>
+		<div class="IcElemanlar">E</div>
+	</div>
+</body>
+</html>

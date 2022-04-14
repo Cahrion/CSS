@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		border-style  		= HTML elementinin kenarlık / çerçeve stilini belirler.
+		Değerleri			= none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset & initial & inherit
+		none 				= Değer yok..
+		hidden 				= Gizli.
+		solid 				= Düz çizgi.
+		double 				= Çift çizgi
+		dashed 				= Kesikli çizgi..
+		dotted 				= Noktalı çizgi.
+		groove 				= İçe dönük gölgeli çizgi.
+		ridge 				= Dışa dönük gölgeli çizgi.
+		inset 				= İçe dönük derin çizgi.
+		outset 				= Dışa dönük derin çizgi.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	p#bir{
+		border-style: solid; 						/* Hepis (solid) olur.*/
+	}	
+	p#iki{
+		border-style: none double; 					/* Üst alt (none) sağ sol (double) */
+	}	
+	p#uc{
+		border-style: hidden double dashed; 		/* üst (hidden) sağ  sol (double) alt (dashed) */
+	}		
+	p#dort{
+		border-style: hidden double dashed dotted; 	/* üst (hidden) sağ (double) alt (dashed) sol (dotted) */
+	}	
+	p#bes{
+		border-style: groove; 						/* İçe dönük gölgeli çizgi. */
+	}	
+	p#alti{
+		border-style: ridge; 						/* Dışa dönük gölgeli çizgi. */
+	}	
+	p#yedi{
+		border-color: red;
+		border-style: inset; 						/* İçe dönük derin çizgi. */
+	}	
+	p#sekiz{
+		border-color: red;
+		border-style: outset; 						/* Dışa dönük derin çizgi. */
+	}
+	p.dokuz{
+		border-style: solid; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		border-style: solid; 						
+		padding: 5px;
+	}
+	p#on{
+		border-style: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p id="bes">Extra Eğitim - Volkan Alakent</p>
+	<p id="alti">Extra Eğitim - Volkan Alakent</p>
+	<p id="yedi">Extra Eğitim - Volkan Alakent</p>
+	<p id="sekiz">Extra Eğitim - Volkan Alakent</p>
+	<p class="dokuz">Extra Eğitim - Volkan Alakent</p>
+	<p class="dokuz" style="border-style:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="on">Extra Eğitim - Volkan Alakent</p>
+	</div>
+	
+</body>
+</html>

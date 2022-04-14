@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* Büyük Harf küçük harf duyarlıdır (Düzenli ifadeler kullanılırsa düzelebilir.)*/
+	li[name$="Dili"]{
+		color:blue
+			
+	}
+	*[ICABI$="deger"]{
+		color: red;
+		/* Böyle bir özellik olmasa bile istenirse koyulabilir ve bu algılanabilir.*/
+	}
+	*[name$="Kullanıcı" i]{ /* (i) Parametresi kullanıldı.*/
+		background-color: black;
+		color: white;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<ul>
+	<!--Kelimenin içindeki kelimelerin başında belirtilen değer geçiyorsa istenileni yapar.	-->
+
+
+		<li>HTML</li>
+		<li ICABI="degerler">CSS</li>
+		<li ICABI="deger">JAVASCRIPT</li>
+		<li name="Programlama">PHP</li>
+		<li name="Yazılım Dili">ASP</li>
+		<li name="Yazılım Dilleri">JAVA</li>
+		<li name="Yazılımcıların Dili">PYTHON</li>
+		<li name="Özel Yazılım _Dili">C / C++</li>
+		<li name="Yazılım dilinin baslangici">C#</li>
+		<li name="Foto programlama">Photoshop</li>
+		<li name="Kullanıcı odaklı yazılım">3Ds Max</li>
+		<li name="KullanıCı odaklı yazılım">Cinema 4D</li>
+		<!--	Kullanıcı yazısında C büyük olduğu için ele almadı lakin istenirse...-->
+		<!--	Düzenli ifadelerden (i) parametresi kullanılarak ele alınabilir. -->
+		
+	</ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-transform 	= Metnin büyük harf / küçük harf dönüştürme özelliklerini belirler.
+		Değerler 		= none | capitalize | uppercase | lowercase | initial | inherit
+		none	 		= Değer yok.
+		capitalize		= Her kelimenin ilk harfi büyük olur.
+		uppercase		= Kelimenin / kelimelerin tüm harfleri büyük olur.
+		lowercase		= Kelimenin / kelimelerin tüm harfleri küçük olur.
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div.none{
+		text-transform: none; /* Varsayılan değer. */
+	}
+	div.capitaliz{
+		text-transform: capitalize; 
+	}
+	div.uppercase{
+		text-transform: uppercase; 
+	}
+	div.lowercase{
+		text-transform: lowercase; 
+	}
+	div.inherit{
+		text-transform: inherit; /* text-transform: lowercase; */
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="none">Icabi Kırgız ~ CSS ders notları</div>
+	<div class="capitaliz">icabi kırgız ~ CSS ders notları</div>
+	<div class="uppercase">Icabi Kırgız ~ CSS ders notları</div>
+	<div class="lowercase">Icabi Kırgız ~ CSS ders notları</div>
+	<div class="lowercase" style="text-transform: initial;">Icabi Kırgız ~ CSS ders notları</div>
+	<br><br>
+	<div class="uppercase">
+		Icabi Kırgız ~ CSS ders notları
+		<div id="inherit">~ Icabi Kırgız ~ CSS ders notları</div>
+	</div>
+	
+</body>
+</html>

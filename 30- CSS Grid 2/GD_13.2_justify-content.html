@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		justify-content = Izgara düzeni içersinde bulunan elementler tüm alanı kullanmadığında, elementlerin yatay hizalama özelliklerini belirler.
+		Değerler 		= stretch | center | start | end | space-around | space-between | space-evenly |initial
+		stretch	 		= Uzat / esne.
+		center	 		= Orta.
+		start	 		= Başlangıç.
+		end	 			= Bitiş.
+		space-around 	= Boşluk arasında.
+		space-between 	= Boşluk etrafında.
+		space-evenly 	= Eşit Boşluk.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	#AnaEleman{
+		display: grid;
+		width: 400px;
+		height:300px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(3,auto);
+		-webkit-justify-content: space-around; 	
+		-moz-justify-content: space-around;		
+		-o-justify-content: space-around;			
+		-ms-justify-content: space-around;		
+		justify-content: space-around;			
+	}
+	#AnaElemaniki{
+		display: grid;
+		width: 400px;
+		height:300px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(3,auto);
+		-webkit-justify-content: space-between; 	
+		-moz-justify-content: space-between;		
+		-o-justify-content: space-between;		
+		-ms-justify-content: space-between;		
+		justify-content: space-between;			
+	}
+	#AnaElemanuc{
+		display: grid;
+		width: 400px;
+		height:300px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(3,auto);
+		-webkit-justify-content: space-evenly; 	
+		-moz-justify-content: space-evenly;		
+		-o-justify-content: space-evenly;		
+		-ms-justify-content: space-evenly;		
+		justify-content: space-evenly;			
+	}
+	.IcEleman{
+		border: 1px solid red;
+		padding: 10px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="AnaEleman">
+		<div class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman Degeriki">2</div>	
+		<div class="IcEleman Degeruc">3</div>	
+		<div class="IcEleman Degerdort">4</div>	
+		<div class="IcEleman Degerbes">5</div>	
+		<div class="IcEleman Degeralti">6</div>	
+		<div class="IcEleman Degeryedi">7</div>	
+		<div class="IcEleman Degersekiz">8</div>	
+		<div class="IcEleman Degerdokuz">9</div>	
+		<div class="IcEleman Degeron">10</div>	
+	</div>
+	<br>
+	<div id="AnaElemaniki">
+		<div class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman Degeriki">2</div>	
+		<div class="IcEleman Degeruc">3</div>	
+		<div class="IcEleman Degerdort">4</div>	
+		<div class="IcEleman Degerbes">5</div>	
+		<div class="IcEleman Degeralti">6</div>	
+		<div class="IcEleman Degeryedi">7</div>	
+		<div class="IcEleman Degersekiz">8</div>	
+		<div class="IcEleman Degerdokuz">9</div>	
+		<div class="IcEleman Degeron">10</div>
+	</div>
+	<br>
+	<div id="AnaElemanuc">
+		<div class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman Degeriki">2</div>	
+		<div class="IcEleman Degeruc">3</div>	
+		<div class="IcEleman Degerdort">4</div>	
+		<div class="IcEleman Degerbes">5</div>	
+		<div class="IcEleman Degeralti">6</div>	
+		<div class="IcEleman Degeryedi">7</div>	
+		<div class="IcEleman Degersekiz">8</div>	
+		<div class="IcEleman Degerdokuz">9</div>	
+		<div class="IcEleman Degeron">10</div>
+	</div>
+</body>
+</html>

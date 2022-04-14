@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-origin 	= HTML elementinin arkaplan resminin başlangıç konumunu belirler.
+		Değerler 			= padding-box | border-box | content-box | initial | inherit
+		padding-box 		= Dolgu Kutusu.
+		border-box 	 		= Kenarlık Kutusu. (Varsayılan değer)
+		content-box	 		= İçerik Kutusu.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 1000px;
+		height: 625px;
+		border: 10px double red;
+		padding: 50px;
+		background-color: purple;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-clip: padding-box;
+	}
+	div#inherit{
+		width: 500px;
+		height: 312px;
+		border: 10px double white;
+		background-color: aqua;
+		background-clip: inherit;  /* Üsttekinin aynısını alır. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>Icabi Kırgız</div><br><br>
+	<div style="background-clip: initial;">Icabi Kırgız</div><br><br> 
+	<!-- Verilen değeri sıfırlar. -->
+	<div style="padding: 50px;">
+		<div id="inherit">Icabi Kırgız</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-position = HTML elementinin arkaplan resminin konum özelliklerini belirler.
+		Değerler 			= length | % | position | initial | inherit
+		length 				= Uzunluk değeri.
+		% 	 				= Yüzde değeri.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+		Position Değerleri  = top | right | bottom | left | center
+		top					= Üst.
+		right 				= Sağ.
+		bottom 				= Alt.
+		left 				= Sol.
+		center				= Orta.
+	*/
+	div#position{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: top left;		 /* Yazılma sırası fark etmez */
+	}
+	div#positioniki{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: top center; 	/* Yazılma sırası fark etmez */
+	}
+	div#positionuc{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: bottom right; 	/* Yazılma sırası fark etmez */
+	}
+	div#positiondort{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: bottom center; /* Yazılma sırası fark etmez */
+	}
+	
+	/* BODY elementi.
+		Bu element için alt tarafa bir yaslama yapılmaz lakin sağ, sol ve orta kısımlara yerleştirme yapabilirler.
+	*/
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="position"></div>
+	<div id="positioniki"></div>
+	<div id="positionuc"></div>
+	<div id="positiondort"></div>
+</body>
+</html>

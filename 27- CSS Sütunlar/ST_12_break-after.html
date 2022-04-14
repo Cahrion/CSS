@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		break-after		= HTML elementinin çok sütunlu düzeni için bölünen sütunların arasındaki belirtilecek olan elementin sonrasında bölünme davranış özelliklerini belirler.
+		Değerler 			= auto | column | initial
+		auto	 			= Otomatik değer alır.
+		column	 			= Sütun bölünur.	
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.	
+	*/	
+	div{
+		border: 2px solid red;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+	}
+	#auto{
+		break-after: auto;
+	}
+	[name="column"]{
+		break-after: column;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<h1 style="text-align: center"> Break-after özellikleri </h1>
+	<div>
+		<h3>auto</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eaque quasi obcaecati distinctio cum ea debitis eum deleniti ullam dignissimos fuga quas optio incidunt deserunt repellendus sit, molestias harum vero.</p>
+
+		<h3 id="auto">auto</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptatibus vel, saepe debitis distinctio ratione aliquid. Unde incidunt officia iure eius tenetur doloremque reiciendis assumenda ab. Sunt modi repudiandae voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloremque, molestiae?
+		</p>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<div>
+		<h3>column</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eaque quasi obcaecati distinctio cum ea debitis eum deleniti ullam dignissimos fuga quas optio incidunt deserunt repellendus sit, molestias harum vero.</p>
+		<h3 name="column">column</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptatibus vel, saepe debitis distinctio ratione aliquid. Unde incidunt officia iure eius tenetur doloremque reiciendis assumenda ab. Sunt modi repudiandae voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloremque, molestiae?
+		</p>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<div>
+		<h3>initial</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eaque quasi obcaecati distinctio cum ea debitis eum deleniti ullam dignissimos fuga quas optio incidunt deserunt repellendus sit, molestias harum vero.</p>
+		<h3 name="column" style="break-after:initial">initial</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptatibus vel, saepe debitis distinctio ratione aliquid. Unde incidunt officia iure eius tenetur doloremque reiciendis assumenda ab. Sunt modi repudiandae voluptate.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates doloremque, molestiae?
+		</p>
+	</div>
+</body>
+</html>

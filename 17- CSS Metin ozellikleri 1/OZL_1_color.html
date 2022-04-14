@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		color  		= Metnin rengini belirler.
+		Değerler 	= color | initial | inherit
+		color  		= Renk.
+		initial  	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  	= Html elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		margin-bottom: 20px;
+	}
+	div#renkbir{
+		color: red;
+	}
+	div.renkiki{
+		color: rgba(171,107,108,0.59)
+	}
+	div#inherit{
+		color: inherit;
+		background-color: black;
+		margin: 0px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="renkbir">
+		Icabi Kırgız
+	</div>
+	<div class="renkiki">
+		Icabi Kırgız
+	</div>
+	<div class="renkiki" style="color:inherit">
+		Icabi Kırgız
+	</div>
+	<div class="renkiki">
+		Buralarda
+		<div id="inherit">
+			Icabi Kırgız
+		</div>
+		Buralarda
+	</div>
+		
+	
+</body>
+</html>

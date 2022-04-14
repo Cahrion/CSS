@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+		/* 
+		border 				= HTML elementinin kenarlık / çerçeve özelliklerini belirler.
+		Parametreler 		= length | style | color
+		length değerleri	= length & initial & inherit & thin & medium & thick
+		style değerleri		= none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset
+		color değerleri		= color
+		length 				= uzunluk değeri.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+		thin  				= Ince.
+		medium 				= Orta.
+		thick 				= Kalın.
+		none 				= Değer yok..
+		hidden 				= Gizli.
+		solid 				= Düz çizgi.
+		double 				= Çift çizgi
+		dashed 				= Kesikli çizgi..
+		dotted 				= Noktalı çizgi.
+		groove 				= İçe dönük gölgeli çizgi.
+		ridge 				= Dışa dönük gölgeli çizgi.
+		inset 				= İçe dönük derin çizgi.
+		outset 				= Dışa dönük derin çizgi.
+		color 				= Renk. 
+	*/
+	p#bir{
+		border: 2px solid black;
+	}	
+	p#iki{
+		border: thin solid black; 	/* İnce bir kenarlık çizer. */
+	}	
+	p#uc{
+		border: medium solid black; /* Orta bir kenarlık çizer. */
+	}	
+	p#dort{
+		border: thick solid black; 	/* Kalın bir kenarlık çizer. */
+	}
+	p.bes{
+		border: thick solid black; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		border: medium solid blue;
+		padding: 5px;
+	}
+	p#alti{
+		border: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p class="bes">Extra Eğitim - Volkan Alakent</p>
+	<p class="bes" style="border:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="alti">Extra Eğitim - Volkan Alakent</p>
+	</div>
+	
+</body>
+</html>

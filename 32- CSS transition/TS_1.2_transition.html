@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		transition 					= HTML elementinin tüm geçiş özelliklerini belirler.
+		Parametreler 				= transition-property | transition-duration | transition-timing-function | transition-delay
+		Değerler 					= property value (özellik değeri) | initial
+		transition-property 		= CSS özellik adı.
+	 	transition-duration 		= Geçiş süresi.
+	 	transition-timing-function 	= Hız eğrisi.
+	 	transition-delay 			= Duraksama süresi.
+		initial 					= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div#Bir{
+		width: 100px;
+		height: 100px;
+		border: 1px solid red;
+		background-color: yellow;
+		-webkit-transition: width 4s ease;  	/* Varsayılan değer */
+		-moz-transition: width 4s ease;     	/* Varsayılan değer */
+		-o-transition: width 4s ease;     		/* Varsayılan değer */
+		-ms-transition: width 4s ease;     		/* Varsayılan değer */
+		transition: width 4s ease;     			/* Varsayılan değer */
+	}
+	div#Bir:hover{
+		width: 1000px;
+	}
+	div#Iki{
+		width: 100px;
+		height: 100px;
+		border: 1px solid red;
+		background-color: yellow;
+		-webkit-transition: width 4s linear; 	/* Hepsinde aynı hızda git */
+		-moz-transition: width 4s linear; 		/* Hepsinde aynı hızda git */
+		-o-transition: width 4s linear; 		/* Hepsinde aynı hızda git */
+		-ms-transition: width 4s linear; 		/* Hepsinde aynı hızda git */
+		transition: width 4s linear; 			/* Hepsinde aynı hızda git */
+	}
+	div#Iki:hover{
+		width: 1000px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="Bir"></div>
+	<div id="Iki"></div>
+	
+</body>
+</html>

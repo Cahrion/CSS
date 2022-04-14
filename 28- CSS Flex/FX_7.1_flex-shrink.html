@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	flex-shrink	 	= Esnek kutuların içerisindeki element veya elementlerin diğer elementlere göre küçüklük / büzülme oranının ne şekilde olması gerektiğini belirler.
+		Değerler 		= number | initial
+		number 			= Rakam. (Varsayılan değer = 1)
+		initial		 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 100px;
+		height: 500px;
+		border: thin solid grey;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		-webkit-flex-basis: 200px; 
+		-moz-flex-basis: 200px; 
+		-o-flex-basis: 200px; 
+		-ms-flex-basis: 200px; 
+		flex-basis: 200px; 
+		-webkit-flex-shrink: 1; 	/* varsayilan değer */
+		-moz-flex-shrink: 1; 		/* varsayilan değer */
+		-o-flex-shrink: 1; 			/* varsayilan değer */
+		-ms-flex-shrink: 1; 		/* varsayilan değer */
+		flex-shrink: 1; 			/* varsayilan değer */
+	}
+	.IcElemanlariki{
+		border: thin solid black;
+		-webkit-flex-basis: 200px; 
+		-moz-flex-basis: 200px; 
+		-o-flex-basis: 200px; 
+		-ms-flex-basis: 200px; 
+		flex-basis: 200px;
+		-webkit-flex-shrink: 2; /* 2'de biri */
+		-moz-flex-shrink: 2; /* 2'de biri */
+		-o-flex-shrink: 2; /* 2'de biri */
+		-ms-flex-shrink: 2; /* 2'de biri */
+		flex-shrink: 2; /* 2'de biri */
+	}
+	.IcElemanlaruc{
+		border: thin solid black;
+		-webkit-flex-basis: 200px; 
+		-moz-flex-basis: 200px; 
+		-o-flex-basis: 200px; 
+		-ms-flex-basis: 200px; 
+		flex-basis: 200px;
+		-webkit-flex-shrink: 3; /* 3'de biri */
+		-moz-flex-shrink: 3; /* 3'de biri */
+		-o-flex-shrink: 3; /* 3'de biri */
+		-ms-flex-shrink: 3; /* 3'de biri */
+		flex-shrink: 3; /* 3'de biri */
+	}
+	#initial{
+		border: thin solid black;
+		-webkit-flex-shrink: initial; 
+		-moz-flex-shrink: initial;
+		-o-flex-shrink: initial;
+		-ms-flex-shrink: initial;
+		flex-shrink: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlariki">B</div>
+		<div class="IcElemanlaruc">C</div>
+		<div id="initial" class="IcElemanlariki">D</div>
+		<div class="IcElemanlar">E</div>
+	</div>
+</body>
+</html>

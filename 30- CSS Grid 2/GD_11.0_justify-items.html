@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		justify-items 	= Izgara düzeni içersinde bulunan elementlerin, yatay hizalama özelliklerini belirler.
+		Değerler 		= stretch | center | start | end | initial
+		stretch	 		= Uzat / esne.
+		center	 		= Orta.
+		start	 		= Başlangıç.
+		end	 			= Bitiş.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	#AnaEleman{
+		display: grid;
+		width: 400px;
+		height:300px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(3,auto);
+		-webkit-justify-items: stretch; 	/* Varsayilan değer */
+		-moz-justify-items: stretch;		/* Varsayilan değer */
+		-o-justify-items: stretch;			/* Varsayilan değer */
+		-ms-justify-items: stretch;			/* Varsayilan değer */
+		justify-items: stretch;				/* Varsayilan değer */
+	}
+	#AnaElemaniki{
+		display: grid;
+		width: 400px;
+		height:300px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(3,auto);
+		-webkit-justify-items: center; 	
+		-moz-justify-items: center;		
+		-o-justify-items: center;		
+		-ms-justify-items: center;		
+		justify-items: center;			
+	}
+	.IcEleman{
+		border: 1px solid red;
+		padding: 10px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="AnaEleman">
+		<div class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman Degeriki">2</div>	
+		<div class="IcEleman Degeruc">3</div>	
+		<div class="IcEleman Degerdort">4</div>	
+		<div class="IcEleman Degerbes">5</div>	
+	</div>
+	<br>
+	<div id="AnaElemaniki">
+		<div class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman Degeriki">2</div>	
+		<div class="IcEleman Degeruc">3</div>	
+		<div class="IcEleman Degerdort">4</div>	
+		<div class="IcEleman Degerbes">5</div>	
+	</div>
+</body>
+</html>

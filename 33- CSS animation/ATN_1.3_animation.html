@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		animation			= HTML elementi tüm animasyon özelliklerini belirler. 
+		Parametreler 		= animation-name |animation-duration | animation-timing-function | animation delay | animation-							  iteration-count | animation-direction | animation-fill-mode | animation-play-state
+		Varsayılan Değer	= none 0 ease 0 1 normal none running
+		Değerler 			= animation value | initial
+		animation value 	= Animasyon özelliği değeri / değerleri
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div#bir{
+		position: relative;
+		width: 50px;
+		height: 50px;
+		background-color: red;
+		-webkit-animation: ExtraEgitim 1s linear 0s infinite alternate none running;
+		-moz-animation: ExtraEgitim 1s linear 0s infinite alternate none running;
+		-o-animation: ExtraEgitim 1s linear 0s infinite alternate none running;
+		-ms-animation: ExtraEgitim 1s linear 0s infinite alternate none running;
+	}
+	div#iki{
+		position: relative;
+		width: 50px;
+		height: 50px;
+		background-color: red;
+		-webkit-animation: VolkanAlakent 1s linear 0s infinite alternate none running;
+		-moz-animation: VolkanAlakent 1s linear 0s infinite alternate none running;
+		-o-animation: VolkanAlakent 1s linear 0s infinite alternate none running;
+		-ms-animation: VolkanAlakent 1s linear 0s infinite alternate none running;
+		animation: VolkanAlakent 1s linear 0s infinite alternate none running;
+	}
+	@keyframes ExtraEgitim{
+		from{
+			width: 0px;
+			
+		}
+		to{
+			width: 1500px;
+		}
+	}
+	@keyframes VolkanAlakent{
+		from{
+			width: 1500px;			
+		}
+		to{
+			width: 0px;
+		}
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="bir"></div><br>
+	<div id="iki"></div>
+</body>
+</html>

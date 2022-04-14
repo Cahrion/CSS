@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+	margin-top 	= HTML elementinin üst kenar boşluğu / dış boşluk özeliklerini belirler.
+	Değerler 	= length | % | auto | initial | inherit
+	length  	= Uzunluk değeri.
+	% 		  	= Yüzde değeri.
+	auto		= Otomatik değer alır.
+	initial   	= HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit  	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		border: 4px solid green;
+		margin-top: 10px;	
+	}
+	div#yuzde{
+		width:196px;
+		height: 18px;
+		border: 4px solid blue;
+		margin-top: 20%;
+	}
+	div#auto{
+		border: 4px solid black;
+		margin-top: auto;
+		/* Üstten bir değişiklik olmaz.*/
+	}
+	div#alan{
+		width: 400px;
+		height: 100px;
+		border: 4px solid purple;
+		margin-top: 10px;	
+	}
+	div#inherits{
+		border: 4px solid yellow;
+		margin-top: inherit;	
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>ICABI KIRGIZ</div>
+	<div id="yuzde">ICABI KIRGIZ</div>
+	<div id="auto">ICABI KIRGIZ</div>
+	<div>ICABI KIRGIZ</div>
+	<div style="margin-top: initial">ICABI KIRGIZ</div>
+	<div id="alan">
+		<div id="inherits">ICABI KIRGIZ</div>
+	</div>
+		
+	
+</body>
+</html>

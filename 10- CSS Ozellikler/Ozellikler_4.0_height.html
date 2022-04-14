@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	
+		height  	= HTML elementinin yüksekliğini belirler.
+		Değerler	= auto / length / % / initial / inherit
+		auto 		= Otomatik değer alır. (İçerisinde bulunan alanın yükselkliğini alır.)
+		length 		= Uzunluk değeri. (İstenilen türden sayı ile uzunluk verilir.)
+		% 			= Yüzde Değeri.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	p{
+		background-color: yellow;
+		height: auto; /* Varsayılan değer. */
+	}	
+	div{
+		background-color: blue;
+		height: 150px; /* Length. */
+	}
+	div#ozel{
+		background-color: #F1F1F1;
+		height: 50%; /* Yüzde Değeri */
+	}
+	div#bir{
+		background-color: green;
+		height: 150px;
+	}
+	div#iki{
+		background-color: black;
+		height: 250px;	
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p>Extra Eğitim</p>
+	<div>Volkan Alakent</div><br><br>
+	<div>
+		<div id="ozel">Icabı Kırgız</div>
+	</div>
+	<br><br>
+	<div id="bir">
+		<div id="iki"></div> <!-- Taşma yapar. -->
+	</div>
+	
+</body>
+</html>

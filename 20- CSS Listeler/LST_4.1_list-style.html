@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		list-style  		= Listedeki madde işaretçisinin tüm özelliklerini belirler.
+		Değerler 			= list-style-type | list-style-position | list-style-image | initial | inherit 
+		list-style-type 	= Listedeki madde işaretçisinin türü.
+		list-style-position = Listedeki madde işaretçisinin içerik akışındaki konumu.
+		list-style-image	= Listedeki madde işaretçisinin resmi.
+		initial				= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit				= HTML elementi üst elementinin biçimlendirme değerini alır.
+	
+	NOT ! = (ol) ve (ul) yapılarının ikisinde de geçerli sayılır.
+	*/
+	ul.type_position_image{
+		list-style:square inside url("Dokuman/Yildiz.png");
+	}
+	.inherit{
+		list-style: inherit;
+	}
+	.initial{
+		list-style: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<ul class="type_position_image">
+		<li>(inside)</li>
+	</ul>
+	<hr>
+	<ul class="type_position_image" style="list-style: initial;">
+		<li>(type-position-image but initial)</li>
+	</ul>
+	<hr>
+	<ul class="type_position_image">
+		<li>(type-position-image)</li>
+		<li>(type-position-image)</li>
+		<li>inheritler
+			<ul class="inherit">
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+			</ul>
+		</li>
+		<li>(type-position-image)</li>
+		<li>(type-position-image)</li>
+		<li>inside
+			<ul class="initial">
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+</body>
+</html>

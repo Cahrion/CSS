@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		outline-color 		= HTML elementinin anahat rengini belirler.
+		Değerleri 			= color & invert & initial & inherit
+		color 				= Renk. (Siyah = varsayılan değer.)
+		invert				= Ters Çevir. (Rengin birleştikleri yerleri farklı kılar ve görünürlüğü artırır.)
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	p#bir{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-color: blue;
+	}	
+	/* invert: Tutarsız tarayıcılar için */
+	div#iki{
+		width: 1000px;
+		height: 100px;
+		background-color: blue;
+	}	
+	div#uc{ 
+		width: 1000px;
+		height: 100px;
+		outline: 10px solid red;
+		outline-color: invert; 	
+	}	
+	/* ~~~~~ */
+	p.dort{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-color: blue; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-color: purple;
+		padding: 5px;
+	}
+	p#bes{
+		width: 1000px;
+		height: 50px;
+		outline: 4px solid red;
+		outline-color: inherit; /* inherit üstekinin rengini alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<div id="iki">Extra Eğitim - Volkan Alakent</div>
+	<div id="uc">Extra Eğitim - Volkan Alakent</div>
+	<br><br><br>
+	<p class="dort">Extra Eğitim - Volkan Alakent</p>
+	<p class="dort" style="outline-color:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="bes">Extra Eğitim - Volkan Alakent</p>
+	</div>
+
+</body>
+</html>

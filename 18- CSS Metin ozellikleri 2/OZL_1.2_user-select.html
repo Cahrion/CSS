@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		user-select 	= Metnin kullanıcı tarafından seçilebilme durumunu belirler.
+		Değerler 		= auto | none | text | all | initial |inherit
+		auto	 		= Otomatik değer alır.
+		none			= Değer yok. (Metin seçilemez.)
+		text			= Metin. (Metin seçilebilir.)
+		all				= Tümü (Tüm metin bir seferde seçilebilir.)
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		-webkit-user-select: none;  	
+		-moz-user-select: none;	    
+		-o-user-select: none;	    
+		-ms-user-select: none;	    
+		user-select: none;	
+	}
+	p{
+		-webkit-user-select: initial;  
+		-moz-user-select: initial;	    
+		-o-user-select: initial;	    
+		-ms-user-select: initial;	    
+		user-select: initial;	 		
+	}
+	p.deneme{
+		-webkit-user-select: inherit;  
+		-moz-user-select: inherit;	    
+		-o-user-select: inherit;	    
+		-ms-user-select: inherit;	    
+		user-select: inherit;	 		
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>
+		<p>Normal değer</p>
+		<p class="deneme">Üstten bilgi alan değer</p>
+		<p>Normal değer</p>
+		<!-- Tek bir değeri ele alır yani üstteki değeri ele alıp özel bir faktör çalıştırır.-->
+	</div>
+	
+</body>
+</html>

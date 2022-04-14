@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-stroke 	= Metne eklenecek olan dış çizgisinin özelliklerini belirler.
+		Degerleri 		= length | initial | inherit | color
+		length			= Uzunluk değeri
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+		color 			= Renk.
+	*/
+	div{
+		margin-bottom: 10px;
+		font-size: 40px;
+	}
+	.color{
+		-webkit-text-stroke: 1px yellow;
+		-moz-text-stroke: 1px yellow;
+		-o-text-stroke: 1px yellow;
+		-ms-text-stroke: 1px yellow;
+		text-stroke: 1px yellow;
+	}
+	#initial{
+		-webkit-text-stroke: initial;
+		-moz-text-stroke: initial;
+		-o-text-stroke: initial;
+		-ms-text-stroke: initial;
+		text-stroke: initial;
+		/* Eğer üst elementi varsa kaldırma işlemi bir işe yaramaz. */
+	}
+	div#inherit{		
+		-webkit-text-stroke: inherit;
+		-moz-text-stroke: inherit;
+		-o-text-stroke: inherit;
+		-ms-text-stroke: inherit;
+		text-stroke: inherit;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="color">Renklendirilmiş</div>
+	<div id="initial" class="color" >Yeniden varsayılana döndürülmüş</div>
+	
+	<div class="color">
+		Üst bilgi dekorasyonu
+		<div id="inherit">Bu değer üstten aldığı bilgiyi taşır.</div>
+	</div>
+</body>
+</html>

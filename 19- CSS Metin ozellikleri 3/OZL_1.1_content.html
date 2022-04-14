@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		content				= before veya after sahte elementi ile birlikte üretilecek olan içeriği metne eklemek için kullanılır.
+		Değerler			= normal | none | string | open-quote | close-quote | no-open-quote | no-close-quote | url | attr | counter | initial 
+		normal				= Normal.
+		none				= Kelimeyi  harflerden kırar.
+		string				= İçeriğe yeni bir dizi ekler.
+		open-quote			= İçeriğe açılış tırnak işareti ekler.
+		close-quote			= İçeriğe kapanış tırnak işareti ekler.
+		no-open-quote		= İçeriğin açılış tırnak işaretini kaldırır.
+		no-close-quote		= İçeriğin kapanış tırnak işaretini kaldırır.
+		url					= İçeriğe medya dosyası ekler.
+		attr				= İçeriğin bulunduğu elementin belirtilecek olan herhangi bir özellik bilgisine erişerek değerini ekler.
+		counter				= Belirtilecek olan herhangi bir elementin sayaç bilgisine erişerek değerini ekler.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+	*/
+	div.quote::before{
+		content: open-quote; 
+	}
+	div.quote::after{
+		content: close-quote; 
+	}
+	q.no_quote::before{
+		content: no-open-quote; 
+	}
+	q.no_quote::after{
+		content: no-close-quote; 
+	}
+	div.url::before{
+		content: url("Dokuman/Logo.png"); 
+	}
+	div.url::after{
+		content: url("Dokuman/Logo.png");; 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="quote">Icabi Kırgız</div>
+	<q>Icabi Kırgız (q)</q><br>
+	<q class="no_quote">Icabi Kırgız (q)</q>
+	<!-- (q tağı) alıntı tağıdır. ve iki tarafına da (alıntı işareti) ekler. -->
+	<div class="url"> Icabi Kırgız </div>
+</body>
+</html>

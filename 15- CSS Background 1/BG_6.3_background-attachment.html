@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-attachment 	= HTML elementine atanmış olan arkaplan hareketlerine göre davranış özelliklerini belirler.
+		Değerler 			= scroll | fixed | local | initial | inherit
+		scroll 				= Kaydırma.
+		fixed 	 			= Sabit.
+		local 	 			= Yerel.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+	*/
+	div#bir{
+		width: 800px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat: no-repeat;
+		background-attachment: scroll; 
+		overflow: auto;
+	}
+	div#iki{
+		width: 700px;
+		height: 300px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat: no-repeat;
+		background-position: 13px 190px;
+		background-attachment: inherit;  /* Üsttekinin değerini alır. */
+		overflow: auto;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="bir"><br><br><br><br><br><br><br><br><br><br>
+		<div id="iki">
+			Icabi Kırgız<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			Icabi Kırgız<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			Icabi Kırgız<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			Icabi Kırgız<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+	</div>
+
+</body>
+</html>

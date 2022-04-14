@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		radial-gradient() 	= HTML elementinin dairesel renk geçişi özelliklerini belirler. 
+		Parametreler 		= Shape (Şekil) | Size(Boyut) | Direction (Yön) | Colors (Renkler)
+		Değerler 			= Ellipse (elips) & Cricle (Daire) |farthest-corner (En uzak koşe) & closest-corner & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece |Başlangıç rengi - bitiş rengi 
+	*/
+	div{
+		width: 600px;
+		height: 450px;
+		border: 2px solid black;
+		margin-bottom: 50px;
+	}
+	div#deger{
+		background: -webkit-radial-gradient(circle,white,white 10%, black 10%, black);
+		background: -moz-radial-gradient(circle,white,white 10%, black 10%, black);
+		background: -o-radial-gradient(circle,white,white 10%, black 10%, black);
+		background: -ms-radial-gradient(circle,white,white 10%, black 10%, black);
+		background: radial-gradient(circle,white,white 10%, black 10%, black);
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="deger"></div>
+	
+</body>
+</html>

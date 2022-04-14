@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		column-rule-color	= HTML elementinin çok sütunlu düzeni için bölünen sütunların aralarındaki dikey ayraç rengini belirler.
+		Değerler 			= color | initial | inherit
+		color 	 			= renk değeri.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.	
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/	
+	p{
+		border: 2px solid red;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: 50px;
+		-moz-column-gap: 50px;
+		-o-column-gap: 50px; 
+		-ms-column-gap: 50px;
+		column-gap: 50px;
+	}
+	p#red{
+		-webkit-column-rule-style: dotted; 
+		-moz-column-rule-style: dotted; 
+		-o-column-rule-style: dotted; 
+		-ms-column-rule-style: dotted;
+		column-rule-style: dotted; 
+		-webkit-column-rule-width: 20px; 
+		-moz-column-rule-width: 20px; 
+		-o-column-rule-width: 20px; 
+		-ms-column-rule-width: 20px;
+		column-rule-width: 20px; 
+		-webkit-column-rule-color: red; 
+		-moz-column-rule-color: red; 
+		-o-column-rule-color: red; 
+		-ms-column-rule-color: red;
+		column-rule-color: red; 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+		<h1 style="text-align: center;">red</h1>
+	<p id="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae ducimus fugit hic culpa, ut accusantium nesciunt nobis soluta nemo harum, deleniti esse, quasi eaque consequatur tempora quam repellendus. Maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis amet ipsum sed accusantium neque possimus laboriosam non repellendus quod ad, culpa asperiores nam id consequatur doloribus, dolore, iure totam!</p>
+</body>
+</html>

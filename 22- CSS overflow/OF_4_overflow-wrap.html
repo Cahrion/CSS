@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		overflow-wrap 	= HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük metnin satır kırılma özelliğini belirler.
+		Değerler 	= normal | break-word | initial | inherit
+		normal 	 	= Normal.
+		break-word	= Kelimeyi kır.
+		initial		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 1000px;
+		height: 200px;
+		border: 2px double red;
+	}
+	div.varsayilan{
+		overflow-wrap: normal;
+	}
+	div.break_word{
+		overflow-wrap: break-word;
+	}
+	div.inherit{
+		overflow-wrap: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="varsayilan"> 
+Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,quosnullaenim,recusandaeugiatea.Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,
+	</div>
+	<div class="break_word"> 
+Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,quosnullaenim,recusandaeugiatea.Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,
+	</div>
+	<div class="break_word" style="overflow-wrap: initial;"> 
+Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,quosnullaenim,recusandaeugiatea.Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,
+	</div>
+	<div class="break_word"> 
+Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,quosnullaenim,recusandaeugiatea.Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,
+		<div class="inherit">
+Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,quosnullaenim,recusandaeugiatea.Loremipsumdolorsitamet,consecteturadipisicinglit.Deseruntquod,laborequia.Inquaeautihilrationeimpeditatqueperspiciatisadeumporroassumenda,
+		</div>
+	</div>
+
+		
+	
+</body>
+</html>

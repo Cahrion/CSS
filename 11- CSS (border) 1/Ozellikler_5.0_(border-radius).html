@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		border-radius  		= HTML elementinin kenarlık / çerçeve koşelerinin yuvarlıklarını belirler.
+		Değerleri			= length & % & initial & inherit  
+		length 				= Uzunluk değeri.
+		%	 				= Yüzde değeri.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	p#bir{
+		border: 2px solid red; 
+		width: 50px;
+		height: 50px;
+		/* Prefix */
+		-webkit-border-radius: 10px;		/* 10px bir kırılma olur. */
+		-moz-border-radius: 10px;			/* 10px bir kırılma olur. */
+		-o-border-radius: 10px;				/* 10px bir kırılma olur. */
+		-ms-border-radius: 10px;			/* 10px bir kırılma olur. */
+		/* 09:03:2021 */
+		border-radius: 10px;		/* 10px bir kırılma olur. */
+	}	
+	p#iki{
+		border: 2px solid red;  	
+		width: 50px;
+		height: 50px;
+		/* Prefix */
+		-webkit-border-radius: 10px 20px;		/* üst-alt (10px) sol-sağ (20px) bir kırılma olur. */
+		-moz-border-radius: 10px 20px;			/* üst-alt (10px) sol-sağ (20px) bir kırılma olur. */
+		-o-border-radius: 10px 20px;			/* üst-alt (10px) sol-sağ (20px) bir kırılma olur. */
+		-ms-border-radius: 10px 20px;			/* üst-alt (10px) sol-sağ (20px) bir kırılma olur. */
+		/* 09:03:2021 */
+		border-radius: 10px 20px;		/* üst-alt (10px) sol-sağ (20px) bir kırılma olur. */
+	}	
+	p#uc{
+		border: 2px solid red;  	
+		width: 50px;
+		height: 50px;
+		/* Prefix */
+		-webkit-border-radius: 10px 20px 30px;		/* üst (10px) sol-sağ (20px) alt (30px) bir kırılma olur. */
+		-moz-border-radius: 10px 20px 30px;			/* üst (10px) sol-sağ (20px) alt (30px) bir kırılma olur. */
+		-o-border-radius: 10px 20px 30px;			/* üst (10px) sol-sağ (20px) alt (30px) bir kırılma olur. */
+		-ms-border-radius: 10px 20px 30px;			/* üst (10px) sol-sağ (20px) alt (30px) bir kırılma olur. */
+		/* 09:03:2021 */
+		border-radius: 10px 20px 30px;		/* üst (10px) sol-sağ (20px) alt (30px) bir kırılma olur. */		
+	}		
+	p#dort{
+		border: 2px solid red;  	
+		width: 50px;
+		height: 50px;
+		/* Prefix */
+		-webkit-border-radius: 10px 20px 30px 40px;		
+		/* üst (10px) sağ (20px) sol(30) alt (40px) bir kırılma olur. */ 
+		-moz-border-radius: 10px 20px 30px 40px;			
+		/* üst (10px) sağ (20px) sol(30) alt (40px) bir kırılma olur. */ 
+		-o-border-radius: 10px 20px 30px 40px;			
+		/* üst (10px) sağ (20px) sol(30) alt (40px) bir kırılma olur. */ 
+		-ms-border-radius: 10px 20px 30px 40px;			
+		/* üst (10px) sağ (20px) sol(30) alt (40px) bir kırılma olur. */ 
+		/* 09:03:2021 */
+		border-radius: 10px 20px 30px 40px;		/* üst (10px) sağ (20px) sol(30) alt (40px) bir kırılma olur. */ 
+	}	
+	p#bes{
+		border: 2px solid red;  	
+		width: 50px;
+		height: 50px;
+		/* Prefix */
+		-webkit-border-radius: 20%;		/* 20px bir kırılma olur. */
+		-moz-border-radius: 20%;			/* 20px bir kırılma olur. */
+		-o-border-radius: 20%;				/* 20px bir kırılma olur. */
+		-ms-border-radius: 20%;			/* 20px bir kırılma olur. */
+		/* 09:03:2021 */
+		border-radius: 20%;		/* 20% bir kırılma olur. */	
+	}
+	p.alti{
+		border: 2px solid red;  	
+		width: 50px;
+		height: 50px;		
+		border-radius: 20px; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		border: 2px solid red;  	
+		width: 50px;
+		height: 50px;		
+		border-radius: 20px; 						
+		padding: 5px;
+	}
+	p#yedi{
+		width: 20px;
+		height: 20px;
+		border: 2px solid red;  
+		border-radius: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir"></p>
+	<p id="iki"></p>
+	<p id="uc"></p>
+	<p id="dort"></p>
+	<p id="bes"></p>
+	<p id="sekiz"></p>
+	<p class="alti"></p>
+	<p class="alti" style="border-radius:initial"></p>
+	<div>
+		<p id="yedi"></p>
+	</div>
+	
+</body>
+</html>

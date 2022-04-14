@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-color 	= HTML elementinin arkaplan rengini belirler.
+		Değerler 			= transparent | color | initial | inherit
+		transparent 		= Transparan.
+		color 	 			= Renk.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+	*/
+	body{
+		background-color: aqua;
+	}
+	div{
+		background-color: red;
+	}
+	div#varsayilan{
+		border: thin solid white;
+		background-color: transparent; /* Varsayılan değer. */
+	}
+	div#inherit{
+		border: thin solid white;
+		background-color: inherit; 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>Icabi Kırgız</div><br><br>
+	<div id="varsayilan">Icabi Kırgız</div><br><br>
+	<div style="background-color: initial;">Icabi Kırgız</div><br><br>
+	<div style="padding: 3px;">
+		<div id="inherit">Icabi Kırgız</div>
+	</div>
+</body>
+</html>

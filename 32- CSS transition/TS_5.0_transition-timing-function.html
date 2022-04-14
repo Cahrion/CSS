@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		transition-timing-function	= HTML elementinin tanımlanmış olan geçiş özellikliğinin hız eğrisi özelliklerini belirler.
+		Değerler 					= ease | linear | ease-in | ease-out | step-start | step-end | steps | cubic-bezier | initial
+		ease	 					= Yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.
+		linear 						= Başlangıçtan sona kadar aynı hız.
+		ease-in	 					= Yavaş olarak başlayarak sona doğru hızlanır.
+		ease-out	 				= Hızlı olarak başlayarak sona doğru yavaşlar.
+		ease-in-out	 				= Yavaş olarak başlayarak ortada hızlanır ve sona doğru tekrar yavaşlar.
+		step-start	 				= Geçiş süresine bakılmaksızın doğrudan sona ulaşır.
+		step-end	 				= Geçiş süresine bakılarak, geçiş süresi kadar bekleyerek doğrudan sona ulaşır.
+		steps	 					= Başlangıç ve bitiş arasında adımlamalı geçiş işlemi yapar.
+		cubic-bezier	 			= Bezier eğrisi. (https://cubic-bezier.com)
+		initial 					= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div#Alan{
+		width: 100%;
+		border: 4px double violet;
+		padding: 5px;
+	}
+	div.yuvarlak{
+		width: 75px;
+		height: 75px;
+		border: thin solid black;
+		background-color: grey;
+		-webkit-transition: all 3s;
+		-moz-transition: all 3s;
+		-o-transition: all 3s;
+		-ms-transition: all 3s;
+		transition: all 3s;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-o-border-radius: 5px;
+		-ms-border-radius: 5px;
+		border-radius: 5px;
+	}
+	div.ease{
+		background-color: skyblue; 
+		-webkit-transition-timing-function: ease;  	/* Varsayılan değer. */
+		-moz-transition-timing-function: ease; 		/* Varsayılan değer. */	
+		-o-transition-timing-function: ease;  		/* Varsayılan değer. */	
+		-ms-transition-timing-function: ease; 		/* Varsayılan değer. */	
+		transition-timing-function: ease;  			/* Varsayılan değer. */		
+	}
+	div.linear{
+		background-color: red;
+		-webkit-transition-timing-function: linear;  	
+		-moz-transition-timing-function: linear; 			
+		-o-transition-timing-function: linear;  			
+		-ms-transition-timing-function: linear; 			
+		transition-timing-function: linear;  					
+	}
+	div.ease_in{
+		background-color: blue;
+		-webkit-transition-timing-function: ease-in;  	
+		-moz-transition-timing-function: ease-in; 			
+		-o-transition-timing-function: ease-in;  			
+		-ms-transition-timing-function: ease-in; 			
+		transition-timing-function: ease-in;  					
+	}
+	div.ease_out{
+		background-color: purple;
+		-webkit-transition-timing-function: ease-out;  	
+		-moz-transition-timing-function: ease-out; 			
+		-o-transition-timing-function: ease-out;  			
+		-ms-transition-timing-function: ease-out; 			
+		transition-timing-function: ease-out;  					
+	}
+	div.ease_in_out{
+		background-color: green;
+		-webkit-transition-timing-function: ease-in-out;  	
+		-moz-transition-timing-function: ease-in-out; 			
+		-o-transition-timing-function: ease-in-out;  			
+		-ms-transition-timing-function: ease-in-out; 			
+		transition-timing-function: ease-in-out;  					
+	}
+	div.step_start{
+		background-color: grey;
+		-webkit-transition-timing-function: step-start;  	
+		-moz-transition-timing-function: step-start; 			
+		-o-transition-timing-function: step-start;  			
+		-ms-transition-timing-function: step-start; 			
+		transition-timing-function: step-start;  					
+	}
+	div.step_end{
+		background-color: black;
+		-webkit-transition-timing-function: step-end;  	
+		-moz-transition-timing-function: step-end; 			
+		-o-transition-timing-function: step-end;  			
+		-ms-transition-timing-function: step-end; 			
+		transition-timing-function: step-end;  					
+	}
+	div.stepsend{
+		background-color: orange;
+		-webkit-transition-timing-function: steps(10, end);  	
+		-moz-transition-timing-function: steps(10, end); 			
+		-o-transition-timing-function: steps(10, end);  			
+		-ms-transition-timing-function: steps(10, end); 			
+		transition-timing-function: steps(10, end);  					
+	}
+	div.stepsstart{
+		background-color: yellow;
+		-webkit-transition-timing-function: steps(10, start);  	
+		-moz-transition-timing-function: steps(10, start); 			
+		-o-transition-timing-function: steps(10, start);  			
+		-ms-transition-timing-function: steps(10, start); 			
+		transition-timing-function: steps(10, start);  					
+	}
+	div.cubic{
+		background-color: saddlebrown;
+		-webkit-transition-timing-function: cubic-bezier(0,1,1,0);  	
+		-moz-transition-timing-function: cubic-bezier(0,1,1,0); 			
+		-o-transition-timing-function: cubic-bezier(0,1,1,0);  			
+		-ms-transition-timing-function: cubic-bezier(0,1,1,0); 			
+		transition-timing-function: cubic-bezier(0,1,1,0);  					
+	}
+	div#Alan:hover div.ease, div#Alan:hover div.linear, div#Alan:hover div.ease_in, div#Alan:hover div.ease_out, div#Alan:hover div.ease_in_out, div#Alan:hover div.step_start, div#Alan:hover div.step_end, div#Alan:hover div.stepsend, div#Alan:hover div.stepsstart, div#Alan:hover div.cubic{
+		width: 1500px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+<div id="Alan">
+	<div class="yuvarlak ease"></div>
+	<div class="yuvarlak linear"></div>
+	<div class="yuvarlak ease_in"></div>
+	<div class="yuvarlak ease_out"></div>
+	<div class="yuvarlak ease_in_out"></div>
+	<div class="yuvarlak step_start"></div>
+	<div class="yuvarlak step_end"></div>
+	<div class="yuvarlak stepsend"></div>
+	<div class="yuvarlak stepsstart"></div>
+	<div class="yuvarlak cubic"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		font-family	= Metnin yazı tipi ailesini belirler.
+		Değerler	= family-name | initial | inherit
+		family-name = Yazı tipi ailesinin adı.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	
+		Font ailelerininin türleri : family-name |  generic-name
+		family-name 	= Yazı tipi ailesinin adı.
+		generic-name 	= genel yazı tipi ailesinin adı.
+			Değerler   	= serif | sans-serif | cursive | fantasy | monospace
+			serif   	= Tırnaklı.
+			sans-serif  = Tırnaksız.
+			cursive   	= El yazısı.
+			fantasy   	= Fantazi.
+			monospace	= Tek aralıklı.
+	
+	*/
+	div{
+		font-size: 40px;
+	}
+	div#times{
+		font-family: "Times New Roman", "serif";
+	}
+	div#arial{
+		font-family:Arial, "sans-serif"; /* Tek kelimelik isimleri ("") değeri kullanılmadan yazılabilir.*/
+	}
+	div#mono{
+		font-family:"Monotype Corsiva", "cursive";
+	}
+	div#stencil{
+		font-family:Stencil, "fantasy"; /* Tek kelimelik isimleri ("") değeri kullanılmadan yazılabilir.*/
+	}
+	div#Cour{
+		font-family:"Courier New", "monospace"; 
+	}
+	div#bilinmeyen{
+		font-family:"Third Rail", "fantasy"; 
+		/* Font karşı tarafın bilgisayarında yoksa font çalışmaz. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>Times Roman (varsayilan)</div>
+	<div id="times">Times Roman (times)</div>
+	<div id="arial">Arial</div>
+	<div id="mono">Monotype Corsiva</div>
+	<div id="stencil">Stencil</div>
+	<div id="Cour">Courier New</div>
+	<div id="bilinmeyen">Third Rail (Bilgisayarda yoksa çalışmaz.)</div>
+</body>
+</html>

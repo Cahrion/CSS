@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	order		= Esnek kutu içerisinde bulunan element veya elementlerin, diğer elementlere göre sıralama özelliklerini belirler.
+		Değerler 	= number | initial
+		number		= Rakam.
+		initial	 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 500px;
+		height: 50px;
+		border: thin solid red;
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		-webkit-flex: 1;
+		-moz-flex: 1;
+		-o-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+	.Ilksira{
+		-webkit-order: 1;
+		-moz-order: 1;
+		-o-order: 1;
+		-ms-order: 1;
+		order: 1;
+	}
+	.Sonsira{
+		-webkit-order: -1;
+		-moz-order: -1;
+		-o-order: -1;
+		-ms-order: -1;
+		order: -1;
+	}
+	.initial{
+		-webkit-order: initial;
+		-moz-order: initial;
+		-o-order: initial;
+		-ms-order: initial;
+		order: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">1</div>
+		<div class="IcElemanlar">2</div>
+		<div class="IcElemanlar">3</div>
+		<div class="IcElemanlar">4</div>
+		<div class="IcElemanlar Sonsira">5</div>
+		<div class="IcElemanlar">6</div>
+		<div class="IcElemanlar">7</div>
+		<div class="IcElemanlar">8</div>
+		<div class="IcElemanlar Ilksira initial">9</div>
+		<div class="IcElemanlar">10</div>
+	</div>
+</body>
+</html>

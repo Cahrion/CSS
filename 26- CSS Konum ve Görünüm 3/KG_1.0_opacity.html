@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		resize 		= HTML elementinin opaklık / şeffaflık özelliklerini belirler.
+		Değerler 	= number | initial |
+		number 		=  Rakam değeri. (0.0 ila 1.0 arasında) (0.0 en şeffaf değer.) (1.0 şeffaflık yok.)
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerine alır.
+	*/
+	div{
+		border: 2px solid black;
+		width: 500px;
+		height: 100px;
+		background-color: darkblue;
+	}
+	div#bir{
+		/* Prefix */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: Alpha(opacity=100);
+		opacity: 1.0 /*Varsayilan değer.*/
+	}
+	div#iki{
+		/* Prefix */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+		filter: Alpha(opacity=80);
+		opacity: 0.8 
+	}
+	div#uc{
+		/* Prefix */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: Alpha(opacity=60);
+		opacity: 0.6 
+	}
+	div#dort{
+		/* Prefix */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+		filter: Alpha(opacity=40);
+		opacity: 0.4 
+	}
+	div#bes{
+		/* Prefix */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+		filter: Alpha(opacity=20);
+		opacity: 0.2 
+	}
+	div#alti{
+		/* Prefix */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+		filter: Alpha(opacity=0);
+		opacity: 0.0  /* Görünmez hale gelir. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<div id="bir" >Ders Notları (Icabi Kırgız)</div>
+	<div id="iki" >Ders Notları (Icabi Kırgız)</div>
+	<div id="uc"  >Ders Notları (Icabi Kırgız)</div>
+	<div id="dort">Ders Notları (Icabi Kırgız)</div>
+	<div id="bes" >Ders Notları (Icabi Kırgız)</div>
+	<div id="alti">Ders Notları (Icabi Kırgız)</div>
+	
+	
+</body>
+</html>

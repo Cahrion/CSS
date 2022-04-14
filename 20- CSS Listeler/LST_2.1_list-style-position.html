@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		list-style-position  	= Listedeki madde işaretçisinin içerik akışındaki konum özelliklerini belirler.
+		Değerler 				= outside | inside | initial | inherit 
+		outside 				= Dışında.
+		inside 					= İçinde.
+		initial					= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit					= HTML elementi üst elementinin biçimlendirme değerini alır.
+	
+	NOT ! = (ol) ve (ul) yapılarının ikisinde de geçerli sayılır.
+	*/
+	ul.outside{
+		list-style-position: outside;
+	}
+	ul.inside{
+		list-style-position: inside;
+	}
+	.inherit{
+		list-style-position: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<ul class="inside">
+		<li>(inside)</li>
+	</ul>
+	<hr>
+	<ul class="inside" style="list-style-position: initial;">
+		<li>(inside but initial)</li>
+	</ul>
+	<hr>
+	<ul class="inside">
+		<li>(inside)</li>
+		<li>(inside)</li>
+		<li>inheritler
+			<ul class="inside">
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+			</ul>
+		</li>
+		<li>(inside)</li>
+		<li>outside
+			<ul class="outside">
+					<li>(outside)</li>
+					<li>(outside)</li>
+					<li>(outside)</li>
+			</ul>
+		</li>
+		<li>(inside)</li>
+	</ul>
+	<hr>
+</body>
+</html>

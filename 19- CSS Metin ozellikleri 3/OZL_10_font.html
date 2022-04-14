@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		font				= Metnin tüm yazı tipi özelliklerini belirler.
+		Değerler			= font-style | font-variant | font-weight | font-size/line-height | font-family | initial | inherit
+		font-style  		= Metnin yazı tipi stili.
+		font-variant 		= Metin küçük harf içerikleri için büyük harf gösterilme özelliği
+		font-weight 		= Metin yazı tipi kalınlığı.
+		font-size 			= Metin yazı tipi boyutu
+		line-height 		= Metin bloğunda bulunan satırların yüksekliği.
+		font-family 		= Metnin yazı tipi ailesi.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		border: 2px solid red;
+	}
+	.enaz{
+		font: 30px "Monotype Corsiva", cursive; 
+		/* En az font boyutu ve ailesi girilmelidir. */
+	}
+	.uc{
+		font: italic 30px Arial, sans-serif; 
+	}
+	.dort{
+		font: italic small-caps 30px Calibri, sans-serif; 
+	}
+	.bes{
+		font: italic small-caps bold 30px Calibri, sans-serif; 
+	}
+	.alti{
+		font: italic small-caps bold 30px/50px Calibri, sans-serif; 
+	}
+	/* Sıra önemlidir. (Hepsinde)*/
+	p{
+		font: initial;
+	}
+	.inherits{
+		font: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<p>Icabi Kırgız (Normal)</p>
+	<p class="enaz">Icabi Kırgız (30px - Monotype)</p>
+	<p class="uc">	Icabi Kırgız (italic - 30px - Arial)</p>
+	<p class="dort">Icabi Kırgız (italic - (small-caps) - 30px - Calibri)</p>
+	<p class="bes">	Icabi Kırgız (italic - (small-caps) - bold - 30px - Calibri)</p>
+	<p class="alti">Icabi Kırgız (italic - (small-caps) - bold - 30px - (line-height) - Calibri)</p>
+	<p class="alti" style="font: initial;">
+		Icabi Kırgız - www.icabikrgz.com (initial)
+	</p>
+	
+	<div class="alti">
+		<p>Icabi Kırgız - www.icabikrgz.com (normal)</p>
+		<p class="inherits">Icabi Kırgız - www.icabikrgz.com (inherit)</p>
+		<p>Icabi Kırgız - www.icabikrgz.com (normal)</p>
+	</div>
+	
+</body>
+</html>

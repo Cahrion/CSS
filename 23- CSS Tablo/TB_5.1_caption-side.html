@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		caption-side 	= HTML'in table (tablo) elementinde bulunan başlık elementinin konum özelliklerini belirler.
+		Değerler		= top | bottom | initial | inherit
+		top	 			= Otomatik değer alır..
+		bottom	 		= Sabit.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	table{
+		border:  2px dashed blue;
+		width: 500px;
+		caption-side: bottom;
+	}
+	th,td{
+		border:  2px solid red;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<table id="bottom">
+		<caption>Extra Eğitim Öğretmenleri.</caption>
+		<tr>
+			<td>Volkan</td>
+			<td>Alakent</td>
+		</tr>
+		<tr>
+			<td>Ali</td>
+			<td>Alakent</td>
+		</tr>
+	</table>
+	<br>
+	<hr>
+	<br>
+	<table style="caption-side: initial;">
+		<caption>Extra Eğitim Öğretmenleri.</caption>
+		<tr>
+			<td>Volkan</td>
+			<td>Alakent</td>
+		</tr>
+		<tr>
+			<td>Ali</td>
+			<td>Alakent</td>
+		</tr>
+	</table>	
+</body>
+</html>

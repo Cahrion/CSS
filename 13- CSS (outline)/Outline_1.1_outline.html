@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		outline 			= HTML elementinin anahat özelliklerini belirler.
+		Parametreler 		= length | style | color
+		length değerleri	= length & initial & inherit & thin & medium & thick
+		style değerleri		= none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset
+		color değerleri		= color & invert
+		length 				= uzunluk değeri. 
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+		thin  				= Ince.
+		medium 				= Orta. (Varsayılan değer.)
+		thick 				= Kalın.
+		none 				= Değer yok..
+		hidden 				= Gizli.
+		solid 				= Düz çizgi.
+		double 				= Çift çizgi
+		dashed 				= Kesikli çizgi..
+		dotted 				= Noktalı çizgi.
+		groove 				= İçe dönük gölgeli çizgi.
+		ridge 				= Dışa dönük gölgeli çizgi.
+		inset 				= İçe dönük derin çizgi.
+		outset 				= Dışa dönük derin çizgi.
+		color 				= Renk. (Siyah = varsayılan değer.)
+		invert				= Ters Çevir. (Rengin birleştikleri yerleri farklı kılar ve görünürlüğü artırır.)
+	*/
+	p#bir{
+		outline: 2px solid black;
+	}	
+	p#iki{
+		outline: thin solid red; 	/* İnce bir kenarlık çizer. */
+	}	
+	p#uc{
+		outline: medium solid blue; /* Orta bir kenarlık çizer. */
+	}	
+	p#dort{
+		outline: thick solid green; 	/* Kalın bir kenarlık çizer. */
+	}
+	p.bes{
+		outline: thick solid purple; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		outline: medium solid blue;
+		padding: 5px;
+	}
+	p#alti{
+		outline: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p class="bes">Extra Eğitim - Volkan Alakent</p>
+	<p class="bes" style="outline:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="alti">Extra Eğitim - Volkan Alakent</p>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		@font-face			= Metinler için sistemde yüklü olmayan font'ların kullanılabilme durumlarını belirler.
+			Değerler			= font-family | local | src | font-style | font-weight 
+			font-family 		= Metnin yazı tipi ailesi.
+			local		 		= Yerel.
+			src			 		= Dosya adresi.
+			font-style  		= Metnin yazı tipi stili.
+			font-weight 		= Metin yazı tipi kalınlığı.
+	
+		Font Dosya Türleri  = EOT | WOFF2 | WOFF | TFF & OTF | SVG
+			EOT 				= Internet Explorer - Microsoft Edge
+			WOFF2 				= Chrome - Firefox - Opera
+			WOFF 				= Tüm tarayıcılar.
+			TFF & OTF 			= Tüm tarayıcılar.
+			SVG					= Chrome - Firefox - Opera
+	
+		(Font converter sayesinde bütün fontlara dönüştürülebilir.)
+	*/
+	@font-face{
+		font-family:"hickory_jack";
+		src:url("Dokuman/Fontlar/Hickory_jack.eot"); /* Internet Explorer - Microsoft Edge */
+		src:url("Dokuman/Fontlar/Hickory_jack.eot?#iefix") format("embedded-opentype"), /* Internet Explorer 6 - 8 */
+			url("Dokuman/Fontlar/Hickory_jack.woff2") format("woff2"), /* Modern tarayıcılar (Super) */ 
+			url("Dokuman/Fontlar/Hickory_jack.woff") format("woff"), /* Modern tarayıcılar */ 
+			url("Dokuman/Fontlar/Hickory_jack.ttf") format("truetype"), /* Safari,Android, İOS */ 
+			url("Dokuman/Fontlar/Hickory_jack.svg#hickory_jackregular") format("svg"); /* İOS */
+	}
+	p{
+		font-size: 40px;
+	}
+	.family{
+		font-family: "hickory_jack"
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<p>Icabi Kırgız (Normal)</p>
+	<p class="family">Icabi Kırgız (hickory_jack)</p>
+</body>
+</html>

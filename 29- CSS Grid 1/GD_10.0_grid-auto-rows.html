@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-auto-rows 		= Izgara düzeni içerisindeki element veya elementler için, oluşturulması gereken satırların varsayılan yüksekliğini belirler.
+		Değerler 			= auto / max-content / min-content / length / initial
+		auto				= Otomatik değer alır.
+		length				= Uzunluk değeri
+		max-content 		= Maksimum içerik.
+		min-content 		= Minimum içerik.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	
+	.AnaEleman{
+		display: grid;
+		width: 500px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-auto-rows: auto; /* Varsayılan değer */
+	}		
+	.AnaElemaniki{
+		display: grid;
+		width: 500px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-auto-rows: 100px;
+	}	
+	.IcEleman{
+		border: 1px solid red;
+		padding: 10px;
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcEleman">1</div>	
+		<div class="IcEleman">2</div>	
+		<div class="IcEleman">3</div>	
+		<div class="IcEleman">4</div>	
+		<div class="IcEleman">5</div>	
+		<div class="IcEleman">6</div>	
+		<div class="IcEleman">7</div>	
+		<div class="IcEleman">8</div>	
+		<div class="IcEleman">9</div>	
+		<div class="IcEleman">10</div>
+	</div>
+	<br>
+	<div class="AnaElemaniki">
+		<div class="IcEleman">1</div>	
+		<div class="IcEleman">2</div>	
+		<div class="IcEleman">3</div>	
+		<div class="IcEleman">4</div>	
+		<div class="IcEleman">5</div>	
+		<div class="IcEleman">6</div>	
+		<div class="IcEleman">7</div>	
+		<div class="IcEleman">8</div>	
+		<div class="IcEleman">9</div>	
+		<div class="IcEleman">10</div>	
+	</div>
+</body>
+</html>

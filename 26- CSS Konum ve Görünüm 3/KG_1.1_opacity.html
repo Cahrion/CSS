@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		resize 		= HTML elementinin opaklık / şeffaflık özelliklerini belirler.
+		Değerler 	= number | initial |
+		number 		=  Rakam değeri. (0.0 ila 1.0 arasında) (0.0 en şeffaf değer.) (1.0 şeffaflık yok.)
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerine alır.
+	*/
+	div{
+		border: 2px solid black;
+		width: 500px;
+		height: 100px;
+		background-color: darkblue;
+				/* Prefix */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+		filter: Alpha(opacity=40);
+		opacity: 0.4 /*Varsayilan değer.*/
+	}
+	#orta{
+				/* Prefix */
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		filter: Alpha(opacity=100);
+		opacity: initial /* initial değeri prefix'lerde kullanılmaz. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<div>Icabi Kırgız</div>
+	<div id="orta">Icabi Kırgız</div>
+	<div>Icabi Kırgız</div>
+	<div style="-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';filter: Alpha(opacity=100);opacity: initial">Icabi Kırgız</div>
+	<div>Icabi Kırgız</div>
+	
+</body>
+</html>

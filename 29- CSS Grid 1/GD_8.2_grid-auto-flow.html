@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-auto-flow 		= Izgara düzeni içerisindeki element veya elementler için, otomatik yerleşim algoritması özelliklerini belirler.
+		Değerler 			= row / column / row dense / column dense / initial
+		row 				= Satır.
+		column 				= Sütun
+		row dense 			= Satır yoğunluğu
+		column dense 		= Sütun yoğunluğu
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	
+	.AnaEleman{
+		display: grid;
+		width: 500px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(4, auto);
+		grid-gap: 10px;
+		
+	}	
+	.Deney{
+		grid-column: 2 / 3;
+	}
+	.AnaElemaniki{
+		display: grid;
+		width: 500px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(4, auto);
+		grid-gap: 10px;
+		grid-auto-flow: column dense;
+		/* Satırdaki boş yerleri doldurur.*/
+	}	
+	.IcEleman{
+		border: 1px solid red;
+		padding: 10px;
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcEleman Deney">1</div>	
+		<div class="IcEleman">2</div>	
+		<div class="IcEleman">3</div>	
+		<div class="IcEleman">4</div>	
+		<div class="IcEleman">5</div>	
+		<div class="IcEleman">6</div>	
+		<div class="IcEleman">7</div>	
+		<div class="IcEleman">8</div>	
+		<div class="IcEleman">9</div>	
+		<div class="IcEleman">10</div>
+	</div>
+	<br>
+		<h1>Düzeltilmiş hal</h1>
+	<br>
+	<div class="AnaElemaniki">
+		<div class="IcEleman Deney">1</div>	
+		<div class="IcEleman">2</div>	
+		<div class="IcEleman">3</div>	
+		<div class="IcEleman">4</div>	
+		<div class="IcEleman">5</div>	
+		<div class="IcEleman">6</div>	
+		<div class="IcEleman">7</div>	
+		<div class="IcEleman">8</div>	
+		<div class="IcEleman">9</div>	
+		<div class="IcEleman">10</div>	
+	</div>
+</body>
+</html>

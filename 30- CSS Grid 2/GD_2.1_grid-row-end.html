@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-row-end 	= Izgara düzeni içerisindeki elementin kaçıncı satırdan bitmesi gerektiğini belirler.
+		Değerler 		= auto | column-line | initial
+		auto			= Otomatik değer alır.
+		column-line		= Sütun çizgisi
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	
+	NOT |-| grid-row-start'tan farkı başladığı yer değil sonlandığı yerin 4. satıra deymesi gerekmektedir. 
+	*/
+	
+	#AnaEleman{
+		display: grid;
+		width: 1000px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(2, auto); 
+	}
+	.Degerbir{
+		grid-row-end: span 5;  /* row-line  (span) eki birleştirerek başlangıç yaptırır. */
+	}
+	
+	#AnaElemaniki{
+		display: grid;
+		width: 1000px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(2, auto);
+	}	
+	.Degeriki{
+		grid-row-end: 5 span; /* row-line  (span) eki sona da eklenebilir.. */
+	}
+	.IcEleman{
+		border: 1px solid red;
+		padding: 10px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="AnaEleman">
+		<div class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman">2</div>	
+		<div class="IcEleman">3</div>	
+		<div class="IcEleman">4</div>	
+		<div class="IcEleman">5</div>	
+		<div class="IcEleman">6</div>	
+		<div class="IcEleman">7</div>	
+		<div class="IcEleman">8</div>	
+		<div class="IcEleman">9</div>	
+		<div class="IcEleman">10</div>
+	</div>
+	<br>
+	<div id="AnaElemaniki">
+		<div class="IcEleman Degeriki">1</div>	
+		<div class="IcEleman">2</div>	
+		<div class="IcEleman">3</div>	
+		<div class="IcEleman">4</div>	
+		<div class="IcEleman">5</div>	
+		<div class="IcEleman">6</div>	
+		<div class="IcEleman">7</div>	
+		<div class="IcEleman">8</div>	
+		<div class="IcEleman">9</div>	
+		<div class="IcEleman">10</div>	
+	</div>
+</body>
+</html>

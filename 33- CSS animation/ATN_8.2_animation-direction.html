@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		animation-direction	= HTML elementinin tanımlanmış olan animasyonun oynatma yönü özelliklerini belirler.
+		Değerler 			= normal | reverse | alternate | alternate-reverse | initial
+		normal	 			= Normal.
+		reverse	 			= Ters.
+		alternate	 		= Alternatif.
+		alternate-reverse	= Ters alternatif.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 75px;
+		height: 75px;
+		margin: 50px;
+		background-color: skyblue;
+		border: 4px double violet;
+		line-height: 50px;
+		text-align: center;
+		-webkit-animation: ExtraEgitim 1s linear 0s infinite;
+		-moz-animation: ExtraEgitim 1s linear 0s infinite;
+		-o-animation: ExtraEgitim 1s linear 0s infinite;
+		-ms-animation: ExtraEgitim 1s linear 0s infinite;
+		animation: ExtraEgitim 1s linear 0s infinite;
+		-webkit-animation-direction: alternate; 	
+		-moz-animation-direction: alternate; 		
+		-o-animation-direction: alternate; 		
+		-ms-animation-direction: alternate; 		
+		animation-direction: alternate; 			
+	}
+	@keyframes ExtraEgitim{
+		from{
+			width: 75px;
+		}
+		to{
+			width: 1500px;
+		}
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div>
+</body>
+</html>

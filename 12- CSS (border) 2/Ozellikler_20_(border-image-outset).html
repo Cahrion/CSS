@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+	border-image-outset =	HTML elementi kenarlık / çerçeve resminin, kenarlık / çerçeve sınırından dışa taşma özelliklerini belirler. 
+	Değerler			=	length | initial | inherit
+	length 				= 	Uzunluk değeri.
+	initial 			= 	html elementi varsayılan biçimlendirme değerine döner.
+	inherit 			= 	html elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 50%;
+		height: 50px;
+		border: 10px solid transparent;
+		-webkit-border-image: url("Dokuman/Resim.png") 30 round;
+		-moz-border-image: url("Dokuman/Resim.png") 30 round;
+		-o-border-image: url("Dokuman/Resim.png") 30 round;
+		-ms-border-image: url("Dokuman/Resim.png") 30 round;
+		border-image: url("Dokuman/Resim.png") 30 round;
+		border-image-outset: 10px;
+	}
+	div#all{
+		width: 50%;
+		height: 50px;
+		border: 10px solid transparent;
+		-webkit-border-image: url("Dokuman/Resim.png") 30 round;
+		-moz-border-image: url("Dokuman/Resim.png") 30 round;
+		-o-border-image: url("Dokuman/Resim.png") 30 round;
+		-ms-border-image: url("Dokuman/Resim.png") 30 round;
+		border-image: url("Dokuman/Resim.png") 30 round;
+		border-image-outset: 10px 200px 50px 2px;
+		/*
+		1.Parametre : Üst
+		2.Parametre : Sağ
+		3.Parametre : Alt
+		4.Parametre : Sol
+		*/
+	}
+	div#ikili{
+		width: 50%;
+		height: 50px;
+		border: 10px solid transparent;
+		-webkit-border-image: url("Dokuman/Resim.png") 30 round;
+		-moz-border-image: url("Dokuman/Resim.png") 30 round;
+		-o-border-image: url("Dokuman/Resim.png") 30 round;
+		-ms-border-image: url("Dokuman/Resim.png") 30 round;
+		border-image: url("Dokuman/Resim.png") 30 round;
+		border-image-outset: 10px 2px;
+		/*
+		1.Parametre : Üst ve Alt
+		2.Parametre : Sağ ve Sol
+		*/
+	}
+	div#uclu{
+		width: 50%;
+		height: 50px;
+		border: 10px solid transparent;
+		-webkit-border-image: url("Dokuman/Resim.png") 30 round;
+		-moz-border-image: url("Dokuman/Resim.png") 30 round;
+		-o-border-image: url("Dokuman/Resim.png") 30 round;
+		-ms-border-image: url("Dokuman/Resim.png") 30 round;
+		border-image: url("Dokuman/Resim.png") 30 round;
+		border-image-outset: 20px 2px 30px;
+		/*
+		1.Parametre : Üst
+		2.Parametre : Sağ ve Sol
+		3.Parametre : Alt
+		*/
+	}
+	div#miras{
+		width: 50%;
+		height: 15px;
+		border: 10px solid transparent;
+		-webkit-border-image: url("Dokuman/Resim.png") 30 round;
+		-moz-border-image: url("Dokuman/Resim.png") 30 round;
+		-o-border-image: url("Dokuman/Resim.png") 30 round;
+		-ms-border-image: url("Dokuman/Resim.png") 30 round;
+		border-image: url("Dokuman/Resim.png") 30 round;
+		border-image-outset: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<br><br><br><br><br><br><br>
+	<div></div>
+	<br><br><br><br><br><br><br>
+	<div id="all"></div>
+	<br><br><br><br><br><br><br>
+	<div id="uclu"></div>
+	<br><br><br><br><br><br><br>
+	<div id="ikili"></div>
+	<br><br><br><br><br><br><br>
+	<div style="border-image-outset: initial;"></div>
+	<br><br><br><br><br><br><br>
+	<div>
+		<div id="miras"></div>
+	</div>
+		
+	
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		clear 		= HTML elementine atanmış olan kayma özelliğinin temizlenme durumunu belirler.
+		Değerler 	= none | left | right | both | initial
+		none 		= Değer yok.
+		left 		= Sol.
+		right 		= Sağ.
+		both 		= Her ikisi de
+		initial		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 100px;
+		border: 1px solid red;
+		margin: 2px;
+		float: right;
+	}
+	#Uc, #Dort, #Bes{
+		clear: right; /* Varsayilan değer */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>Extra Eğitim 1</div>
+	<div>Extra Eğitim 2</div>
+	<div id="Uc">Extra Eğitim 3</div>
+	<div id="Dort">Extra Eğitim 4</div>
+	<div id="Bes">Extra Eğitim 5</div>
+		
+	
+</body>
+</html>

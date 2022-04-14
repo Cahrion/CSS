@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		animation-delay 	= HTML elementine tanımlanmış olan animasyonun, kaç saniye veya kaç milisaniye gecikme sonunda başlayacağını belirler.
+		Değerler 			= time | initial
+		time				= Zaman. (Saniye : s, Milisaniye : ms)
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		-webkit-animation: ExtraEgitim 5s;
+		-moz-animation: ExtraEgitim 5s;
+		-o-animation: ExtraEgitim 5s;
+		-ms-animation: ExtraEgitim 5s;
+		animation: ExtraEgitim 5s;
+		-webkit-animation-delay: 2s;
+		-moz-animation-delay: 2s;
+		-o-animation-delay: 2s;
+		-ms-animation-delay: 2s;
+		animation-delay: 2s;
+	}
+	#initial{
+		-webkit-animation-delay: initial;
+		-moz-animation-delay: initial;
+		-o-animation-delay: initial;
+		-ms-animation-delay: initial;
+		animation-delay: initial;
+	}
+	@keyframes ExtraEgitim{
+		from{
+			-webkit-transform: translateX(0px);
+			-moz-transform: translateX(0px);
+			-o-transform: translateX(0px);
+			-ms-transform: translateX(0px);
+			transform: translateX(0px);
+			
+		}
+		to{
+			-webkit-transform: translateX(450px);
+			-moz-transform: translateX(450px);
+			-o-transform: translateX(450px);
+			-ms-transform: translateX(450px);
+			transform: translateX(450px);
+		}
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div><br>
+	<div id="initial"></div>
+</body>
+</html>

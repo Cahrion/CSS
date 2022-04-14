@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	div#bir{background-color: 		blue;	width: 50%		;}
+	
+	div#iki{background-color: 		blue;	width: 25em	;} 
+	/* Verilen font-size boyutuna göre işlem yapar. (font-size x 25em) gibi*/
+	
+	div#uc{background-color: 		blue;	width: 25rem	;}
+	/* Verilen font-size boyutuna göre işlem yapar ama kök elemandan (html'den) alır. (html{font-size:25px;})*/
+	
+	div#dort{background-color: 		blue;	width: 100ex	;}
+	/* Verilen font-size'da kelimelerin alttan üstten faktörlerinin ortalamasını alıp yapar biraz karmaşık. */
+	
+	div#bes{background-color: 		blue;	width: 50ch		;}
+	/* Verilen font-size'da (0) değerinini genişliğine göre işlem yapar (font-size(0) x 50ch) gibi*/
+	
+	div#alti{background-color: 		blue;	width: 2vw		;}
+	/* Ekranın görünür alanına göre (ekran boyutu genişliği/100 = 1vw) şeklinde yapılandırılır.*/
+	
+	div#yedi{background-color: 		blue;	width: 80vh		;}
+	/* Ekranın görünür alanına göre (ekran boyutu yuksekliği/100 = 1vh) şeklinde yapılandırılır.*/
+	
+	div#sekiz{background-color: 	blue;	width: 50vmin	;}
+	/* Genişlikle - Yüksekliğe bakar hangisi daha azsa ona göre o sayının %'de birini alır. */
+	
+	div#dokuz{background-color: 	blue;	width: 50vmax	;}
+	/* Genişlikle - Yüksekliğe bakar hangisi daha fazlaysa ona göre o sayının %'de birini alır. '*/
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="bir">		Extra Eğitim - Volkan Alakent (50%)			</div><br><br>
+	<div id="iki">		Extra Eğitim - Volkan Alakent (25em)		</div><br><br>
+	<div id="uc">		Extra Eğitim - Volkan Alakent (25rem)		</div><br><br>
+	<div id="dort">		Extra Eğitim - Volkan Alakent (100ex)		</div><br><br>
+	<div id="bes">		Extra Eğitim - Volkan Alakent (50ch)		</div><br><br>
+	<div id="alti">		Extra Eğitim - Volkan Alakent (2vw)			</div><br><br>
+	<div id="yedi">		Extra Eğitim - Volkan Alakent (80vh)		</div><br><br>
+	<div id="sekiz">	Extra Eğitim - Volkan Alakent (50vmin)		</div><br><br>
+	<div id="dokuz">	Extra Eğitim - Volkan Alakent (50vmax)		</div><br><br>
+</body>
+</html>

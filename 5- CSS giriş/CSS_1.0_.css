@@ -1,0 +1,13 @@
+@charset "utf-8";
+@import "CSS_1.1_.css";
+/* 
+Alttaki versiyon şeklinde de belirtilebilir. İnternet üzerinden almak için gerekiyor.
+@import url("CSS_1.1_.css"); 
+*/
+
+/* CSS Document */
+body{
+	background-color: black;
+}
+/* Dosyaları css içinden css'den veri alınabilir.*/
+

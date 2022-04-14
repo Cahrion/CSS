@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background   = HTML elementinin arkaplan özelliğini veya özelliklerini belirler.
+		Değerler 	 = color / image / repeat / position / size / attachment / origin / clip / initial / inherit 	
+		color   	 = 	Renk.			
+		image  		 =	Resim.
+		repeat  	 =	Tekrar et.
+		position 	 =	Pozisyon.
+		size  	  	 =	Boyut.
+		attachment   =	Sayfa hareketine göre davranış
+		origin 	  	 =	Resmin başlangış konumu
+		clip 	  	 =	Rengin başlangış konumu
+		initial	 	 =	HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	 =	HTML elementi üst elementinini biçimlendirme değerini alır.
+	*/
+	div{
+		padding: 3px;
+		margin: 4px;
+		border: 2px solid purple;
+		width: 600px;
+		height: 350px;
+	}
+	div#bir{
+		background: url("Dokuman/Logo.png") no-repeat left top/200px local border-box; /* origin */
+	}
+	div#iki{
+		background: yellow no-repeat left top/200px local content-box;  /* clip */
+	}
+	div#uc{
+		background: url("Dokuman/Resim.jpg") no-repeat left top/100px local content-box; 
+	}
+	div#dort{
+		background: url("Dokuman/Logo.png") repeat-x left top/100px local border-box; 
+		padding: 40px;
+	}
+	div#bes{
+		background: inherit; 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="bir">Icabi kırgız</div>
+	<div id="iki">Icabi kırgız</div>
+	<div id="uc" style="background: initial;">Icabi kırgız</div>
+
+	<div id="dort">
+		<div id="bes"></div>
+	</div>
+	
+		
+	
+</body>
+</html>

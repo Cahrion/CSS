@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		outline 			= HTML elementinin anahat özelliklerini belirler.
+		Parametreler 		= length | style | color
+		length değerleri	= length & initial & inherit & thin & medium & thick
+		style değerleri		= none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset
+		color değerleri		= color & invert
+		length 				= uzunluk değeri. 
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+		thin  				= Ince.
+		medium 				= Orta. (Varsayılan değer.)
+		thick 				= Kalın.
+		none 				= Değer yok..
+		hidden 				= Gizli.
+		solid 				= Düz çizgi.
+		double 				= Çift çizgi
+		dashed 				= Kesikli çizgi..
+		dotted 				= Noktalı çizgi.
+		groove 				= İçe dönük gölgeli çizgi.
+		ridge 				= Dışa dönük gölgeli çizgi.
+		inset 				= İçe dönük derin çizgi.
+		outset 				= Dışa dönük derin çizgi.
+		color 				= Renk. (Siyah = varsayılan değer.)
+		invert				= Ters Çevir. (Rengin birleştikleri yerleri farklı kılar ve görünürlüğü artırır.)
+	*/
+	p#bir{
+		outline: none; 				/* Bir stil ataması yapmaz. (outline yok)*/
+	}	
+	p#iki{
+		outline: hidden; 			/* Kenarlığı gizli tutar. (Olaya bağlı durumlarda önce gizleyip sonra gösterme işlemi yapılabilir.)*/
+	}	
+	p#uc{
+		outline: 2px solid black; 	/* Düz çizgi cizer. */
+	}	
+	p#dort{
+		outline: 4px double black; 	/* Çift çizgi çizer. Aralarında boşluklarla beraber toplam 4px olur.*/
+	}	
+	p#bes{
+		outline: 2px dashed black;	/* Kesikli çizgi çizer. */
+	}	
+	p#alti{
+		outline: 2px dotted black; 	/* Noktalı çizgi çizer */
+	}	
+	p#yedi{
+		outline: 10px groove grey; 	/* İçe dönük gölgeli yapı yapar*/
+	}	
+	p#sekiz{
+		outline: 10px ridge grey; 	/* Dışa dönük gölgeli yapı yapar. */
+	}	
+	p#dokuz{
+		outline: 10px inset grey ; 	/* İçe dönük derin bir yapı yapar. */
+	}	
+	p#on{
+		outline: 10px outset grey; 	/* Dışa dönük derin bir yapı yapar.. */
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p id="bes">Extra Eğitim - Volkan Alakent</p>
+	<p id="alti">Extra Eğitim - Volkan Alakent</p>
+	<p id="yedi">Extra Eğitim - Volkan Alakent</p>
+	<p id="sekiz">Extra Eğitim - Volkan Alakent</p>	
+	<p id="dokuz">Extra Eğitim - Volkan Alakent</p>
+	<p id="on">Extra Eğitim - Volkan Alakent</p>
+
+	
+</body>
+</html>

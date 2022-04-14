@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-image 	= HTML elementinin arkaplan resmini belirler.
+		Değerler 			= none | image | initial | inherit
+		none 				= Değer yok. (Varsayılan değer.)
+		image 	 			= Resim.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+	*/
+	body{
+		background-image: url("Dokuman/Desen.jpg");
+	}
+	div{
+		width: 1000px;
+		height: 100px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+	}
+	div#varsayilan{
+		width: 1000px;
+		height: 100px;
+		border: 2px solid red;
+		background-image: none; /* Varsayılan değer. */
+	}
+	div#resimlirenk{
+		width: 1000px;
+		height: 100px;
+		border: 2px solid red;
+		background-color: black; 
+		background-image: url("Dokuman/Logo.png"); 
+	}
+	div#inherit{
+		width: 1000px;
+		height: 100px;
+		border: 2px solid blue;
+		background-color: black;
+		background-image: inherit; /* Varsayılan değer. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div><br><br>
+	<div id="varsayilan"></div><br><br>
+	<div id="resimlirenk"></div><br><br>
+	<div style="background-image: initial;"></div><br><br>
+	<div style="padding: 10px;">
+		<div id="inherit"></div>
+	</div>
+</body>
+</html>

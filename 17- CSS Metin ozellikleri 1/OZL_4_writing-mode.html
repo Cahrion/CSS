@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		writing-mode 	= Metnin veya içeriğin hizalama yönü özelliklerini belirler
+		Değerler 		= horizontal-tb | vertical-lr | vertical-rl | initial | inherit
+		horizontal-tb   = Yatay sekme.
+		vertical-lr  	= Dikey (Sol).
+		vertical-rl 	= Dikey (Sağ).
+		initial  		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  		= Html elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 150px;
+		height: 150px;
+		border: 2px solid red;
+		margin-bottom: 20px;
+	}
+	div#varsayilan{
+		-webkit-writing-mode: horizontal-tb;	/* Varsayılan değer. */
+		-ms-writing-mode: horizontal-tb;		/* Varsayılan değer. */
+		-o-writing-mode: horizontal-tb;			/* Varsayılan değer. */
+		-ms-writing-mode: horizontal-tb;		/* Varsayılan değer. */
+		writing-mode: horizontal-tb;			/* Varsayılan değer. */
+	}
+	div#sol{
+		-webkit-writing-mode: vertical-lr;	
+		-ms-writing-mode: vertical-lr;		
+		-o-writing-mode: vertical-lr;		
+		-ms-writing-mode: vertical-lr;		
+		writing-mode: vertical-lr;
+	}
+	div.sag{
+		-webkit-writing-mode: vertical-rl;	
+		-ms-writing-mode: vertical-rl;		
+		-o-writing-mode: vertical-rl;		
+		-ms-writing-mode: vertical-rl;		
+		writing-mode: vertical-rl;
+	}
+	div#inherit{
+		width: 75px;
+		height: 150px;
+		border: 2px solid red;
+		-webkit-writing-mode: inherit;	/*-webkit-writing-mode: vertical-rl*/
+		-moz-writing-mode: inherit;		/*-moz-writing-mode: vertical-rl*/
+		-o-writing-mode: inherit;		/*-o-writing-mode: vertical-rl*/
+		-ms-writing-mode: inherit;		/*-ms-writing-mode: vertical-rl*/
+		writing-mode: inherit;			/*writing-mode: vertical-rl*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="varsayilan">Extra Eğitim - Volkan Alakent</div>
+	<div id="sol">Extra Eğitim - Volkan Alakent</div>
+	<div class="sag">Extra Eğitim - Volkan Alakent</div>
+	<div class="sag" style="writing-mode: initial">Extra Eğitim - Volkan Alakent</div>
+	
+	<div class="sag">
+		Extra Eğitim - Volkan Alakent
+		<div id="inherit">Extra Eğitim - Volkan Alakent</div>
+	</div>
+	
+	
+	
+	
+</body>
+</html>

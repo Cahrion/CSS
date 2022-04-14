@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		resize 		= HTML elementinin kullanıcı tarafından yeniden boyutlandırılabilir olup olmadığı durumunu belirler.
+		Değerler 	= none | both | horizontal | vertical | initial | inherit
+		none 		= Değer yok.
+		both 		= Her ikside
+		horizontal 	= Yatay.
+		vertical 	= Dikey.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerine alır.
+	*/
+	div{
+		width: 200px;
+		height: auto;
+		border: 2px solid red;
+		overflow: auto;
+	}
+	div#bir{
+		resize: none; /* Boyutlandırma olanları kapatır ve olmayanlar da varsayılan değerdir.*/
+	}
+	div#iki{
+		resize: both; /* (both) her iki yönden de genişletilebilir bi yapı sunar.*/
+	}
+	div#uc{
+		resize: horizontal; /* (horizontal) yatay şekilde genişletilebilir bi yapı sunar.*/
+	}
+	div#dort{
+		resize: vertical; /* (vertical) dikey şekilde genişletilebilir bi yapı sunar.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+		<div id="bir">Extra Eğitim - Volkan ALAKENT (Boyutlanamaz)</div><br><br>
+		<div id="iki">Extra Eğitim - Volkan ALAKENT (Her iki yönden de)</div><br><br>
+		<div id="uc">Extra Eğitim - Volkan ALAKENT (Yatay)</div><br><br>
+		<div id="dort">Extra Eğitim - Volkan ALAKENT (Dikey)</div>
+	
+</body>
+</html>

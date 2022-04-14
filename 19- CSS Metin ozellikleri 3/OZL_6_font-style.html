@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		font-style  = Metnin yazı stilini belirler.
+		Değerler	= normal | italic | oblique | initial | inherit
+		normal  	= Normal.
+		italic  	= İtalik.
+		oblique		= Eğik.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		border: 2px solid red;
+	}
+	.varsayilan{
+		font-style: normal; /* Varsayilan değer. */
+	}
+	.italic{
+		font-style: italic; 
+	}
+	.oblique{
+		font-style: oblique; 
+	}
+	.inherits{
+		font-style: inherit;
+	}
+	p{
+		font-style: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<p class="varsayilan">Icabi Kırgız - www.icabikrgz.com (normal)</p>
+	<p class="italic">Icabi Kırgız - www.icabikrgz.com (italic) </p>
+	<p class="oblique">Icabi Kırgız - www.icabikrgz.com (oblique)</p>
+	<p class="oblique" style="font-style: initial;">Icabi Kırgız - www.icabikrgz.com (oblique but initial)</p>
+	
+	<div class="oblique">
+		<p>Icabi Kırgız - www.icabikrgz.com (normal)</p>
+		<p class="inherits">Icabi Kırgız - www.icabikrgz.com (inherit)</p>
+		<p>Icabi Kırgız - www.icabikrgz.com (normal)</p>
+	</div>
+	
+</body>
+</html>

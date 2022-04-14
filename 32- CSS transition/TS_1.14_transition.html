@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		transition 					= HTML elementinin tüm geçiş özelliklerini belirler.
+		Parametreler 				= transition-property | transition-duration | transition-timing-function | transition-delay
+		Değerler 					= property value (özellik değeri) | initial
+		transition-property 		= CSS özellik adı.
+	 	transition-duration 		= Geçiş süresi.
+	 	transition-timing-function 	= Hız eğrisi.
+	 	transition-delay 			= Duraksama süresi.
+		initial 					= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 100px;
+		height: 100px;
+		background-color: skyblue;
+		-webkit-border-radius: 5px 50%;
+		-moz-border-radius: 5px 50%;
+		-o-border-radius: 5px 50%;
+		-ms-border-radius: 5px 50%;
+		border-radius: 5px 50%;
+		border: 1px solid grey;
+		margin: 300px auto;
+		-webkit-transition: transform 1s;
+		-moz-transition: transform 1s;
+		-o-transition: transform 1s;
+		-ms-transition: transform 1s;
+		transition: transform 1s;
+		-webkit-transform-origin: 0 0;
+		-moz-transform-origin: 0 0;
+		-o-transform-origin: 0 0;
+		-ms-transform-origin: 0 0;
+		transform-origin: 0 0;
+	}
+	div:hover{
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+		<div></div>
+</body>
+</html>

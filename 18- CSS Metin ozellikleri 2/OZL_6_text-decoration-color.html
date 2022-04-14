@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-decoration-color	= Metne eklenecek olan dekorasyon / süsleme çizgisi rengini belirler.
+		Prametreler 			= Decoration (Dekorasyon / süsleme )| Style (Stil) | Color (Renk)
+		Degerleri 				= color | initial | inherit | 
+		color 					= Renk.
+		initial 				= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 				= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		margin-bottom: 10px;
+	}
+	.turuncu{
+		text-decoration: underline wavy; 
+		-webkit-text-decoration-color: #FF9900; 
+		-moz-text-decoration-color: #FF9900; 
+		-o-text-decoration-color: #FF9900; 
+		-ms-text-decoration-color: #FF9900; 
+		text-decoration-color: #FF9900; 
+	}
+	
+	p{
+		-webkit-text-decoration-color:initial;
+		-moz-text-decoration-color:initial;
+		-o-text-decoration-color:initial;
+		-ms-text-decoration-color:initial;
+		text-decoration-color:initial;
+		/* Eğer üst elementi varsa kaldırma işlemi bir işe yaramaz. */
+	}
+	div#inherit{
+		-webkit-text-decoration-color: inherit;
+		-moz-text-decoration-color: inherit;
+		-o-text-decoration-color: inherit;
+		-ms-text-decoration-color: inherit;
+		text-decoration-color: inherit;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="turuncu">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="turuncu" style="text-decoration-color:initial;">Icabi KIRGIZ ~ CSS ders notları (initial)</div>
+	
+	<div class="turuncu">
+		<p>HTML</p>
+		<p>CSS</p>
+		<p>JS</p>
+		<p>PHP</p>
+	</div>
+	<div style="text-decoration: overline wavy; text-decoration-color: purple">
+		Üst bilgi dekorasyonu
+		<div id="inherit">Bu değer üstten aldığı bilgiyi taşır.</div>
+	</div>
+</body>
+</html>

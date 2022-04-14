@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-repeat 	= HTML elementinin arkaplan resminin tekrarlanma özelliklerini belirler.
+		Değerler 			= repeat | space | round | no-repeat | repeat-x | repeat-y | initial | inherit
+		repeat 				= Tekrar et. (Varsayılan değer.)
+		space 	 			= Boşluk.
+		round	 	 		= Yuvarla.
+		no-repeat 	 		= Tekrar yok.
+		repeat-x 	 		= X ekseni boyunca tekrar et.
+		repeat-y 	 		= Y ekseni boyunca tekrar et.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 1000px;
+		height: 256px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Desen.jpg");
+		background-repeat: repeat; /* Varsayılan değer. */
+	}
+	div#bosluk{
+		width: 1000px;
+		height: 256px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Desen.jpg");
+		background-repeat: space; /* Boşluklu bir yapı üzerine kurar. (X ekseni boyunca)*/
+	}
+	div#round{
+		width: 1000px;
+		height: 256px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat: round; 
+		/* Belli oranlarda küçültme ve büyütme yaparak tam anlamıyla gösterir. */
+		/* 14.03.2021 */
+	}
+	div#tekrarsiz{
+		width: 1000px;
+		height: 256px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png"); 
+		background-repeat: no-repeat; /* Başlangıç noktasına konur ve bırakılır.*/
+	}
+	div#xlitekrar{
+		width: 1000px;
+		height: 256px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png"); 
+		background-repeat: repeat-x; 
+	}
+	div#ylitekrar{
+		width: 1000px;
+		height: 256px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png"); 
+		background-repeat: repeat-y; 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div><br><br>
+	<div id="bosluk"></div><br><br>
+	<div id="round"></div><br><br>
+	<div id="tekrarsiz"></div><br><br>
+	<div id="xlitekrar"></div><br><br>
+	<div id="ylitekrar"></div><br><br>
+</body>
+</html>

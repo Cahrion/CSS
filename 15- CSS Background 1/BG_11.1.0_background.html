@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background   = HTML elementinin arkaplan özelliğini veya özelliklerini belirler.
+		Değerler 	 = color / image / repeat / position / size / attachment / origin / clip / initial / inherit 	
+		color   	 = 	Renk.			
+		image  		 =	Resim.
+		repeat  	 =	Tekrar et.
+		position 	 =	Pozisyon.
+		size  	  	 =	Boyut.
+		attachment   =	Sayfa hareketine göre davranış
+		origin 	  	 =	Resmin başlangış konumu
+		clip 	  	 =	Rengin başlangış konumu
+		initial	 	 =	HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	 =	HTML elementi üst elementinini biçimlendirme değerini alır.
+	*/
+	div{
+		padding: 3px;
+		margin: 4px;
+		width: 800px;
+		height: 800px;
+		border: 2px solid purple;
+	}
+	div#bir{
+		background: url("Dokuman/1.png") no-repeat left top/50px, url("Dokuman/2.png") no-repeat right top/75px, url("Dokuman/2.png") no-repeat center top/75px;
+		/* Diğer resmin öncesinde bütün veriler girilmeli yoksa diğerine eklenir.*/
+	}
+	div#iki{
+		background: url("Dokuman/1.png") no-repeat left top/50px, url("Dokuman/2.png") no-repeat right top/75px yellow;
+		/* Renk verisi sonradan eklenmelidir. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="bir"></div>
+	<div id="iki"></div>
+		
+	
+</body>
+</html>

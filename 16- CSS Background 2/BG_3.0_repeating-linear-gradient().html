@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+	
+	    repeating-linear-gradient() = HTML elementinin doğrusal arkaplan renk geçişi tekrarlama özelliklerini belirler.
+		Parametreler 	 			= Direction (Yön) | Colors (Renkler)
+		Değerler 					= Başlangıç noktası & açı - derece | başlangıç rengi - bitiş rengi 
+	
+	*/
+	div{
+		width: 500px;
+		height: 250px;
+		border: 2px solid black;
+		margin-bottom: 20px;
+	}
+	div#normal{
+		background: -webkit-repeating-linear-gradient(red, yellow);
+		background: -moz-repeating-linear-gradient(red, yellow);
+		background: -o-repeating-linear-gradient(red, yellow);
+		background: -ms-repeating-linear-gradient(red, yellow);
+		background: repeating-linear-gradient(red, yellow);
+		/* linear-gradient()'ta çalışan değerler de burada çalışır.*/
+		/* Normal hali aynı linear gradient gibi çalışır. */
+	}
+	div#yuzde{
+		background: -webkit-repeating-linear-gradient(red 0%,yellow 50%);
+		background: -moz-repeating-linear-gradient(red 0%,yellow 50%);
+		background: -o-repeating-linear-gradient(red 0%,yellow 50%);
+		background: -ms-repeating-linear-gradient(red 0%,yellow 50%);
+		background: repeating-linear-gradient(red 0%,yellow 50%);
+	}
+	div#derece{
+		background: -webkit-repeating-linear-gradient(-124deg, red 0%, yellow 50%);
+		background: -moz-repeating-linear-gradient(-124deg, red 0%, yellow 50%);
+		background: -o-repeating-linear-gradient(-124deg, red 0%, yellow 50%);
+		background: -ms-repeating-linear-gradient(-124deg, red 0%, yellow 50%);
+		background: repeating-linear-gradient(-124deg, red 0%, yellow 50%);
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+		<div id="normal"></div>
+		<div id="yuzde"></div>
+		<div id="derece"></div>
+	
+</body>
+</html>

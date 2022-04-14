@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		cursor 		= Mouse (fare) işaretçisinin stilini belirler.
+		Değerler 	= auto | default | none | pointer | text | vertical-text | crosshair | cell | help | alias | copy | progress | wait | zoom-in | zoom-out | grab | grabbing | move | no-drop | not-allowed | all-scroll | row-resize | col-resize | nwse-resize | se-resize | nw-resize | nesw-resize | sw-resize | ne-resize | s-resize | n-resize | ns-resize | ew-resize | e-resize | w-resize | url | initial | inherit 
+		auto 		= Otomatik değer alır.
+		default 	= TÜm elementlerde mouse (fare) imleci OK şeklinde görünür.
+		none 		= Değer yok. (İmleç görüntülenmez.).
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 400px;
+		height: 100px;
+		border: 2px solid red;
+		text-align: center;
+	}
+	div#se_resize{
+		cursor:se-resize;
+	}
+	div#nw_resize{
+		cursor:nw-resize;
+	}
+	div#nesw_resize{
+		cursor:nesw-resize;
+	}
+	div#sw_resize{
+		cursor:sw-resize;
+	}
+	div#ne_resize{
+		cursor:ne-resize;
+	}
+	div#s_resize{
+		cursor:s-resize;
+	}
+	div#n-resize{
+		cursor:n-resize;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="se_resize">se-resize</div><br><br>
+	<div id="nw_resize">nw-resize</div><br><br>
+	<div id="nesw_resize">nesw-resize</div><br><br>
+	<div id="sw_resize">sw-resize</div><br><br>
+	<div id="ne_resize">ne_resize</div><br><br>
+	<div id="s_resize">s-resize</div><br><br>
+	<div id="n_resize">n-resize</div><br><br>
+	
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		list-style  		= Listedeki madde işaretçisinin tüm özelliklerini belirler.
+		Değerler 			= list-style-type | list-style-position | list-style-image | initial | inherit 
+		list-style-type 	= Listedeki madde işaretçisinin türü.
+		list-style-position = Listedeki madde işaretçisinin içerik akışındaki konumu.
+		list-style-image	= Listedeki madde işaretçisinin resmi.
+		initial				= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit				= HTML elementi üst elementinin biçimlendirme değerini alır.
+	
+	NOT ! = (ol) ve (ul) yapılarının ikisinde de geçerli sayılır.
+	*/
+	ul#type{
+		list-style:lower-roman;
+	}
+	ul#type_position{
+		list-style:lower-roman inside;
+	}
+	ul#position_image{
+		list-style:inside url("Dokuman/Yildiz.png");
+	}
+	ul#type_position_image{
+		list-style:lower-roman inside url("Dokuman/Yildiz.png");
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	Extra Eğitim
+	<ul id="type">
+		<li>(tekli)</li>
+		<li>(tekli)</li>
+		<li>(tekli)</li>
+	</ul>	
+	<ul id="type_position">
+		<li>(çiftli)</li>
+		<li>(çiftli)</li>
+		<li>(çiftli)</li>
+	</ul>	
+	<ul id="position_image">
+		<li>(çiftli)(position ve image)</li>
+		<li>(çiftli)(position ve image)</li>
+		<li>(çiftli)(position ve image)</li>
+	</ul>	
+	<ul id="type_position_image">
+		<li>üçlü</li>
+		<li>üçlü</li>
+		<li>üçlü</li>
+	</ul>
+	
+</body>
+</html>

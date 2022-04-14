@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*	first-of-type 	= Belirtilen HTML elementi baz alınarak, üst elementine göre ilk child (çocuk) durumundaki ilk elemente stil tanımlar.*/
+	p:first-of-type{
+		color:red;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<h3>Extra Eğitim</h3>
+	<!-- Bitişik olmasa bile çalışır -->
+	<p>HTML</p>
+	<p>JS</p>
+	<p>CSS</p>
+	<p>PHP</p>
+	<p>ASP</p>
+
+	<!-- DIV'in çoçukları olduğundan dolayı bu p'de alınır. -->
+	<div>
+		<p>JAVA</p>
+		<p>PYTHON</p>
+		<p>C / C++</p>
+		<p>C#</p>
+		<p>R</p>
+	</div>
+	
+</body>
+</html>

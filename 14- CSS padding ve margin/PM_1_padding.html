@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+	padding 	= HTML elementinin dolgu / iç boşluk özeliklerini belirler.
+	Değerler 	= length | % | initial | inherit
+	length  	= Uzunluk değeri.
+	% 		  	= Yüzde değeri.
+	initial   	= HTML elementi varsayılan biçimlendirme değerine döner.
+	inherit  	= HTML elementi üst elementinin biçimlendirme değerini alır.
+
+	*/
+	div{
+		width:196px;
+		height: 28px;
+		border: 4px solid green;
+		padding: 10px;	
+		/*
+			1. Parametre : Her taraf.
+		*/
+	}
+	div#ikili{
+		width:196px;
+		height: 18px;
+		border: 4px solid red;
+		padding: 10px 20px;	
+		/*
+			1. Parametre : Üst ve Alt
+			2. Parametre : Sağ ve Sol
+		*/
+	}
+	div#uclu{
+		width:196px;
+		height: 18px;
+		border: 4px solid red;
+		padding: 10px 20px 30px;	
+		/*
+			1. Parametre : Üst
+			2. Parametre : Sağ ve Sol
+			3. Parametre : Alt
+		*/
+	}
+	div#dortlu{
+		width:196px;
+		height: 18px;
+		border: 4px solid red;
+		padding: 10px 20px 30px 40px;	
+		/*
+			1. Parametre : Üst 
+			2. Parametre : Sağ
+			3. Parametre : Alt
+			4. Parametre : Sol
+		*/
+	}
+	div#yuzde{
+		width:196px;
+		height: 18px;
+		border: 4px solid blue;
+		padding: 1% 1% 1% 1%;
+		/*
+			1. Parametre : Üst 
+			2. Parametre : Sağ
+			3. Parametre : Alt
+			4. Parametre : Sol
+		*/
+	}
+	div#inherits{
+		border: 4px solid yellow;
+		width: 80px;
+		height: 1px;
+		padding: inherit;	
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div><br><br>
+	<div id="ikili"></div><br><br>
+	<div id="uclu"></div><br><br>
+	<div id="dortlu"></div><br><br>
+	<div id="yuzde"></div><br><br>
+	<div></div><br><br>
+	<div style="padding: initial"></div><br><br>
+	<div>
+		<div id="inherits"></div>
+	</div>
+		
+	
+</body>
+</html>

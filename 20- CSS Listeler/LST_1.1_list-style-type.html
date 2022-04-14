@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		list-style-type  		= Listedeki madde işaretçisinin türünü belirler.
+		Değerler 				= disc | circle | square | decimal | decimal-leanding-zero | lower-alpha | upper-alpha | lower-roman | upper-roman | none | initial | inherit
+		disc 					= İçi dolu daire. (Varsayılan değer.)
+		circle 					= İçi boş daire.
+		square 					= İçi dolu kare.
+		decimal 				= Ondalıklı sayı.
+		decimal-leading-zero 	= Ondalıklı sayı. (Tek haneli sayılarda 0 takısı eklenir.)
+		lower-alpha 			= Küçük harf.
+		upper-alpha 			= Büyük harf.
+		lower-roman 			= Küçük harfli roma rakamı.
+		upper-roman 			= Büyük harfli roma rakamı.
+		none					= Değer yok.
+		initial					= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit					= HTML elementi üst elementinin biçimlendirme değerini alır.
+		
+	NOT ! = (ol) ve (ul) yapılarının ikisinde de geçerli sayılır.
+	*/
+	ul.disc{
+		list-style-type: disc;
+	}
+	ul.square{
+		list-style-type: square;
+	}
+	ul.lower_roman{
+		list-style-type: lower-roman;
+	}
+	ul.inherits{
+		list-style-type: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<ul class="disc">
+		<li>(disc)</li>
+	</ul>
+	<hr>
+	<ul class="square">
+		<li>(square)</li>
+	</ul>
+	<hr>
+	<ul class="square" style="list-style-type: initial;">
+		<li>(square but initial)</li>
+	</ul>
+	<hr>
+	<ul class="lower_roman">
+		<li>(lower-roman)</li>
+		<li>(lower-roman)</li>
+		<li>inheritler
+			<ul class="inherits">
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+			</ul>
+		</li>
+		<li>(lower-roman)</li>
+		<li>(lower-roman)</li>
+		<li>Normaller
+			<ul>
+				<li>(Normal)</li>
+				<li>(Normal)</li>
+				<li>(Normal)</li>
+			</ul>
+		</li>
+		<li>(lower-roman)</li>
+	</ul>
+	<hr>
+</body>
+</html>

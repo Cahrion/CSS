@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		animation-play-state	= HTML elementine tanımlanmış olan animasyonun çalışıp çalışmadığınız veya duraklatılmış olup olmadığını belirler.
+		Değerler 			= running | paused | initial
+		running 			= Çalışır.
+		paused	 			= Duraklatılmış.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 75px;
+		height: 75px;
+		margin: 50px;
+		background-color: skyblue;
+		border: 4px double violet;
+		-webkit-border-radius: 50%; 
+		-o-border-radius: 50%; 
+		-ms-border-radius: 50%; 
+		-ms-border-radius: 50%; 
+		border-radius: 50%; 
+		-webkit-animation: ExtraEgitim 1s linear 0s infinite;
+		-moz-animation: ExtraEgitim 1s linear 0s infinite;
+		-o-animation: ExtraEgitim 1s linear 0s infinite;
+		-ms-animation: ExtraEgitim 1s linear 0s infinite;
+		animation: ExtraEgitim 1s linear 0s infinite;
+		-webkit-animation-play-state: paused; 	 	
+		-moz-animation-play-state: paused; 		 		
+		-o-animation-play-state: paused;			 		
+		-ms-animation-play-state: paused; 		 		
+		animation-play-state: paused;			 			
+	}
+	#initial{
+		-webkit-animation-play-state: initial; 	 	
+		-moz-animation-play-state: initial; 		 		
+		-o-animation-play-state: initial;			 		
+		-ms-animation-play-state: initial; 		 		
+		animation-play-state: initial;
+	}
+	@keyframes ExtraEgitim{
+		from{
+			-webkit-transform: translateX(0px); 
+			-moz-transform: translateX(0px); 
+			-o-transform: translateX(0px); 
+			-ms-transform: translateX(0px); 
+			transform: translateX(0px); 
+		}
+		to{
+			-webkit-transform: translateX(1000px); 
+			-moz-transform: translateX(1000px); 
+			-o-transform: translateX(1000px); 
+			-ms-transform: translateX(1000px); 
+			transform: translateX(1000px); 
+		}
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div>
+	<div id="initial"></div>
+</body>
+</html>

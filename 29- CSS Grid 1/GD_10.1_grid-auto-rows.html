@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-auto-rows 		= Izgara düzeni içerisindeki element veya elementler için, oluşturulması gereken satırların varsayılan yüksekliğini belirler.
+		Değerler 			= auto / max-content / min-content / length / initial
+		auto				= Otomatik değer alır.
+		length				= Uzunluk değeri
+		max-content 		= Maksimum içerik.
+		min-content 		= Minimum içerik.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	
+	.AnaEleman{
+		display: grid;
+		width: 500px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-auto-rows: max-content; 
+	}		
+	.AnaElemaniki{
+		display: grid;
+		width: 500px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-auto-rows: min-content;
+	}	
+	.IcEleman{
+		border: 1px solid red;
+		padding: 10px;
+		-webkit-writing-mode: vertical-rl;
+		-moz-writing-mode: vertical-rl;
+		-o-writing-mode: vertical-rl;
+		-ms-writing-mode: vertical-rl;
+		writing-mode: vertical-rl;
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcEleman">Extra Eğitim ~ CSS notları</div>	
+		<div class="IcEleman">Extra Eğitim ~ CSS notları</div>	
+		<div class="IcEleman">Extra Eğitim ~ CSS notları</div>	
+	</div>
+	<br>
+	<div class="AnaElemaniki">
+		<div class="IcEleman">Extra Eğitim ~ CSS notları</div>	
+		<div class="IcEleman">Extra Eğitim ~ CSS notları</div>	
+		<div class="IcEleman">Extra Eğitim ~ CSS notları</div>		
+	</div>
+</body>
+</html>

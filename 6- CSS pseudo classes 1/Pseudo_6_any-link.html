@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* :any-link 	= Döküman içerisinde bulunan HTML'in link elementinin / elementlerinin URL değeri boş değil ise stil tanımlar.*/
+	/* Prefix */
+	a:-webkit-any-link{
+		color: red;
+		text-decoration: none;
+	}	
+	a:-mox-any-link{
+		color: red;
+		text-decoration: none;
+	}	
+	a:-o-any-link{
+		color: red;
+		text-decoration: none;
+	}	
+	a:-ms-any-link{
+		color: red;
+		text-decoration: none;
+	}
+
+	/* 2021' prefix'e gerek yok. */
+	a:any-link{
+		color: red;
+		text-decoration: none;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<a href="https://www.extraegitim.com.tr">Extra Eğitim</a><br>
+	<a href="https://www.google.com.tr">Google</a><br>
+	<a href="https://www.yandex.com">Yandex</a><br>
+	<a href="#">Çapa yapısı</a><br>
+	<a href="">Href'i boş link</a><br>
+	<a>boş link</a>
+		
+	
+</body>
+</html>

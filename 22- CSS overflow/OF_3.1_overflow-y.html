@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		overflow-y	= HTML elementinin y ekseni baz alınarak boyutlandırılmış alanına sığmayacak kadar büyük olan içeriğin taşma özelliklerini belirler.
+		Değerler 	= visible | hidden | scroll | auto | initial | inherit
+		visible 	= Görünür.
+		hidden  	= Gizli.
+		scroll 	 	= Kaydırma.
+		auto		= Otomatik değer alır.
+		initial		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div.tasma{
+		width: 400px;
+		height: 300px;
+		border: 4px double red;
+	}
+	div.hidden{
+		overflow-y: hidden;
+		width: 500px;
+		height: 200px;
+		border: thick solid red;
+	}
+	div#inherit{
+		overflow-y: inherit;
+		border: 2px solid blue;
+		width: 300px;
+	}
+	div.alan{
+		width: 500px;
+		height: 300px;
+		border: 2px solid red;
+		overflow-y: hidden;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="hidden">
+		<div class="tasma"></div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+
+	<div class="hidden" style="overflow-y: initial;">
+		<div class="tasma"></div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+	<div class="alan">
+		<div id="inherit">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum libero amet ab a qui velit debitis atque eius unde quos, nostrum aperiam nam adipisci dolore suscipit veritatis necessitatibus quae. Quos!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima unde repudiandae rem delectus labore, quam magni deserunt eos modi. Non unde rerum, consectetur tempora. Sequi ab sed, porro temporibus veniam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni veniam sint voluptatum vel repudiandae minima nemo porro sunt fuga, autem tenetur officiis. Similique nostrum error a, quo perferendis illo exercitationem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero labore sed possimus facilis ea officia ut, eveniet optio temporibus nulla neque at fuga expedita. Saepe, in ad assumenda at repellat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea provident natus fugit qui, nihil nisi maiores temporibus, modi officiis! Beatae voluptatem nemo, totam quidem. Maiores ab unde deleniti temporibus. Exercitationem?
+		</div>
+	</div>
+
+
+
+	
+</body>
+</html>

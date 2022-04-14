@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		font-variant	= Metnin küçük harf içerikleri için büyük harf gösterilme özelliklerini belirler.
+		Değerler		= normal | small-caps | initial | inherit
+		normal  		= Normal.
+		small-caps 		= Küçük harfli metinler, küçük harf boyutu korunarak büyük harf olarak dönüştürülür.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		border: 2px solid red;
+	}
+	p{
+		font-variant: initial;
+	}
+	.varsayilan{
+		font-variant: normal; /* Varsayilan değer. */
+	}
+	.small_caps{
+		font-variant: small-caps; 
+	}
+	.inherits{
+		font-variant: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<p class="varsayilan">Icabi Kırgız - www.icabikrgz.com (normal)</p>
+	<p class="small_caps">Icabi Kırgız - www.icabikrgz.com (small_caps) </p>
+	<p class="small_caps" style="font-variant: initial;">Icabi Kırgız - www.icabikrgz.com (small-caps but initial)</p>
+	
+	<div class="small_caps">
+		<p>Icabi Kırgız - www.icabikrgz.com (normal)</p>
+		<p class="inherits">Icabi Kırgız - www.icabikrgz.com (inherit)</p>
+		<p>Icabi Kırgız - www.icabikrgz.com (normal)</p>
+	</div>
+	
+</body>
+</html>

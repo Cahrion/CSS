@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-shadow			= Metnin gölgelendirme özelliklerini belirler.
+		Parametreler 		= horizontal shadow (yatay gölge) | vertical shadow (dikey gölge) | blur radius (bulanıklık yarıçapı) | color
+		Değerler			= none & length & initial & inherit | blur-radius | color
+		none				= Değer yok.
+		length				= Uzunluk değeri.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+		blur-radius			= Bulanıklık yarıçapı değeri.
+		color				= Renk.
+	*/
+	div{
+		margin-bottom: 10px;
+	}
+	div#varsayilan{
+		text-shadow: none; /* Varsayilan değer */
+	}
+	div#length{
+		text-shadow: 0px 0px 5px red; 
+	}
+	div#lengthyatay{
+		text-shadow: 2px 0px 5px red;  /* 2 px yatay kayar */
+	}
+	div#lengthdikey{
+		text-shadow: 0px 2px 5px red;  /* 2 px dikey kayar */
+	}
+	div#lengthikisi{
+		text-shadow: 2px 2px 5px red;  /* 2 px dikey ve yatay kayar */
+	}
+	div#lengtheksi{
+		text-shadow: -2px -2px 5px red;  /* Hepsine (-) değerler verilebilir. */
+	}
+	div#blursuz{
+		text-shadow: -2px -2px 0px gray;  
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="varsayilan">Icabi Kırgız</div>
+	<div id="length">Icabi Kırgız</div>
+	<div id="lengthyatay">Icabi Kırgız</div>
+	<div id="lengthdikey">Icabi Kırgız</div>
+	<div id="lengthikisi">Icabi Kırgız</div>
+	<div id="lengtheksi">Icabi Kırgız</div>
+	<div id="blursuz">Icabi Kırgız</div>
+</body>
+</html>

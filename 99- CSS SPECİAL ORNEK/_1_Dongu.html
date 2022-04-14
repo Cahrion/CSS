@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+	<style>
+		body{
+			background-color: black;
+		}
+		div{
+			position: relative;
+			top: 50px;
+			left: 550px;
+			border: 6px solid white;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+		}
+		div#Birincitop{
+			-webkit-animation: BirTop 1.5s linear 0s infinite;
+			-moz-animation: BirTop 1.5s linear 0s infinite;
+			-o-animation: BirTop 1.5s linear 0s infinite;
+			-ms-animation: BirTop 1.5s linear 0s infinite;
+			animation: BirTop 1.5s linear 0s infinite;
+		}
+		div#Ikincitop{
+			top: 89px;
+			left: 450px;
+			-webkit-animation: IkiTop 1.5s linear 0s infinite;
+			-moz-animation: IkiTop 1.5s linear 0s infinite;
+			-o-animation: IkiTop 1.5s linear 0s infinite;
+			-ms-animation: IkiTop 1.5s linear 0s infinite;
+			animation: IkiTop 1.5s linear 0s infinite;
+		}
+		div#Ucuncutop{
+			top: 29px;
+			left: 650px;
+			-webkit-animation: UcTop 1.5s linear 0s infinite;
+			-moz-animation: UcTop 1.5s linear 0s infinite;
+			-o-animation: UcTop 1.5s linear 0s infinite;
+			-ms-animation: UcTop 1.5s linear 0s infinite;
+			animation: UcTop 1.5s linear 0s infinite;
+		}
+	@keyframes BirTop{
+		33%{
+			-webkit-transform: translateX(100px) translateY(100px);
+			-moz-transform: translateX(100px) translateY(100px);
+			-o-transform: translateX(100px) translateY(100px);
+			-ms-transform: translateX(100px) translateY(100px);
+			transform: translateX(100px) translateY(100px);
+			
+		}
+		66%{
+			-webkit-transform: translateX(-100px) translateY(100px);
+			-moz-transform: translateX(-100px) translateY(100px);
+			-o-transform: translateX(-100px) translateY(100px);
+			-ms-transform: translateX(-100px) translateY(100px);
+			transform: translateX(-100px) translateY(100px);
+		}
+		100%{
+		}
+	}
+	@keyframes IkiTop{
+		33%{
+			-webkit-transform: translateX(100px) translateY(-100px);
+			-moz-transform: translateX(100px) translateY(-100px);
+			-o-transform: translateX(100px) translateY(-100px);
+			-ms-transform: translateX(100px) translateY(-100px);
+			transform: translateX(100px) translateY(-100px);
+			
+		}
+		66%{
+			-webkit-transform: translateX(200px) translateY(0px);
+			-moz-transform: translateX(200px) translateY(0px);
+			-o-transform: translateX(200px) translateY(0px);
+			-ms-transform: translateX(200px) translateY(0px);
+			transform: translateX(200px) translateY(0px);
+		}
+		100%{
+		}
+	}
+	@keyframes UcTop{
+		33%{
+			-webkit-transform: translateX(-200px);
+			-moz-transform: translateX(-200px);
+			-o-transform: translateX(-200px);
+			-ms-transform: translateX(-200px);
+			transform: translateX(-200px);
+			
+		}
+		66%{
+			-webkit-transform: translateX(-100px) translateY(-100px);
+			-moz-transform: translateX(-100px) translateY(-100px);
+			-o-transform: translateX(-100px) translateY(-100px);
+			-ms-transform: translateX(-100px) translateY(-100px);
+			transform: translateX(-100px) translateY(-100px);
+		}
+		100%{
+		}
+	}
+	</style>
+</head>
+
+<body onLoad="">
+	<div id="Birincitop"></div>
+	<br>
+	<div id="Ikincitop"></div>
+	<br>
+	<div id="Ucuncutop"></div>
+<script type="text/javascript" language="javascript">
+</script>
+</body>
+</html>

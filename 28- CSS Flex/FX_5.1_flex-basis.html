@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	flex-flow	 	= Esnek kutuların dizilim yönü ve satır kırılma özelliklerini belirler.
+		Parametreler 	= flex-direction | flex-wrap
+		Değerler 		= row & row-reverse & column & colum-reverse | nowrap & wrap & wrap-reverse | initial
+		row 			= Satır.
+		row-reverse 	= Ters Satır.
+		column 			= Sütun.
+		column-reverse	= Ters Sütun.
+		nowrap 			= Kırılma yok.
+		wrap			= Kırılma
+		wrap-reverse 	= Ters kırılma.
+		initial		 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 250px;
+		height: 250px;
+		border: thin solid grey;		 	
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		-webkit-flex-basis: 100px; 
+		-moz-flex-basis: 100px; 
+		-o-flex-basis: 100px; 	
+		-ms-flex-basis: 100px; 	
+		flex-basis: 100px; 		
+	}
+	.IcElemanlariki{
+		border: thin solid black;
+		-webkit-flex-basis: initial;
+		-moz-flex-basis: initial;
+		-o-flex-basis: initial;
+		-ms-flex-basis: initial;
+		flex-basis: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlariki">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlariki">D</div>
+		<div class="IcElemanlar">E</div>
+		<div class="IcElemanlar">F</div>
+		<div class="IcElemanlariki">G</div>
+		<div class="IcElemanlar">H</div>
+	</div>
+</body>
+</html>

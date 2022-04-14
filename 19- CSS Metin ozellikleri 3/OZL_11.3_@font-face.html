@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		@font-face			= Metinler için sistemde yüklü olmayan font'ların kullanılabilme durumlarını belirler.
+			Değerler			= font-family | local | src | font-style | font-weight 
+			font-family 		= Metnin yazı tipi ailesi.
+			local		 		= Yerel.
+			src			 		= Dosya adresi.
+			font-style  		= Metnin yazı tipi stili.
+			font-weight 		= Metin yazı tipi kalınlığı.
+	
+		Font Dosya Türleri  = EOT | WOFF2 | WOFF | TFF & OTF | SVG
+			EOT 				= Internet Explorer - Microsoft Edge
+			WOFF2 				= Chrome - Firefox - Opera
+			WOFF 				= Tüm tarayıcılar.
+			TFF & OTF 			= Tüm tarayıcılar.
+			SVG					= Chrome - Firefox - Opera
+	
+		(Font converter sayesinde bütün fontlara dönüştürülebilir.)
+	*/
+	@font-face{
+		font-family:"Angilla Tattoo Personal Use Regular";
+		src:url("Dokuman/Fontlar/Angilla_Tattoo_Personal_Use_Regular.eot"); /* Internet Explorer - Microsoft Edge */
+		src:local("Angilla Tattoo Personal Use Regular"), 	/* local parametresiyle kullanıcı cihazının font klosörü kontrol edilir. */
+			local("Angilla Tattoo Personal Use"),  			/* local parametresiyle kullanıcı cihazının font klosörü kontrol edilir. */
+			/* Local değerleri telefon uygulamalarında kullanılmaz bu yüzden eğer kullanılırsa hata oluşturur.*/
+			
+			/* Dosya Fontlarının yüklenmesi */
+			url("Dokuman/Fontlar/Angilla_Tattoo_Personal_Use_Regular.eot?#iefix") format("embedded-opentype"), /* Internet Explorer 6 - 8 */
+			url("Dokuman/Fontlar/Angilla_Tattoo_Personal_Use_Regular.woff2") format("woff2"), /* Modern tarayıcılar (Super) */ 
+			url("Dokuman/Fontlar/Angilla_Tattoo_Personal_Use_Regular.woff") format("woff"), /* Modern tarayıcılar */ 
+			url("Dokuman/Fontlar/Angilla_Tattoo_Personal_Use_Regular.ttf") format("truetype"), /* Safari,Android, İOS */ 
+			url("Dokuman/Fontlar/Angilla_Tattoo_Personal_Use_Regular.svg#angilla_tattoo_personal_useRg") format("svg"); /* İOS */
+	}
+	p{
+		font-size: 40px;
+	}
+	.family{
+		font-family: "Angilla Tattoo Personal Use Regular"
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<p>Icabi Kırgız (Normal)</p>
+	<p class="family">Icabi Kırgız (Angilla_Tattoo_Personal_Use_Regular)</p>
+</body>
+</html>

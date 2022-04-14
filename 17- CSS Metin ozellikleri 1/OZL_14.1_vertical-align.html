@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		vertical-align  = Metnin son satırının ve metnin justify değeri atanmış olan satırlarının yatay hizalama özelliklerini belirler.
+		Değerler 		= baseline | length | % | sub | super | top | text-top | middle | bottom | text-bottom | initial | inherit
+		baseline	 	= Alt koşeden başlar.
+		length	 		= Uzuluk değeri
+		%	 			= Yüzde değeri
+		sub	 			= Alt simge
+		super	 		= Üst simge
+		top				= En üstten.
+		text-top		= Metnin veya içeriğin üst hizasından.
+		middle 			= Ortadan.
+		text-bottom 	= Metnin veya içeriğin alt hizasından
+		bottom 			= En alttan.
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 750px;
+		height: auto;
+		border: 1px solid blue;
+		margin-bottom: 20px;
+		font-size: 50px;
+	}
+	.top{
+		vertical-align: top; /* içeriğin en üst tarafına kayar*/
+		font-size: 20px;
+	}
+	.text-top{
+		vertical-align: text-top; /* Yandaki font boyutunun en üst tarafına kayar*/
+		font-size: 20px;
+	}
+	.middle{
+		vertical-align: middle;  /* Yandaki font boyutunun orta tarafına kayar*/
+		font-size: 20px;
+	}
+	.text-bottom{
+		vertical-align: text-bottom; /* Yandaki font boyutunun en alt tarafına kayar*/
+		font-size: 20px;
+	}
+	.bottom{
+		vertical-align: bottom; /* içeriğin en alt tarafına kayar*/
+		font-size: 20px;
+	}
+	
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>CSS - </span><span class="top">Içeriğin en üsttünde</span>
+	</div>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>CSS - </span><span class="text-top">Yandaki font'un en büyük kısmına hizalanır.</span> 
+	</div>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>CSS - </span><span class="middle">Yandaki font'un orta kısmına hizalanır.</span>
+	</div>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>CSS - </span><span class="text-bottom">Yandaki font'un en küçük kısmına hizalanır.</span>
+	</div>
+	<div>
+		<img src="Dokuman/1.png" alt="Extra Eğitim">
+		<span>CSS - </span><span class="bottom">Içeriğin en alttında</span>
+	</div>
+</body>
+</html>

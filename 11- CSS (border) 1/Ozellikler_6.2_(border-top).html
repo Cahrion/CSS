@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		border-top 			= HTML elementinin üst kenarlık / çerçeve özelliklerini belirler.
+		Parametreler 		= length | style | color
+		length değerleri	= length & initial & inherit & thin & medium & thick
+		style değerleri		= none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset
+		color değerleri		= color
+		length 				= uzunluk değeri.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+		thin  				= Ince.
+		medium 				= Orta.
+		thick 				= Kalın.
+		none 				= Değer yok..
+		hidden 				= Gizli.
+		solid 				= Düz çizgi.
+		double 				= Çift çizgi
+		dashed 				= Kesikli çizgi..
+		dotted 				= Noktalı çizgi.
+		groove 				= İçe dönük gölgeli çizgi.
+		ridge 				= Dışa dönük gölgeli çizgi.
+		inset 				= İçe dönük derin çizgi.
+		outset 				= Dışa dönük derin çizgi.
+		color 				= Renk. 
+	*/
+	p#bir{
+		border-top : 2px solid; 	/* Renk parametresini belirtmezseniz (Siyah) olur.*/
+	}
+	p#iki{
+		border-top : 2px; 			/* Sadece uzunluk verisi giremezsiniz. */
+	}
+	p#uc{
+		border-top : dotted; 		/* Sadece style verisi girebilirsiniz. */
+	}
+	p#dort{
+		border-top : red; 			/* Sadece color verisi giremezsiniz. */
+	}
+	p#bes{
+		border-top : dotted red; 	/* style ve color verisi giremezsiniz. */
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p id="bes">Extra Eğitim - Volkan Alakent</p>
+	
+</body>
+</html>

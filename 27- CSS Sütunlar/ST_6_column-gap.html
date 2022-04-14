@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		column-gap 		= HTML elementinin çok sütunlu düzeni için bölünen sütunların aralarındaki boşluk değerlerini belirler.
+		Değerler 		= normal | length | initial | inherit
+		normal 	 		= Normal.
+		length 			= Uzunluk değeri.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.	
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/	
+	p#normal{
+		height: 200px;
+		border: 2px solid red;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: normal; /* varsayılan değer. */
+		-moz-column-gap: normal; /* varsayılan değer. */
+		-o-column-gap: normal; /* varsayılan değer. */
+		-ms-column-gap: normal; /* varsayılan değer. */
+		column-gap: normal; /* varsayılan değer. */
+	}
+	p[name="length"]{
+		border: 2px solid red;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: 100px;
+		-moz-column-gap: 100px;
+		-o-column-gap: 100px; 
+		-ms-column-gap: 100px;
+		column-gap: 100px;
+	}
+	
+	p.initial{
+		border: 2px solid red;
+		padding: 10px;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: initial;
+		-moz-column-gap: initial;
+		-o-column-gap: initial; 
+		-ms-column-gap: initial;
+		column-gap: initial;
+	}
+	div.alan{
+		border: 2px solid red;
+		padding: 10px;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: 100px;
+		-moz-column-gap: 100px;
+		-o-column-gap: 100px; 
+		-ms-column-gap: 100px;
+		column-gap: 100px;
+	}
+	div#inherit{
+		padding-right: 30px;
+		height: 200px;
+		border: 2px solid blue;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+		-webkit-column-gap: inherit;
+		-moz-column-gap: inherit;
+		-o-column-gap: inherit; 
+		-ms-column-gap: inherit;
+		column-gap: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+		<h1 style="text-align: center;">normal</h1>
+	<p id="normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae ducimus fugit hic culpa, ut accusantium nesciunt nobis soluta nemo harum, deleniti esse, quasi eaque consequatur tempora quam repellendus. Maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis amet ipsum sed accusantium neque possimus laboriosam non repellendus quod ad, culpa asperiores nam id consequatur doloribus, dolore, iure totam!</p>
+		<br>
+		<h1 style="text-align: center;">length = 100px</h1>
+	<p name="length">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae ducimus fugit hic culpa, ut accusantium nesciunt nobis soluta nemo harum, deleniti esse, quasi eaque consequatur tempora quam repellendus. Maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis amet ipsum sed accusantium neque possimus laboriosam non repellendus quod ad, culpa asperiores nam id consequatur doloribus, dolore, iure totam!</p>
+		<br>
+		<h1 style="text-align: center;">initial</h1>
+	<p name="length" class="initial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ullam explicabo quasi modi, rem eligendi provident, facilis recusandae doloribus deleniti aut voluptatum molestias porro suscipit excepturi ratione nostrum cupiditate distinctio?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere molestiae ducimus fugit hic culpa, ut accusantium nesciunt nobis soluta nemo harum, deleniti esse, quasi eaque consequatur tempora quam repellendus. Maxime.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil officiis amet ipsum sed accusantium neque possimus laboriosam non repellendus quod ad, culpa asperiores nam id consequatur doloribus, dolore, iure totam!</p>
+		<br>
+		<h1 style="text-align: center;">inherit (length = 100px)</h1>
+	
+	<div class="alan">
+		<div id="inherit">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vel cum qui ea iusto perspiciatis aliquid. Vel ipsum fugit sunt dolorum mollitia, officiis error culpa soluta suscipit in, quo enim.
+		</div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates minima nisi cumque a harum assumenda veritatis eligendi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dolorum maiores odit optio culpa repellat obcaecati placeat recusandae at ea voluptatum sunt, atque dignissimos possimus ab consectetur delectus, minus! Dignissimos?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime doloremque fugiat excepturi dolore illo corrupti cumque ipsam autem libero animi, minus suscipit recusandae ullam alias et nemo a doloribus fuga!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident modi tenetur, similique soluta minima repellat natus nihil a officia. Fugit libero ipsam totam recusandae excepturi tenetur ut distinctio quas!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias blanditiis laborum modi eligendi veniam sed aspernatur voluptatum, aut error cupiditate, vero odit consectetur ut doloremque quibusdam labore, nostrum explicabo aliquam.
+	</div>
+	
+</body>
+</html>

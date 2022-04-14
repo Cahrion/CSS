@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		font-family	= Metnin yazı tipi ailesini belirler.
+		Değerler	= family-name | initial | inherit
+		family-name = Yazı tipi ailesinin adı.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	
+		Font ailelerininin türleri : family-name |  generic-name
+		family-name 	= Yazı tipi ailesinin adı.
+		generic-name 	= genel yazı tipi ailesinin adı.
+			Değerler   	= serif | sans-serif | cursive | fantasy | monospace
+			serif   	= Tırnaklı.
+			sans-serif  = Tırnaksız.
+			cursive   	= El yazısı.
+			fantasy   	= Fantazi.
+			monospace	= Tek aralıklı.
+	
+	*/
+	div.alan{
+		font-size: 30px;
+		font-family: "Monotype Corsiva", "cursive";
+	}
+	.Islem{
+		font-family: inherit;
+	}
+	p{
+		font-family: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="alan">Icabi Kırgız (Monotype)</div>
+	<div class="alan" style="font-family: initial;">Icabi Kırgız (Monotype but initial)</div>
+	<div class="alan">
+		<p>Icabi Kırgız (initial)</p>
+		<p class="Islem">Icabi Kırgız (inherit)</p>
+		<p>Icabi Kırgız (initial)</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		border-right-style  = HTML elementinin sağ kenarlık / çerçeve stilini belirler.
+		Değerleri			= none & hidden & solid & double & dashed & dotted & groove & ridge & inset & outset & initial & inherit
+		none 				= Değer yok..
+		hidden 				= Gizli.
+		solid 				= Düz çizgi.
+		double 				= Çift çizgi
+		dashed 				= Kesikli çizgi..
+		dotted 				= Noktalı çizgi.
+		groove 				= İçe dönük gölgeli çizgi.
+		ridge 				= Dışa dönük gölgeli çizgi.
+		inset 				= İçe dönük derin çizgi.
+		outset 				= Dışa dönük derin çizgi.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	p#bir{
+		border:4px solid red;
+		border-right-style: solid; 						/* Hepis (solid) olur.*/
+	}	
+	p#iki{
+		border:4px solid red;
+		border-right-style: none double; 					/*  2'li parametre çalışmaz */
+	}	
+	p#uc{
+		border:4px solid red;
+		border-right-style: hidden double dashed; 		/*  3'lü parametre çalışmaz */
+	}		
+	p#dort{
+		border:4px solid red;
+		border-right-style: hidden double dashed dotted; 	/*  4'lü parametre çalışmaz */
+	}	
+	p#bes{
+		border:4px solid red;
+		border-right-style: groove; 						/* İçe dönük gölgeli çizgi. */
+	}	
+	p#alti{
+		border:4px solid red;
+		border-right-style: ridge; 						/* Dışa dönük gölgeli çizgi. */
+	}	
+	p#yedi{
+		border:4px solid red;
+		border-right-style: inset; 						/* İçe dönük derin çizgi. */
+	}	
+	p#sekiz{
+		border:4px solid red;
+		border-right-style: outset; 						/* Dışa dönük derin çizgi. */
+	}
+	p.dokuz{
+		border:4px solid red;
+		border-right-style: solid; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		border:4px solid red;
+		border-right-style: hidden; 						
+		padding: 5px;
+	}
+	p#on{
+		border:4px solid red;
+		border-right-style: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p id="bes">Extra Eğitim - Volkan Alakent</p>
+	<p id="alti">Extra Eğitim - Volkan Alakent</p>
+	<p id="yedi">Extra Eğitim - Volkan Alakent</p>
+	<p id="sekiz">Extra Eğitim - Volkan Alakent</p>
+	<p class="dokuz">Extra Eğitim - Volkan Alakent</p>
+	<p class="dokuz" style="border-right-style:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="on">Extra Eğitim - Volkan Alakent</p>
+	</div>
+	
+</body>
+</html>

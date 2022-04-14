@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		border-color  		= HTML elementinin kenarlık / çerçeve rengini belirler.
+		Değerleri			= color & transparent & initial & inherit
+		color 				= Renk. 
+		transparent			= Transparan.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+
+	*/
+	p#bir{
+		border: 4px solid;
+		border-color: red; 						/* Hepis (red) olur.*/
+	}	
+	p#iki{
+		border: 4px solid;
+		border-color: red blue; 				/* Üst alt (red) sağ sol (blue) */
+	}		
+	p#uc{
+		border: 4px solid;
+		border-color: red blue green; 			/* üst (red) sağ  sol (blue) alt (green) */
+	}		
+	p#dort{
+		border: 4px solid;
+		border-color: red blue green yellow; 	/* üst (red) sağ (blue) alt (green) sol (yellow) */
+	}	
+	p#bes{
+		border: 3px solid;
+		border-color: rgba(241,64,67,0.75) rgba(241,64,67,0.50) rgba(241,64,67,0.25) transparent; 				/* Saydam bir (border) ekler. */
+	}
+	p.alti{
+		border: 5px solid;
+		border-color: red; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		border: 5px solid;
+		border-color: blue;
+		padding: 5px;
+	}
+	p#yedi{
+		border: 5px solid;
+		border-color: inherit; /* inherit üstekinin rengini alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p id="bes">Extra Eğitim - Volkan Alakent</p>
+	<p class="alti">Extra Eğitim - Volkan Alakent</p>
+	<p class="alti" style="border-color:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="yedi">Extra Eğitim - Volkan Alakent</p>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		repeating-radial-gradient() 	= HTML elementinin dairesel renk geçişi özelliklerini belirler. 
+		Parametreler 		= Shape (Şekil) | Size(Boyut) | Direction (Yön) | Colors (Renkler)
+		Değerler 			= Ellipse (elips) & Cricle (Daire) |farthest-corner (En uzak koşe) & closest-corner & farthest-side (En uzak taraf) & closest-side (En yakın taraf) | Başlangıç noktası & açı - derece |Başlangıç rengi - bitiş rengi - dilimle 
+	*/
+	div{
+		width: 600px;
+		height: 450px;
+		border: 2px solid black;
+		margin-bottom: 50px;
+	}
+	div#konum_sol{
+		background: -webkit-repeating-radial-gradient(circle at 0% 50%, white 0px, white 10px, black 10px, blue 30px);
+		background: -moz-repeating-radial-gradient(circle at 0% 50%, white 0px, white 10px, black 10px, blue 30px);
+		background: -o-repeating-radial-gradient(circle at 0% 50%, white 0px, white 10px, black 10px, blue 30px);
+		background: -ms-repeating-radial-gradient(circle at 0% 50%, white 0px, white 10px, black 10px, blue 30px);
+		background: repeating-radial-gradient(circle at 0% 50%, white 0px, white 10px, black 10px, blue 30px);	
+	}
+	div#konum_ust{
+		background: -webkit-repeating-radial-gradient(circle at 50% 0%, white 0px, white 10px, black 10px, blue 30px);
+		background: -moz-repeating-radial-gradient(circle at 50% 0%, white 0px, white 10px, black 10px, blue 30px);
+		background: -o-repeating-radial-gradient(circle at 50% 0%, white 0px, white 10px, black 10px, blue 30px);
+		background: -ms-repeating-radial-gradient(circle at 50% 0%, white 0px, white 10px, black 10px, blue 30px);
+		background: repeating-radial-gradient(circle at 50% 0%, white 0px, white 10px, black 10px, blue 30px);	
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+		<div id="konum_sol"></div>
+		<div id="konum_ust"></div>
+	
+</body>
+</html>

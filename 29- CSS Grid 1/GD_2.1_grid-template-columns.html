@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-template-columns 	= Izgara düzeni içerisindeki element veya elementler için, oluşturulması gereken sütun adedini ve sütun boyutu genişliğini belirler.
+		Değerler 				= none / auto / max-content / min-content / length / initial
+		none 					= Değer yok.
+		auto 					= Otomatik değer alır.
+		max-content 			= Maksimum içerik
+		min-content 			= Minimum içerik
+		length 					= Uzunluk değeri.
+		initial 				= HTML elementi varsayılan biçimlendirme değerine döner.
+		
+	
+	*/
+	
+	#AnaEleman{
+		display: grid;
+		width: 200px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-template-columns: max-content max-content max-content;
+		/* Boşluklardan altta almazki uzun bir içerik olsun*/
+	}	
+	#AnaElemaniki{
+		display: grid;
+		width: 200px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-template-columns: min-content min-content min-content min-content min-content min-content;
+		/* Boşluklardan altta alırki kısa bir içerik olsun*/
+	}	   
+	.IcEleman{
+		padding: 20px;
+		border: 1px solid red;
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="AnaEleman">
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+	</div>
+		<br>
+	<div id="AnaElemaniki">
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>		
+	</div>
+</body>
+</html>

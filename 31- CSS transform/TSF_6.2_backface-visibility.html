@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		backface-visibility 	= Belirtilen HTML elementinin dönüştürme, geçiş veya anismasyon işlemlerinde arka yüzeyin görüntülenme veya gizlenme özelliklerini belirler.
+		Değerler 			= visible / hidden / initial
+		visible 			= Göster. 
+		hidden 				= Gizle.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.Islem1a{
+		width: 87px;
+		padding: 25px;
+		border: 1px solid red;	
+		background-color: red;	
+		color: white;
+	}
+	.Islem1b{
+		width: 87px;
+		padding: 25px;
+		border: 1px solid red;	
+		background-color: red;	
+		color: white;
+		-webkit-transform: rotateY(130deg); /* 100 üstü değerler gözükmez.*/ 
+		-moz-transform: rotateY(130deg); 	/* 100 üstü değerler gözükmez.*/
+		-o-transform: rotateY(130deg); 		/* 100 üstü değerler gözükmez.*/
+		-ms-transform: rotateY(130deg); 	/* 100 üstü değerler gözükmez.*/
+		transform: rotateY(130deg); 		/* 100 üstü değerler gözükmez.*/
+		
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	.Islem2a{
+		width: 102px;
+		padding: 25px;
+		border: 1px solid blue;
+		background-color: blue;
+		color: white;
+	}
+	.Islem2b{
+		width: 102px;
+		padding: 25px;
+		border: 1px solid blue;
+		background-color: blue;	
+		color: white;
+		-webkit-transform: rotateX(180deg);	/* 100 üstü değerler gözükmez.*/
+		-moz-transform: rotateX(180deg); 	/* 100 üstü değerler gözükmez.*/
+		-o-transform: rotateX(180deg); 		/* 100 üstü değerler gözükmez.*/
+		-ms-transform: rotateX(180deg);		/* 100 üstü değerler gözükmez.*/
+		transform: rotateX(180deg); 		/* 100 üstü değerler gözükmez.*/
+		
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	#initial{
+		-webkit-backface-visibility: initial;
+		-moz-backface-visibility: initial;
+		-o-backface-visibility: initial;
+		-ms-backface-visibility: initial;
+		backface-visibility: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<div class="Islem1a">Extra Eğitim</div><br>
+	<div id="initial" class="Islem1b">Extra Eğitim</div><br>
+	<div class="Islem2a">Volkan Alakent</div><br>
+	<div class="Islem2b">Volkan Alakent</div>
+	
+</body>
+</html>

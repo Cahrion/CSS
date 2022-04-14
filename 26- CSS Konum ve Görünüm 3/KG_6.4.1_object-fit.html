@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		object-fit 	= HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük resim veya video içeriklerininin yeniden nasıl boyutlandırılacağını belirler.
+		Değerler 	= fill | cover | contain | none | scale-down | initial
+	
+		fill 		= Doldurma. (Genişlik ve yükseklik değerlerine bakılmaksızın, resim veya video, elementin içine sığacak şekilde dağıtılır veya uzatılır.)
+	
+		cover 		= Kapak. (Genişlik ve yükseklik değerleri korunarak, resim veya video, elementin içerisine sığacak halde kırpılır fakat resim veya video genişlik veya yükseklik değeri genişlik yada yükseklik değerinden az ise uzatılır.)
+	
+		contain 	= İçerme. (Genişlik ve yükseklik değerleri korunarak, resim veya video, elementin içerisine sığacak halde orantılı bir şekilde boyutlandırılır.)
+	
+		none 		= Değer yok. (Genişlik ve yükseklik değerleri korunarak, resim veya video, elementin içerisine sığdırılmaz fakat elementin içerisine sığmayan kısım kırpılır.)
+	
+		scale-down 	= Azaltma. (Resim veya video nesnesinin en uygun boyutlandırmasını bulmak için contain ve none değerlerini karşılaştırarak en uygun olanı otomatik olarak uygular.)
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner..
+	*/
+	img{
+		width: 1000px;
+		height: 600px;
+		object-fit: scale-down;
+	}
+	
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<img src="Dokuman/Mustang.jpg" alt="Mustang" title="Mustang">
+	
+</body>
+</html>

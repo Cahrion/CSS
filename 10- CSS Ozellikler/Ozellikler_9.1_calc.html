@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		calc() 		= Değer hesaplama işlemleri için kullanılır. 
+		Değerler	=	+ | - | * | /
+		+			= Toplama
+		-			= Çıkarma
+		*			= Çarpma
+		/			= Bölme
+	*/
+	div#menu{
+		background-color: yellow;
+		width: 300px;
+		height: 500px;
+		float: left;
+	}
+	div#icerik{
+		background-color: blue;
+		height: 500px;
+		float: left;
+		/* Prefix */
+		width: -webkit-calc(100% - 575px);
+		width: -moz-calc(100% - 575px);
+		width: -o-calc(100% - 575px);
+		width: -ms-calc(100% - 575px);
+		/* Prefix gerekli değil lakin (w3) kullanın diyor. (09.03.2021)*/
+		width: calc(100% - 575px);
+		
+	}
+	div#Reklam{
+		background-color: red;
+		width: 275px;
+		height: 500px;
+		float: left;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="menu">Extra Eğitim</div>
+	<div id="icerik">Extra Eğitim</div>
+	<div id="Reklam">Extra Eğitim</div>
+	
+</body>
+</html>

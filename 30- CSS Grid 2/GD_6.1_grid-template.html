@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-template-areas = Izgara düzeni içerisindeki element veya elementler için, tüm satır ve sütun işlemlerinin yanı sıra alan yerleştirme özelliklerini belirler.
+		Parametreler 		= grid-template-rows (Sütun adedi) | grid-template-columns (Satır adedi) | grid-template-areas (Tüm satır ve sütun için alan yerleştirme)
+		Değerler 			= none | initial;
+		none	 			= Dğer yok.
+		initial 	 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	
+	#AnaEleman{
+		display: grid;
+		width: 1000px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-gap: 10px;
+		grid-template: 100px / auto auto auto;
+	}
+	.IcEleman{
+		border: 1px solid red;
+		padding: 10px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="AnaEleman">
+		<div class="IcEleman Degerbir">1</div>	
+		<div class="IcEleman Degeriki">2</div>	
+		<div class="IcEleman Degeruc">3</div>	
+		<div class="IcEleman Degerdort">4</div>	
+		<div class="IcEleman Degerbes">5</div>	
+		<div class="IcEleman Degeralti">6</div>	
+		<div class="IcEleman Degeryedi">7</div>	
+		<div class="IcEleman Degersekiz">8</div>	
+		<div class="IcEleman Degerdokuz">9</div>	
+		<div class="IcEleman Degeron">10</div>
+		<div class="IcEleman Degeronbir">11</div>	
+		<div class="IcEleman Degeroniki">12</div>	
+		<div class="IcEleman Degeronuc">13</div>	
+		<div class="IcEleman Degerondort">14</div>	
+		<div class="IcEleman Degeronbes">15</div>	
+		<div class="IcEleman Degeronalti">16</div>	
+		<div class="IcEleman Degeronyedi">17</div>	
+		<div class="IcEleman Degeronsekiz">18</div>	
+		<div class="IcEleman Degerondokuz">19</div>	
+		<div class="IcEleman Degeryirmi">20</div>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		resize 			= HTML elementinin uygulanacak olan efekt özelliklerini belirler.
+		Değerler 		= none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia()
+		none 			= Değer yok.
+		blur() 			= Bulanıklık. (Pixel değer.)
+		brightness()	= Parlaklık. (0% ila 100% arası.)
+		contrast() 		= Kontrast. (0% ila 100% arası.)
+		drop-shadow() 	= Gölge düşürme. (horizontal shadow (yatay gölge) | verical shadow(dikey gölge) | blur spread (bulanıklık yayma) color(renk))
+		grayscale() 	= Gri tonlama. (0% ila 100% arası.)
+		hue-rotate() 	= Renk döndürme. (0 derece ila 360 derece arası.)
+		invert() 		= Ters çevirme. (0% ila 100% arası.)
+		opacity() 		= Opaklık değeri. (0% ila 100% arası.)
+		saturate() 		= Doyma. (0% ila 100% arası.)
+		sepia() 		= Sepya.(Kahverengi ağırlıklı antik tonlama) (0% ila 100% arası.)
+	*/
+	img{
+		-webkit-filter: blur(1px);
+		-moz-filter: blur(1px);
+		-o-filter: blur(1px);
+		-ms-filter: blur(1px);
+		filter: blur(1px);
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<img src="Dokuman/Mustang.jpg" alt="Mustang" title="Mustang" width="500" height="500">
+</body>
+</html>

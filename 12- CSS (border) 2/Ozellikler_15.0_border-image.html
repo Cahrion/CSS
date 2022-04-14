@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	border-image  	=	HTML elementinin kenarlık / çerçeve resim özelliklerini belirler. 
+		Parametreler 	= 	image | slice | repeat
+		İmage Değerleri =	image & initial & inherit 
+		Slice Değerleri =	lenfth & % 
+		repeat Değerleri=	repeat & round & stretch 
+	 	image 			= 	resim değeri.
+		initial 		= 	html elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= 	html elementi üst elementinin biçimlendirme değerini alır.
+		length 			= 	Uzunluk Değeri.
+		% 				= 	Yüzde Değeri.
+		repeat 			= 	Tekrarla.
+		round 			= 	Yuvarla.
+		stretch 		= 	Uzat & Gerdir & Esnet. (Varsayılan değer.)
+	*/
+	div{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png");
+		-mox-border-image: url("Dokuman/Resim.png");
+		-o-border-image: url("Dokuman/Resim.png");
+		-ms-border-image: url("Dokuman/Resim.png");
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png");
+	}
+	div#slicelength{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png") 30;
+		-mox-border-image: url("Dokuman/Resim.png") 30;
+		-o-border-image: url("Dokuman/Resim.png") 30;
+		-ms-border-image: url("Dokuman/Resim.png") 30;
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png") 30; /* (30)'bir slice değeridir.'*/
+	}
+	div#sliceyuzde{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png") 20%;
+		-mox-border-image: url("Dokuman/Resim.png") 20%;
+		-o-border-image: url("Dokuman/Resim.png") 20%;
+		-ms-border-image: url("Dokuman/Resim.png") 20%;
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png") 20%; /* (20%)'bir slice değeridir.'*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div></div>
+	<br>
+	<div id="slicelength"></div>
+	<div id="sliceyuzde"></div>
+	
+</body>
+</html>

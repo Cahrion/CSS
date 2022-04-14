@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		unicode-bidi 	= Metnin direction özelliği ile belirtilmiş akış yönü özelliğinin döndürme durumunu belirler.
+		Değerler 		= normal | embed | bidi-override | initial | inherit
+		normal  		= Normal (Varsayılan değer)
+		embed  			= Gömülü
+		bidi-override  	= Geçersiz kılma
+		initial  		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  		= Html elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		margin-bottom: 20px;
+		direction: rtl; 
+	}
+	div.varsayilan{
+		unicode-bidi: normal; /* Varsayilan değer */
+	}
+	.embed{
+		unicode-bidi: embed; 
+	}
+	p{
+		direction: rtl; 
+		unicode-bidi: bidi-override; 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="varsayilan">
+		Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<div class="embed">
+		Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<p>Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</p>
+	<p class="embed">Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</p>
+	<p class="normal">Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</p>
+	<p class="embed">Extra Eğitim - Volkan Alakent - A'dan Z'ye CSS Görsel Eğitim Seti</p>
+
+</body>
+</html>

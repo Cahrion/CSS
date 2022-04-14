@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-size 	= HTML elementinin atanmış olan arkaplan resminin boyutunu belirler.
+		Değerler 			= auto | lenfth | % | cover | contain | initial | inherit
+		auto 				= Otomatik değer alır.
+		length 	 			= Uzunluk Değeri.
+		%	 	 			= Yüzde değeri..
+		cover 	 			= Kapak.
+		contain 			= İçerme.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 800px;
+		height: 500px;
+		border: 2px solid black;
+		background-image: url("Dokuman/Resim.jpg");
+		background-repeat: no-repeat;
+		background-size: cover; 
+		/* İçeriğe bağlı çalışır ve içerik olursa o alana göre yayılır.*/
+	}
+	div#inherit{
+		border: thin solid white;
+		background-size: inherit; 
+		box-shadow: blue 0px 0px 1000px;
+
+		
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div><br><br>
+	<div style="background-size: initial;"></div><br><br> <!-- Varsayilan değere döner. -->
+	<div style="padding: 150px;">
+		<div id="inherit"></div>
+	</div>
+</body>
+</html>

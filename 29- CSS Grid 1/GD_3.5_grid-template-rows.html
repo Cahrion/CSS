@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-template-rows 	= Izgara düzeni içerisindeki element veya elementler için, oluşturulması gereken satır adedini ve satır boyutu genişliğini belirler.
+		Değerler 				= none / auto / max-content / min-content / length / initial
+		none 					= Değer yok.
+		auto 					= Otomatik değer alır.
+		max-content 			= Maksimum içerik
+		min-content 			= Minimum içerik
+		length 					= Uzunluk değeri.
+		initial 				= HTML elementi varsayılan biçimlendirme değerine döner.
+		
+	
+	*/
+	
+	.AnaEleman{
+		display: grid;
+		width: 500px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-template-rows: 100px 90px 80px 70px 60px; 
+	}	
+	.IcEleman{
+		border: 1px solid red;
+		padding: 20px;
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+	</div>
+		<br>
+	<div class="AnaEleman" id="Initial">
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+		<div class="IcEleman">Extra Eğitim</div>	
+	</div>
+</body>
+</html>

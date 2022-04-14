@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+	
+	    linear-gradient() 	= HTML elementinin doğrusal arkaplan renk geçişi özelliklerini belirler.
+		Parametreler 	 	= Direction (Yön) | Colors (Renkler)
+		Değerler 			= Başlangıç noktası & açı - derece | başlangıç rengi - bitiş rengi 
+	
+	*/
+	div{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid black;
+	}
+	div#bir{
+		/*
+				0
+		
+		-90		 		90
+		
+			   180
+		*/
+		background: -webkit-linear-gradient(0deg , blue, yellow,green);
+		background: -moz-linear-gradient(0deg ,blue, yellow,green);
+		background: -o-linear-gradient(0deg ,blue, yellow,green);
+		background: -ms-linear-gradient(0deg ,blue, yellow,green);
+		background: linear-gradient(0deg ,blue, yellow,green);
+	}
+	div#iki{
+		background: -webkit-linear-gradient(90deg , blue, yellow,green);
+		background: -moz-linear-gradient(90deg ,blue, yellow,green);
+		background: -o-linear-gradient(90deg ,blue, yellow,green);
+		background: -ms-linear-gradient(90deg ,blue, yellow,green);
+		background: linear-gradient(90deg ,blue, yellow,green);
+	}
+	div#uc{
+		background: -webkit-linear-gradient(180deg , blue, yellow,green);
+		background: -moz-linear-gradient(180deg ,blue, yellow,green);
+		background: -o-linear-gradient(180deg ,blue, yellow,green);
+		background: -ms-linear-gradient(180deg ,blue, yellow,green);
+		background: linear-gradient(180deg ,blue, yellow,green);
+	}
+	div#dort{
+		background: -webkit-linear-gradient(-90deg , blue, yellow,green);
+		background: -moz-linear-gradient(-90deg ,blue, yellow,green);
+		background: -o-linear-gradient(-90deg ,blue, yellow,green);
+		background: -ms-linear-gradient(-90deg ,blue, yellow,green);
+		background: linear-gradient(-90deg ,blue, yellow,green);
+	}
+	div#bes{
+		background: -webkit-linear-gradient(45deg , blue, yellow,green);
+		background: -moz-linear-gradient(45deg ,blue, yellow,green);
+		background: -o-linear-gradient(45deg ,blue, yellow,green);
+		background: -ms-linear-gradient(45deg ,blue, yellow,green);
+		background: linear-gradient(45deg ,blue, yellow,green);
+	}
+	div#alti{
+		background: -webkit-linear-gradient(top , blue 0%, yellow 40%,green 90%);
+		background: -moz-linear-gradient(top , blue 0%, yellow 40%,green 90%);
+		background: -o-linear-gradient(top , blue 0%, yellow 40%,green 90%);
+		background: -ms-linear-gradient(top , blue 0%, yellow 40%,green 90%);
+		background: linear-gradient(top , blue 0%, yellow 40%,green 90%);
+		/*
+			Yüzdelik olarak şuraya kadar gibi bir değerlendirme yapılabilir. 
+			%0'da başladı %40'da mavi bitti. (blue)
+			%40'da başladı %90'da sarı bitti. (yellow)
+			%90'da başladı %100'da yeşil bitti. (green)
+		*/
+	}
+	/* 
+		Burada yapılan her bir değer body elementindee de yapılabilir.
+		Lakin doşeme kısmı üstten veya alttan olursa görüntü bozukluğu olur.
+	*/
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div id="bir"></div><br><br>
+	<div id="iki"></div><br><br>
+	<div id="uc"></div><br><br>
+	<div id="dort"></div><br><br>
+	<div id="bes"></div><br><br>
+	<div id="alti"></div><br><br>
+	
+</body>
+</html>

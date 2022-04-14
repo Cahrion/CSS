@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-template-areas = Izgara düzeni içerisindeki alan adı tanımlanmış olan elementin tüm satır ve sütun işlemleri için alan yerleştirme özelliklerini belirler.
+		Değerler 			= none | area name 
+		none	 			= Dğer yok.
+		area name 	 		= Alan adı.
+	*/
+	
+	#AnaEleman{
+		display: grid;
+		grid-template-areas: "HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi HeaderEtiketi" "MenuEtiketi MenuEtiketi MenuEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi IcerikEtiketi" "FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi FooterEtiketi"; 
+	}
+	.HeaderAlani{
+		grid-area: HeaderEtiketi;
+		background-color: black;
+		height: 500px;
+	}
+	.MenuAlani{
+		grid-area: MenuEtiketi;
+		background-color: yellow;
+		height: 500px;
+	}
+	.IcerikAlani{
+		grid-area: IcerikEtiketi;
+		background-color: grey;
+		height: 500px;
+	}
+	.FooterAlani{
+		grid-area: FooterEtiketi;
+		background-color: red;
+		height: 500px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body style="margin: 0px;">
+	<div id="AnaEleman">
+		<div class="IcEleman HeaderAlani">1</div>	
+		<div class="IcEleman MenuAlani">2</div>	
+		<div class="IcEleman IcerikAlani">3</div>	
+		<div class="IcEleman FooterAlani">4</div>	
+	</div>
+</body>
+</html>

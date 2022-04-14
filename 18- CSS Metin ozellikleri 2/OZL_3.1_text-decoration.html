@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-decoration 		= Metne eklenecek olan dekorasyon / süsleme özeliklerini belirler.
+		Prametreler 			= Decoration (Dekorasyon / süsleme )| Style (Stil) | Color (Renk)
+		Degerleri 				= none & underline & overline & line-through & initial & inherit | solid & dashed & dotted & double & wavy | color
+		none	 				= Değer yok.
+		underline				= Metnin alt tarafına çizgi ekler
+		line-through			= Metnin Üzerine çizgi ekler
+		overline				= Metnin Üst tarafına çizgi ekler
+		initial 				= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 				= HTML elementi üst elementinin biçimlendirme değerini alır.
+		solid 					= Düz çizgi.
+		dashed 					= Kesikli çizgi.
+		dotted 					= Noktalı çizgi.
+		double 					= Çift çizgi.
+		wavy 					= Dalgalı çizgi.
+		color 					= Renk.
+	*/
+	div{
+		margin-bottom: 10px;
+	}
+	.solid{
+		text-decoration: underline solid; 
+	}
+	.dashed{
+		text-decoration: underline dashed; 
+	}
+	.dotted{
+		text-decoration: underline dotted; 
+	}
+	.double{
+		text-decoration: underline double; 
+	}
+	.wavy{
+		text-decoration: underline wavy; 
+	}
+	.toplu{
+		text-decoration: underline line-through wavy; 
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="solid">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="dashed">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="dotted">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="double">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="wavy">Icabi KIRGIZ ~ CSS ders notları</div>
+	<div class="toplu">Icabi KIRGIZ ~ CSS ders notları</div>
+</body>
+</html>

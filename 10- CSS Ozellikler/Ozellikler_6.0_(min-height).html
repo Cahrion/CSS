@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	
+		min-height 	= HTML elementinin minimum yüksekliğini belirler.
+	 	Değerler	= length / % / initial / inherit
+	
+		length 		= Uzunluk değeri. (İstenilen türden sayı ile uzunluk verilir.)
+		% 			= Yüzde Değeri.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div#bir{
+		background-color: green;
+		min-height: 500px;
+	}
+	div{
+		background-color: blue;
+		height: 100%;
+	}
+	div#iki{
+		background-color: black;
+		height: 800px;
+	}
+	div#uc{
+		background-color: red;
+		min-height: 500px;	
+		opacity: 0.5;
+
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div>Extra Eğitim</div>
+	<p>Volkan Alakent</p>
+	
+	<div>
+		<div id="bir">Icabi</div> 
+	</div>	<br><br>
+	<div id="iki">
+		<div id="uc">Icabi</div> 
+	</div>
+	
+</body>
+</html>

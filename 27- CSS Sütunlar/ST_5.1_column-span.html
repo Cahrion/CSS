@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		column-span 	= HTML elementinin çok sütunlu düzeni için bölünen sütunların içerisindeki bir elementin sutun veya sutunlara ayırmasını belirler.
+		Değerler 		= none | all | initial | inherit
+		none 	 		= Değer yok. (Varsayilan değer)
+		all 			= Tümü.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.	
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/	
+	div#none{
+		border: 2px solid red;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		-o-column-count: 3;
+		-ms-column-count: 3;
+		column-count: 3;
+	}
+	.iki{
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		-o-column-span: all; 
+		-ms-column-span: all;
+		column-span: all;
+	}
+	h1.inherit{
+		-webkit-column-span: inherit;
+		-moz-column-span: inherit;
+		-o-column-span: inherit; 
+		-ms-column-span: inherit;
+		column-span: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+		<h1 style="text-align: center;">inherit</h1>
+	<div id="none">
+		<h1 class="iki">Icabi Kırgız - CSS (150SAAT) ders notları</h1>
+		<div class="iki">
+			<h1 class="inherit">1</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga tenetur optio quae sapiente nostrum soluta repellendus placeat praesentium architecto cupiditate sit, suscipit molestias asperiores, velit. Modi quaerat repellat odio adipisci.
+		</div>
+		<div>
+			<h1>2</h1>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam commodi quisquam ullam accusamus voluptas dolorum officiis recusandae quam quos modi dolorem eligendi dolor molestias repudiandae, voluptatem temporibus laborum perferendis provident!
+		</div>
+	</div>
+</body>
+</html>

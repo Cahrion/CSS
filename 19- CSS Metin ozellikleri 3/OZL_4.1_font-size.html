@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		font-size	= Metnin yazı tipi boyutunu belirler.
+		Değerler	= length | % | xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger | initial | inherit
+		length  	= Uzunluk değeri.
+		%	  		= Yüzde değeri.
+		xx-small  	= En küçük.
+		x-small  	= Çok kuçük.
+		small  		= Küçük.
+		medium  	= Orta.
+		large  		= Büyük.
+		x-large  	= Çok büyük.
+		xx-large  	= En büyük.
+		smaller 	= Daha küçük.
+		larger 		= Daha büyük.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div.alan{
+		font-size: 30px;
+	}
+	p{
+		font-size: initial;
+	}
+	.Islem{
+		font-size: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="alan">Icabi Kırgız (30px)</div>
+	<div class="alan" style="font-size: initial;">Icabi Kırgız (30px but initial)</div>
+	<div class="alan">
+		<p>Icabi Kırgız (initial)</p>
+		<p class="Islem">Icabi Kırgız (inherit)</p>
+		<p>Icabi Kırgız (initial)</p>
+	</div>
+</body>
+</html>

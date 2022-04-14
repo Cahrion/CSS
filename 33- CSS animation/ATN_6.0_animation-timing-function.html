@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		animation-timing-function	= HTML elementinin tanımlanmış olan animasyon döngüsünün hız eğrisi özelliklerini belirler.
+		Değerler 					= ease | linear | ease-in | ease-out | step-start | step-end | steps() | cubic-bezier | initial
+		ease	 					= Yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.
+		linear 						= Başlangıçtan sona kadar aynı hız.
+		ease-in	 					= Yavaş olarak başlayarak sona doğru hızlanır.
+		ease-out	 				= Hızlı olarak başlayarak sona doğru yavaşlar.
+		ease-in-out	 				= Yavaş olarak başlayarak ortada hızlanır ve sona doğru tekrar yavaşlar.
+		step-start	 				= Animasyon süresine bakılmaksızın doğrudan sona ulaşır.
+		step-end	 				= Animasyon süresine bakılarak, animasyon süresi kadar bekleyerek doğrudan sona ulaşır.
+		steps	 					= Başlangıç ve bitiş arasında adımlamalı animasyon işlemi yapar.
+		cubic-bezier	 			= Bezier eğrisi. (https://cubic-bezier.com)
+		initial 					= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div#Alan{
+		width: 100%;
+		border: 4px double violet;
+		padding: 5px;
+	}
+	div.yuvarlak{
+		width: 75px;
+		height: 75px;
+		border: thin solid black;
+		line-height: 50px;
+		text-align: center;
+		background-color: grey;
+		-webkit-animation: ExtraEgitim 3s;
+		-moz-animation: ExtraEgitim 3s;
+		-o-animation: ExtraEgitim 3s;
+		-ms-animation: ExtraEgitim 3s;
+		animation: ExtraEgitim 3s;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-o-border-radius: 5px;
+		-ms-border-radius: 5px;
+		border-radius: 5px;
+	}
+	div.ease{
+		background-color: skyblue; 
+		-webkit-animation-timing-function: ease;  	/* Varsayılan değer. */
+		-moz-animation-timing-function: ease; 		/* Varsayılan değer. */	
+		-o-animation-timing-function: ease;  		/* Varsayılan değer. */	
+		-ms-animation-timing-function: ease; 		/* Varsayılan değer. */	
+		animation-timing-function: ease;  			/* Varsayılan değer. */		
+	}
+	div.linear{
+		background-color: red;
+		-webkit-animation-timing-function: linear;  	
+		-moz-animation-timing-function: linear; 			
+		-o-animation-timing-function: linear;  			
+		-ms-animation-timing-function: linear; 			
+		animation-timing-function: linear;  					
+	}
+	div.ease_in{
+		background-color: blue;
+		-webkit-animation-timing-function: ease-in;  	
+		-moz-animation-timing-function: ease-in; 			
+		-o-animation-timing-function: ease-in;  			
+		-ms-animation-timing-function: ease-in; 			
+		animation-timing-function: ease-in;  					
+	}
+	div.ease_out{
+		background-color: purple;
+		-webkit-animation-timing-function: ease-out;  	
+		-moz-animation-timing-function: ease-out; 			
+		-o-animation-timing-function: ease-out;  			
+		-ms-animation-timing-function: ease-out; 			
+		animation-timing-function: ease-out;  					
+	}
+	div.ease_in_out{
+		background-color: green;
+		-webkit-animation-timing-function: ease-in-out;  	
+		-moz-animation-timing-function: ease-in-out; 			
+		-o-animation-timing-function: ease-in-out;  			
+		-ms-animation-timing-function: ease-in-out; 			
+		animation-timing-function: ease-in-out;  					
+	}
+	div.step_start{
+		background-color: grey;
+		-webkit-animation-timing-function: step-start;  	
+		-moz-animation-timing-function: step-start; 			
+		-o-animation-timing-function: step-start;  			
+		-ms-animation-timing-function: step-start; 			
+		animation-timing-function: step-start;  					
+	}
+	div.step_end{
+		background-color: black;
+		-webkit-animation-timing-function: step-end;  	
+		-moz-animation-timing-function: step-end; 			
+		-o-animation-timing-function: step-end;  			
+		-ms-animation-timing-function: step-end; 			
+		animation-timing-function: step-end;  					
+	}
+	div.stepsend{
+		background-color: orange;
+		-webkit-animation-timing-function: steps(10, end);  	
+		-moz-animation-timing-function: steps(10, end); 			
+		-o-animation-timing-function: steps(10, end);  			
+		-ms-animation-timing-function: steps(10, end); 			
+		animation-timing-function: steps(10, end);  					
+	}
+	div.stepsstart{
+		background-color: yellow;
+		-webkit-animation-timing-function: steps(10, start);  	
+		-moz-animation-timing-function: steps(10, start); 			
+		-o-animation-timing-function: steps(10, start);  			
+		-ms-animation-timing-function: steps(10, start); 			
+		animation-timing-function: steps(10, start);  					
+	}
+	div.cubic{
+		background-color: saddlebrown;
+		-webkit-animation-timing-function: cubic-bezier(0,1,1,0);  	
+		-moz-animation-timing-function: cubic-bezier(0,1,1,0); 			
+		-o-animation-timing-function: cubic-bezier(0,1,1,0);  			
+		-ms-animation-timing-function: cubic-bezier(0,1,1,0); 			
+		animation-timing-function: cubic-bezier(0,1,1,0);  					
+	}
+	@keyframes ExtraEgitim{
+		from{
+			width: 75px;
+		}
+		to{
+			width: 1500px;
+		}
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+<div id="Alan">
+	<div class="yuvarlak ease"></div>
+	<div class="yuvarlak linear"></div>
+	<div class="yuvarlak ease_in"></div>
+	<div class="yuvarlak ease_out"></div>
+	<div class="yuvarlak ease_in_out"></div>
+	<div class="yuvarlak step_start"></div>
+	<div class="yuvarlak step_end"></div>
+	<div class="yuvarlak stepsend"></div>
+	<div class="yuvarlak stepsstart"></div>
+	<div class="yuvarlak cubic"></div>
+</div>
+</body>
+</html>

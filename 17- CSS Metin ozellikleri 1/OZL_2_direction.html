@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		direction  	= Metnin veya içeriğin akış yönü özelliklerini belirler.
+		Değerler 	= ltr | rtl | initial | inherit
+		ltr  		= Soldan sağa.
+		rtl  		= Sağdan sola.
+		initial  	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  	= Html elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		margin-bottom: 20px;
+	}
+	div#soldan{
+		direction: ltr; /* Varsayılan değer */
+	}
+	div.sagdan{
+		direction: rtl;
+	}
+	p#inherit{
+		direction: inherit;
+		margin: 0px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="soldan">
+		Icabi Kırgız
+	</div>
+	<div class="sagdan">
+		Icabi Kırgız
+	</div>
+	<div class="sagdan" style="direction:inherit">
+		Icabi Kırgız
+	</div>
+	<div class="sagdan">
+		Buralarda
+		<p id="inherit">
+			Icabi Kırgız
+		</p>
+		Buralarda
+	</div>
+		
+	<div class="sagdan">
+		<img src="Dokuman/1.png" alt="">
+	</div>
+	
+</body>
+</html>

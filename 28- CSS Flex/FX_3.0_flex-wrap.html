@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	flex-wrap	 	= Esnek kutuların satır kırılma özelliklerini belirler.
+		Değerler 		= nowrap | wrap | wrap-reverse | initial
+		nowrap 			= Kırılma yok.
+		wrap			= Kırılma
+		wrap-reverse 	= Ters kırılma.
+		initial		 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	#AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 250px;
+		height: 250px;
+		border: thin solid grey;
+		-webkit-flex-wrap: nowrap; 	/* Varsayılan değer */
+		-moz-flex-wrap: nowrap; 	/* Varsayılan değer */
+		-o-flex-wrap: nowrap; 		/* Varsayılan değer */
+		-ms-flex-wrap: nowrap; 	 	/* Varsayılan değer */
+		flex-wrap: nowrap; 		 	/* Varsayılan değer */
+	}
+	#AnaElemaniki{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 250px;
+		height: 250px;
+		border: thin solid grey;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap; 	
+		-o-flex-wrap: wrap; 	
+		-ms-flex-wrap: wrap; 	
+		flex-wrap: wrap; 		
+	}
+	.IcElemanlar{
+		width: 50px;
+		height: 50px;
+		border: thin solid black;
+		
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="AnaEleman">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlar">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlar">D</div>
+		<div class="IcElemanlar">E</div>
+		<div class="IcElemanlar">F</div>
+		<div class="IcElemanlar">G</div>
+		<div class="IcElemanlar">H</div>
+	</div>
+	<br>
+	<hr>
+	<br>
+	<div id="AnaElemaniki">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlar">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlar">D</div>
+		<div class="IcElemanlar">E</div>
+		<div class="IcElemanlar">F</div>
+		<div class="IcElemanlar">G</div>
+		<div class="IcElemanlar">H</div>
+	</div>
+</body>
+</html>

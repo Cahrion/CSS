@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		animation-name	= HTML elementine atanmış olan animasyonun, @keyframes özelliği için isim tanımlamasını belirler. 
+		Değerler 		= none | keyframes name | initial
+		none			= Değer yok.
+		keyframes name  = Animasyon aşamaları adı.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 100px;
+		height: 100px;
+		background-color: red;
+		-webkit-animation: 10s;
+		-moz-animation: 10s;
+		-o-animation: 10s;
+		-ms-animation: 10s;
+		animation: 10s;
+		-webkit-animation-name: ExtraEgitim;
+		-moz-animation-name: ExtraEgitim;
+		-o-animation-name: ExtraEgitim;
+		-ms-animation-name: ExtraEgitim;
+		animation-name: ExtraEgitim;
+	}
+	@keyframes ExtraEgitim{
+		from{
+			-webkit-transform: translateY(0px);
+			-moz-transform: translateY(0px);
+			-o-transform: translateY(0px);
+			-ms-transform: translateY(0px);
+			transform: translateY(0px);
+			
+		}
+		to{
+			-webkit-transform: translateY(450px);
+			-moz-transform: translateY(450px);
+			-o-transform: translateY(450px);
+			-ms-transform: translateY(450px);
+			transform: translateY(450px);
+		}
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div>
+</body>
+</html>

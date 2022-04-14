@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	align-items	= Esnek kutu içerisinde bulunan elementlerin hizalama özelliklerini belirler.
+		Değerler 	= auto | stretch | center | flex-start | flex-end | baseline | initial
+		auto 		= Otomatik değer.
+		stretch 	= Uzat / esne.
+		center 		= Orta.
+		flex-start 	= Esnek başlangıç.
+		flex-end 	= Esnek bitiş.
+		baseline 	= Başlangıç.
+		initial	 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 500px;
+		height: 250px;
+		border: thin solid red;
+		-webkit-align-items: baseline;	
+		-moz-align-items: baseline; 		
+		-o-align-items: baseline; 		
+		-ms-align-items: baseline; 		
+		align-items: baseline; 		
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		-webkit-flex: 1; 	
+		-moz-flex: 1; 		
+		-o-flex: 1; 		
+		-ms-flex: 1; 		
+		flex: 1; 	
+	}
+	#otomatik{
+		-webkit-align-self: auto; 	/* Varsayılan değer */	
+		-moz-align-self: auto; 		/* Varsayılan değer */	
+		-o-align-self: auto; 		/* Varsayılan değer */	
+		-ms-align-self: auto; 		/* Varsayılan değer */	
+		align-self: auto; 			/* Varsayılan değer */	
+	}
+	#esne{
+		-webkit-align-self: stretch;
+		-moz-align-self: stretch; 	
+		-o-align-self: stretch; 	
+		-ms-align-self: stretch; 	
+		align-self: stretch; 
+	}
+	#orta{
+		-webkit-align-self: center;
+		-moz-align-self: center; 	
+		-o-align-self: center; 	
+		-ms-align-self: center; 	
+		align-self: center; 
+	}
+	#flex_start{
+		-webkit-align-self: flex-start;
+		-moz-align-self: flex-start; 	
+		-o-align-self: flex-start; 	
+		-ms-align-self: flex-start; 	
+		align-self: flex-start; 
+	}
+	#flex_end{
+		-webkit-align-self: flex-end;
+		-moz-align-self: flex-end; 	
+		-o-align-self: flex-end; 	
+		-ms-align-self: flex-end; 	
+		align-self: flex-end; 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div id="otomatik" class="IcElemanlar">auto</div>
+		<div id="esne" class="IcElemanlar">stretch</div>
+		<div id="orta" class="IcElemanlar">center</div>
+		<div id="flex_start" class="IcElemanlar">flex-start</div>
+		<div id="flex_end" class="IcElemanlar">flex-end</div>
+	</div>
+</body>
+</html>

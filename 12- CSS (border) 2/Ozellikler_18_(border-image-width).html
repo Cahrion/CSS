@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+	border-image-width 	=	HTML elementi kenarlık / çerçeve resminin genişliğini belirler. 
+	Değerler			=	auto | length | % | initial | inherit
+	auto 				=	Otomatik değer alır.
+	length 				= 	Uzunluk Değeri.
+	% 					= 	Yüzde Değeri.
+	initial 			= 	html elementi varsayılan biçimlendirme değerine döner.
+	inherit 			= 	html elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: -webkit-calc(100% - 60px);
+		width: -moz-calc(100% - 60px);
+		width: -o-calc(100% - 60px);
+		width: -ms-calc(100% - 60px);
+		width: calc(100% - 60px);
+		height: 100px;
+		border:30px solid transparent;
+		border-image-source: url("Dokuman/Resim.png");	
+		border-image-slice: 30;
+		border-image-width: 10px;
+	}
+	div#lengthiki{
+		width: -webkit-calc(100% - 60px);
+		width: -moz-calc(100% - 60px);
+		width: -o-calc(100% - 60px);
+		width: -ms-calc(100% - 60px);
+		width: calc(100% - 60px);
+		height: 100px;
+		border:30px solid transparent;
+		border-image-source: url("Dokuman/Resim.png");	
+		border-image-slice: 30;
+		border-image-width: 10px 30px;
+	}
+	div#lengthdort{
+		width: -webkit-calc(100% - 60px);
+		width: -moz-calc(100% - 60px);
+		width: -o-calc(100% - 60px);
+		width: -ms-calc(100% - 60px);
+		width: calc(100% - 60px);
+		height: 100px;
+		border:30px solid transparent;
+		border-image-source: url("Dokuman/Resim.png");	
+		border-image-slice: 30;
+		border-image-width: 10px 30px 25px 40px;
+	}
+	div#yuzde{
+		width: -webkit-calc(100% - 60px);
+		width: -moz-calc(100% - 60px);
+		width: -o-calc(100% - 60px);
+		width: -ms-calc(100% - 60px);
+		width: calc(100% - 60px);
+		height: 100px;
+		border: 20px solid transparent;
+		border-image-source: url("Dokuman/Resim.png");	
+		border-image-slice: 30;
+		border-image-width: 10%;
+	}
+	div#yuzdeiki{
+		width: -webkit-calc(100% - 60px);
+		width: -moz-calc(100% - 60px);
+		width: -o-calc(100% - 60px);
+		width: -ms-calc(100% - 60px);
+		width: calc(100% - 60px);
+		height: 100px;
+		border: 20px solid transparent;
+		border-image-source: url("Dokuman/Resim.png");	
+		border-image-slice: 30;
+		border-image-width: 10% 20%;
+	}
+	div#auto{
+		width: -webkit-calc(100% - 60px);
+		width: -moz-calc(100% - 60px);
+		width: -o-calc(100% - 60px);
+		width: -ms-calc(100% - 60px);
+		width: calc(100% - 60px);
+		height: 100px;
+		border: 20px solid transparent;
+		border-image-source: url("Dokuman/Resim.png");	
+		border-image-slice: 30;
+		border-image-width:  auto; /* İç alanın görüntüsünü de alır.*/
+	}
+	div#miras{
+		width: 300px;
+		height: 100px;
+		border: 20px solid transparent;
+		border-image-source: url("Dokuman/Resim.png");	
+		border-image-slice: 30;
+		border-image-width: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div>
+	<br><br>	
+	<div id="lengthiki"></div>
+	<br><br>	
+	<div id="lengthdort"></div>
+	<br><br>
+	<div id="yuzde"></div>
+	<br><br>
+	<div id="yuzdeiki"></div>
+	<br><br>
+	<div id="auto"></div>
+	<br><br>
+	<div style="border-image-width: initial;"></div>
+	<br><br>
+	<div style="padding: 50px;">
+		<div id="miras"></div>
+	</div>
+		
+	
+</body>
+</html>

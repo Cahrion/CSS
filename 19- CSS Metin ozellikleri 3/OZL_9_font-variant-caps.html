@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		font-variant-caps	= Metnin küçük harf içerikleri için büyük harf alternatif gösterilme özelliklerini belirler.
+		Değerler			= normal | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | initial | inherit
+		normal  			= Normal.
+		small-caps 			= Küçük harfli metinler, küçük harf boyutu korunarak büyük harf olarak dönüştürülür.
+		all-small-caps 		= Tüm metinler, küçük harf boyutu korunarak büyük harf olarak dönüştürülür.
+		petite-caps 		= Küçük harfli metinler, küçük harf boyutu korunarak büyük harf olarak dönüştürülür. (Yazı ailesi küçük harf büyüklüğünü desteklemiyorsa small-caps yerine kullanılır.)
+		all-petite-caps 	= Tüm metinler, küçük harf boyutu korunarak büyük harf olarak dönüştürülür. (Yazı ailesi küçük harf büyüklüğünü desteklemiyorsa all-small-caps yerine kullanılır.)
+		unicase 			= Büyük harfli metinler, küçük harf boyutu korunarak büyük harf olarak dönüşütürülür.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit  			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		border: 2px solid red;
+	}
+	p{
+		font-variant-caps: initial;
+	}
+	.varsayilan{
+		font-variant-caps: normal; /* Varsayilan değer. */
+	}
+	.small_caps{
+		font-variant-caps: small-caps; 
+	}
+	.all_small_caps{
+		font-variant-caps: all-small-caps; 
+	} /* Petite yapısı belirtilen fontun küçük olma durumu var mı diye bakar eğer yoksa düzenler ve (small) yapısı gibi yeniden kullanır. */
+	.petite_caps{
+		font-variant-caps: petite-caps; 
+	}
+	.all_petite_caps{
+		font-variant-caps: all-petite-caps; 
+	}
+	.unicase{
+		font-variant-caps: unicase; 
+	}
+	.inherits{
+		font-variant-caps: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<p class="varsayilan">Icabi Kırgız - WWW.icabikrgz.com (normal)</p>
+	<p class="small_caps">Icabi Kırgız - WWW.icabikrgz.com (small-caps) </p>
+	<p class="all_small_caps">Icabi Kırgız - WWW.icabikrgz.com (all-small-caps) </p>
+	<p class="petite_caps">Icabi Kırgız - WWW.icabikrgz.com (petite-caps) </p>
+	<p class="all_petite_caps">Icabi Kırgız - WWW.icabikrgz.com (all-petite-caps) </p>
+	<p class="unicase">Icabi Kırgız - WWW.icabikrgz.com (unicase) </p>
+	<p class="unicase" style="font-variant-caps: initial;">
+		Icabi Kırgız - WWW.icabikrgz.com (unicase but initial) 
+		<!-- buradaki initial kavramı farklı bir yapı sunmaktadır. -->
+	</p>
+	
+	<div class="unicase">
+		<p>Icabi Kırgız - WWW.icabikrgz.com (normal)</p>
+		<p class="inherits">Icabi Kırgız - WWW.icabikrgz.com (inherit)</p>
+		<p>Icabi Kırgız - WWW.icabikrgz.com (normal)</p>
+	</div>
+	
+</body>
+</html>

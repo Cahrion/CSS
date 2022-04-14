@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		list-style-image  	= Listedeki madde işaretçisinin resim özelliklerini belirler.
+		Değerler 			= none | url | initial | inherit 
+		none 				= Değer yok.
+		url 				= Dosya adresi.
+		initial				= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit				= HTML elementi üst elementinin biçimlendirme değerini alır.
+	
+	NOT ! = (ol) ve (ul) yapılarının ikisinde de geçerli sayılır.
+	*/
+	ul.yildiz{
+		list-style-image: url("Dokuman/Yildiz.png");
+	}
+	.inherit{
+		list-style-image: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<ul class="yildiz">
+		<li>(inside)</li>
+	</ul>
+	<hr>
+	<ul class="yildiz" style="list-style-image: initial;">
+		<li>(image but initial)</li>
+	</ul>
+	<hr>
+	<ul class="yildiz">
+		<li>(image)</li>
+		<li>(image)</li>
+		<li>inheritler
+			<ul class="inherit">
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+				<li>(inherit)</li>
+			</ul>
+		</li>
+		<li>(image)</li>
+		<li>(image)</li>
+	</ul>
+	<hr>
+</body>
+</html>

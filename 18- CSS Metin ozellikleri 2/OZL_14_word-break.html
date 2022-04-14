@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		word-break			= HTML elementinin boyutlandırılmış alanının sonuna sığmayacak kadar büyük kelimenin satır kırılma özelliklerini belirler.
+		Değerler			= normal | break-all | keep-all | initial | inherit 
+		normal				= Normal.
+		break-all			= Kelimeyi  harflerden kırar.
+		keep-all			= Kelimeyi  boşluklardan kırar.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 275px;
+		border: thin solid red;
+		margin-bottom: 10px;
+	}
+	div.normal{
+		word-break: normal; /* Varsayılan değer */
+	}
+	div.break_all{
+		word-break: break-all; /* Kırdı ve düzenledi */
+	}
+	div.keep_all{
+		word-break: keep-all; /* Kırdı ve düzenledi */
+	}
+	#inherit{
+		word-break: inherit;
+	}
+	p{
+		word-break: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="normal">
+		Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<div class="break_all">
+		Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<div class="keep_all">
+		Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<!-- initial -->
+	<div class="break_all" style="word-break: initial;">
+		Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<br><br>
+	<!-- inherit -->
+	<div class="break_all">
+		<p>
+			Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+		</p>		
+		<p id="inherit">
+			Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+		</p>		<!-- Üstten veriyi aldı. -->
+		<p>
+			Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+		</p>
+	</div>
+
+</body>
+</html>

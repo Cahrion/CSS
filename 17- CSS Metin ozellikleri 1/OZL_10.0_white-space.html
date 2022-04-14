@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		white-space 	= HTML elementi içerisinde bulunan metin boşluk değerleri için davranış özelliklerini belirler.
+		Değerler 		= normal | nowrap | pre | pre-line | pre-wrap | initial |inherit
+		normal	 		= Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de tek boşluk olur.
+		nowrap			= Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de tek boşluk olur ve satır sonları hiçbir zaman alt satıra geçmez.
+		pre				= Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de korunur ve satır sonları hiçbir zaman alt satıra geçmez.
+		pre-line		= Satır boşluk dizeleri korunur ve metin içi boşluk dizeleri tek boşluk olur.
+		pre-wrap		= Satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de korunur.
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 750px;
+		padding: 4px;
+		border: thin solid red;
+		margin-bottom: 40px;
+	}
+	div#varsayilan{		
+		white-space: normal; /* Varsayılan değer. */
+	}
+	div#nowrap{
+		white-space: nowrap; /* Satır başına asla geçmez.*/
+	}
+	div#pre{
+		white-space: pre; /* Satır başına bu da geçmez ve bütün boşlukları varmış gibi alır.*/
+	}
+	div#pre_line{
+		white-space: pre-line; /* Metin içi boşlukları siler ama Satır içi boşlukları silmez*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="varsayilan">
+		
+		İcabi Kırgız 		- Ozel yapım Dersler ve önemli konu başlıklarıyla birleştirilmiş olan konuların özel		- CSS dersleri
+		
+		Notları 
+		
+		
+	</div>	
+	<div id="nowrap">
+		
+		İcabi Kırgız 		- Ozel yapım Dersler ve önemli konu başlıklarıyla birleştirilmiş olan konuların özel		- CSS dersleri
+		
+		Notları 
+		
+		
+	</div>		
+	<div id="pre">
+		
+		İcabi Kırgız 		- Ozel yapım Dersler ve önemli konu başlıklarıyla birleştirilmiş olan konuların özel		- CSS dersleri
+		
+		Notları 
+		
+		
+	</div>			
+	<div id="pre_line">
+		
+		İcabi Kırgız 		- Ozel yapım Dersler ve önemli konu başlıklarıyla birleştirilmiş olan önemli bir kaç bilgiyi alınde tutan ve bu konuların özel		- CSS dersleri
+		
+		Notları 
+		
+		
+	</div>	
+		
+	
+</body>
+</html>

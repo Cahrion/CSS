@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	
+		max-width 	= HTML elementinin maksimum genişliğini belirler.
+	 	Değerler	= none / length / % / initial / inherit
+		none 		= Değer yok.
+		length 		= Uzunluk değeri. (İstenilen türden sayı ile uzunluk verilir.)
+		% 			= Yüzde Değeri.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		background-color: yellow;
+		max-width: none; /* Varsayılan değer. */
+	}
+	p{
+		background-color: green;
+		max-width: 1000px;
+	}
+	div#max{
+		background-color: blue;
+		width: 500px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div>Extra Eğitim</div>
+	<p>Volkan Alakent</p>
+	
+	<div id="max">
+		<p>Icabi</p> <!-- Üstündeki elemente göre konum alır ve eğer üstteki elementin width değerini geçiyorsa max' değeri o zaman  üstekinin aynısı şeklinde oluşur.-->
+	</div>
+	
+</body>
+</html>

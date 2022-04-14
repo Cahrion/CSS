@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		grid-gap 		= Izgara düzeni içerisindeki element veya elementler için, oluşturulmuş olan satırların ve sütunların aralarındaki boşluk değerilerini belirler.
+		Parametreler 	= grid-now-gap (Satır) | grid-column-gap (Sütun)
+		Değerler 		= length / initial
+		length 			= Uzunluk değeri.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	
+	.AnaEleman{
+		display: grid;
+		width: 500px;
+		padding: 10px;
+		border: 1px solid blue;
+		grid-template-columns: repeat(5, auto);
+		grid-gap: 50px 10px;
+	}	
+	#Initial{
+		grid-gap: initial; 
+	}	  
+	.IcEleman{
+		border: 1px solid red;
+		padding: 20px;
+	}
+
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcEleman">1</div>	
+		<div class="IcEleman">2</div>	
+		<div class="IcEleman">3</div>	
+		<div class="IcEleman">4</div>	
+		<div class="IcEleman">5</div>	
+		<div class="IcEleman">6</div>	
+		<div class="IcEleman">7</div>	
+		<div class="IcEleman">8</div>	
+		<div class="IcEleman">9</div>	
+		<div class="IcEleman">10</div>	
+		<div class="IcEleman">11</div>	
+		<div class="IcEleman">12</div>	
+		<div class="IcEleman">13</div>	
+		<div class="IcEleman">14</div>	
+		<div class="IcEleman">15</div>	
+		<div class="IcEleman">16</div>	
+		<div class="IcEleman">17</div>	
+		<div class="IcEleman">18</div>	
+		<div class="IcEleman">19</div>	
+		<div class="IcEleman">20</div>	
+	</div>
+	<div  id="Initial" class="AnaEleman">
+		<div class="IcEleman">1</div>	
+		<div class="IcEleman">2</div>	
+		<div class="IcEleman">3</div>	
+		<div class="IcEleman">4</div>	
+		<div class="IcEleman">5</div>	
+		<div class="IcEleman">6</div>	
+		<div class="IcEleman">7</div>	
+		<div class="IcEleman">8</div>	
+		<div class="IcEleman">9</div>	
+		<div class="IcEleman">10</div>	
+		<div class="IcEleman">11</div>	
+		<div class="IcEleman">12</div>	
+		<div class="IcEleman">13</div>	
+		<div class="IcEleman">14</div>	
+		<div class="IcEleman">15</div>	
+		<div class="IcEleman">16</div>	
+		<div class="IcEleman">17</div>	
+		<div class="IcEleman">18</div>	
+		<div class="IcEleman">19</div>	
+		<div class="IcEleman">20</div>	
+	</div>
+</body>
+</html>

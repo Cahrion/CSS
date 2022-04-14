@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		all			= direction ve unicode-bidi hariç, diğer tüm CSS özelliklerinin sıfırlanacağı veya devralınacağı durmunu belirler.
+		Değerler 	= initial | inherit | unset
+		initial 	= Belirtilecek olan HTML elementinin, tüm CSS özelliklerini varsayılan biçimlendirme değerine döner.
+		inherit 	= Belirtilecek olan HTML elementinin, üst elementinden normalde devralınmayan tüm CSS özelliklerini devralır.
+		unset 		= Belirtilecek olan HTML elementinin, üst elementinden normalde devralınmayan tüm CSS özelliklerini devralır. Üst elementinde tanımlı herhangi bir özellik yoksa, tüm CSS özelliklerini varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+	 	border: 2px solid red;
+		padding: 10px;
+		font-size: 25px;
+		font-weight: bold;
+		color: red;
+	}
+	div#all{
+		all: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>Extra Eğitim - Volkan Alakent</div><br>
+	<div id="all">Extra Eğitim - Volkan Alakent</div><br>
+	<div>Extra Eğitim - Volkan Alakent</div>
+	
+</body>
+</html>

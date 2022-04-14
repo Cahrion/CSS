@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		border-collapse = HTML table (tablo) elementinin kenarlık / çerçeve birleştirme durumunu belirler.
+		Değerler		= separate | collapse | initial | inherit
+		separate 		= Ayrı kenarlık / çerçeve (Varsayılan değer)
+		collapse 		= Bitişik kenarlık / çerçeve 
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	table#varsayilan{
+		border:  2px solid red;
+		border-collapse: separate; /* Varsayilan değer. */
+	}
+	table#collapse{
+		border:  2px solid red;
+		border-collapse: collapse; 
+	}
+	table#oncelik{
+		/* Hangisi öncelikli dersek*/
+		border:  2px dashed blue;
+		border-collapse: collapse; 
+	}
+	th, td{
+		border: 2px solid red;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<table id="varsayilan">
+		<tr>
+			<th>1</th>
+			<th>1</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</table>	
+	<br><br>
+	<table id="collapse">
+		<tr>
+			<th>2</th>
+			<th>2</th>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+	</table>
+	<br><br>
+
+	<table id="oncelik">
+		<tr>
+			<th>3</th>
+			<th>3</th>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+		</tr>
+	</table>
+</body>
+</html>

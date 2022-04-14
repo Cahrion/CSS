@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		animation-timing-function	= HTML elementinin tanımlanmış olan animasyonun kaç defa oynatılacağını belirler.
+		Değerler 					= number | infinite | initial
+		ease	 					= Rakam.
+		infinite	 				= Sonsuz.
+		initial 					= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		width: 75px;
+		height: 75px;
+		margin: 50px;
+		border: 4px double violet;
+		line-height: 50px;
+		text-align: center;
+		-webkit-animation: ExtraEgitim 1s linear 0s ;
+		-moz-animation: ExtraEgitim 1s linear 0s ;
+		-o-animation: ExtraEgitim 1s linear 0s ;
+		-ms-animation: ExtraEgitim 1s linear 0s ;
+		animation: ExtraEgitim 1s linear 0s ;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		-ms-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		background-color: black;
+	}
+	#initial{
+		-webkit-animation-iteration-count: initial;
+		-moz-animation-iteration-count: initial;
+		-o-animation-iteration-count: initial;
+		-ms-animation-iteration-count: initial;
+		animation-iteration-count: initial;
+	}
+	@keyframes ExtraEgitim{
+		from{
+			-webkit-transform:rotate(0deg);
+			-moz-transform:rotate(0deg);
+			-o-transform:rotate(0deg);
+			-ms-transform:rotate(0deg);
+			transform:rotate(0deg);
+			background-color: black;
+		}
+		to{
+			-webkit-transform:rotate(360deg);
+			-moz-transform:rotate(360deg);
+			-o-transform:rotate(360deg);
+			-ms-transform:rotate(360deg);
+			transform:rotate(360deg);
+			background-color: blue;
+		}
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div>
+	<div id="initial"></div>
+</body>
+</html>

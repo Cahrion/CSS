@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	@media not print{
+		div{
+			color: green;
+		}
+	}	
+	@media only screen and (min-height:600px){
+		p#min{
+			color: green;
+		}
+	}
+	@media only screen and (max-height:600px){
+		p#max{
+			color: green;
+		}
+	}
+	@media only screen and (min-height:600px) and (max-height:800px){
+		p#ikisi{
+			color: green;
+		}
+	}	
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div>Extra Eğitim</div>		
+	<p id="min">(MİN)CSS dersleri</p>
+	<p id="max">(MAX)CSS dersleri</p>
+	<p id="ikisi">(İkisi)CSS dersleri</p>
+	
+</body>
+</html>

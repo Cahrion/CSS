@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	
+		width  		= HTML elementinin genişliğini belirler.
+		Değerler	= auto / length / % / initial / inherit
+		auto 		= Otomatik değer alır. (İçerisinde bulunan alanın genişliğini alır.)
+		length 		= Uzunluk değeri. (İstenilen türden sayı ile uzunluk verilir.)
+		% 			= Yüzde Değeri.
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+
+
+	div{
+		background-color: blue;
+		width: 50%; /* Yüzdelik. */
+	}
+	div#Bir{
+		background-color: yellow;
+		width: 80%; /* Yüzdelik. */
+	}	
+	div#Iki{
+		background-color: green;
+		width: inherit; /* inherit --> %80 (Üstekinin genişliğini miras alır.)*/
+	}	
+	div#uc{
+		background-color: red;
+		width: 50%; 
+	}	
+	div#dort{
+		background-color: purple;
+		width: inherit; /* inherit --> %50 (Üstekinin genişliğini miras alır.)*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div>Volkan Alakent</div><br>
+	<div style="width:initial;">CSS</div> <!-- initial -->
+	<br><br>
+	<div id="Bir">
+		<div id="Iki">
+			<div id="uc">
+				<div id="dort">
+					Extra Eğitim
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	
+</body>
+</html>

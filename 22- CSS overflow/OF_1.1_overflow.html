@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		overflow 	= HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük olan içeriğin taşma özelliklerini belirler.
+		Değerler 	= visible | hidden | scroll | auto | initial | inherit
+		visible 	= Görünür.
+		hidden  	= Gizli.
+		scroll 	 	= Kaydırma.
+		auto		= Otomatik değer alır.
+		initial		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		margin-bottom: 50px;
+	}
+	div.hidden{
+		overflow: hidden;
+		width: 500px;
+		height: 95px;
+		border: thick solid red;
+	}
+	div#inherit{
+		overflow: inherit;
+		border: 2px solid blue;
+		width: 800px;
+	}
+	div.alan{
+		width: 1000px;
+		height: 95px;
+		border: 2px solid red;
+		overflow: hidden;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vero eaque laudantium delectus hic, consequuntur animi molestias illo, quisquam fuga magni iusto atque error ad commodi aspernatur! Illum, delectus, deleniti?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non placeat laudantium deserunt a, tempora id molestiae nostrum voluptatibus eos quibusdam consectetur fugiat, illo nobis beatae aspernatur eius quas. Maiores, eaque.</div>
+	<div class="hidden" style="overflow: initial;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vero eaque laudantium delectus hic, consequuntur animi molestias illo, quisquam fuga magni iusto atque error ad commodi aspernatur! Illum, delectus, deleniti?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non placeat laudantium deserunt a, tempora id molestiae nostrum voluptatibus eos quibusdam consectetur fugiat, illo nobis beatae aspernatur eius quas. Maiores, eaque.</div>
+	<div class="alan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vero eaque laudantium delectus hic, consequuntur animi molestias illo, quisquam fuga magni iusto atque error ad commodi aspernatur! Illum, delectus, deleniti?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non placeat laudantium deserunt a, tempora id molestiae nostrum voluptatibus eos quibusdam consectetur fugiat, illo nobis beatae aspernatur eius quas. Maiores, eaque.
+		<div id="inherit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati vero eaque laudantium delectus hic, consequuntur animi molestias illo, quisquam fuga magni iusto atque error ad commodi aspernatur! Illum, delectus, deleniti?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non placeat laudantium deserunt a, tempora id molestiae nostrum voluptatibus eos quibusdam consectetur fugiat, illo nobis beatae aspernatur eius quas. Maiores, eaque.</div>
+	</div>
+
+
+
+	
+</body>
+</html>

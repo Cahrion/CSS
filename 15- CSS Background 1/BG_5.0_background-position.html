@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background-position = HTML elementinin arkaplan resminin konum özelliklerini belirler.
+		Değerler 			= length | % | position | initial | inherit
+		length 				= Uzunluk değeri.
+		% 	 				= Yüzde değeri.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 	 		= HTML elementinin üst elementinin biçimlendirme değerini alır.
+		Position Değerleri  = top | right | bottom | left | center
+		top					= Üst.
+		right 				= Sağ.
+		bottom 				= Alt.
+		left 				= Sol.
+		center				= Orta.
+	*/
+	div#length{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: 100px;
+		/* (-) değer de alabilir. */
+		/* Bu değer yükseklik parametresi girilmediğinde belirtilen elementinin dikey ekseninin tam orta noktasında koyar. (Body elementi hariç)*/
+		/* Body elementindeki değişikliği görmek için --> BG_5.2_background-position.html 'i aç*/
+	}
+	div#lengthiki{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: 100px 100px; /* (Sağdan) ve (Üstten)*/
+	}
+	div#yuzde{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: 25%;
+		/* (-) değer de alabilir. */
+		/* Bu değer yükseklik parametresi girilmediğinde belirtilen elementinin dikey ekseninin tam orta noktasında koyar. (Body elementi hariç)*/
+		/* Body elementindeki değişikliği görmek için --> BG_5.3_background-position.html 'i aç*/
+	}
+	div#yuzdeiki{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: 10% 10%; /* (Sağdan) ve (Üstten)*/
+	}
+	div{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: 50px 50px;
+	}
+	div#inherit{
+		width: 1000px;
+		height: 500px;
+		border: 2px solid red;
+		background-color: black;
+		background-image: url("Dokuman/Logo.png");
+		background-repeat:  no-repeat;
+		background-position: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="length"></div><br><br>
+	<div id="lengthiki"></div><br><br>
+	<div id="yuzde"></div><br><br>
+	<div id="yuzdeiki"></div><br><br>
+	<div style="background-position: initial"></div><br><br>
+	<div style="padding: 200px;">
+		<div id="inherit"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	border-image  	=	HTML elementinin kenarlık / çerçeve resim özelliklerini belirler. 
+		Parametreler 	= 	image | slice | repeat
+		İmage Değerleri =	image & initial & inherit 
+		Slice Değerleri =	lenfth & % 
+		repeat Değerleri=	repeat & round & stretch 
+	 	image 			= 	resim değeri.
+		initial 		= 	html elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= 	html elementi üst elementinin biçimlendirme değerini alır.
+		length 			= 	Uzunluk Değeri.
+		% 				= 	Yüzde Değeri.
+		repeat 			= 	Tekrarla.
+		round 			= 	Yuvarla.
+		stretch 		= 	Uzat & Gerdir & Esnet. (Varsayılan değer.)
+	*/
+	div{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png") 25 30 10 20 ;
+		-mox-border-image: url("Dokuman/Resim.png")  25 30 10 20 ;
+		-o-border-image: url("Dokuman/Resim.png")  25 30 10 20 ;
+		-ms-border-image: url("Dokuman/Resim.png")  25 30 10 20 ;
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png")  25 30 10 20 ; 
+		/* Slice parametreleri. */
+		/*
+			1. Parametresi : Sağ üstten yükseklik.
+			2. Parametresi : Sağ üstten genişlik.
+			3. Parametresi : Sağ alttan yükseklik.
+			4. Parametresi : sol üstten genişlik.
+
+		*/
+	}
+	div#paramet{
+		width: 400px;
+		height: 200px;
+		border: 30px solid transparent;
+		/* Prefix */
+		-webkit-border-image: url("Dokuman/Resim.png") 25 30;
+		-mox-border-image: url("Dokuman/Resim.png")  25 30;
+		-o-border-image: url("Dokuman/Resim.png")  25 30;
+		-ms-border-image: url("Dokuman/Resim.png")  25 30;
+		/* 11:03:2021 */
+		border-image: url("Dokuman/Resim.png")  25 30; 
+		/* Slice parametreleri. */
+		/*
+			1. Parametresi : Sağ üstten yükseklik. (Diğer faktörler için zıttını alır.)
+			2. Parametresi : Sağ üstten genişlik. (Diğer faktörler için zıttını alır.)
+		*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div></div>
+	<div id="paramet"></div>
+
+	
+</body>
+</html>

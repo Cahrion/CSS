@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		perspective-origin 	= HTML elementinin 3D dönüştürme sonrasındaki perspektif derinliği konum özelliklerini belirler.
+		Parametreler 		= x | y
+		Varsayılan 			= 50% | 50%
+		Değerler 			= none / length / initial
+		none 				= Değer yok.
+		length 				= Uzunluk yok.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		position: relative;
+		width: 250px;
+		height: 250px;
+		padding: 50px;
+		margin: 50px;
+		border: 1px solid red;
+		-webkit-perspective: 150px;
+		-moz-perspective: 150px;
+		-o-perspective: 150px;
+		-ms-perspective: 150px;
+		perspective: 150px;
+		-webkit-perspective-origin: 100px 200px; 		/* (-) değerler de verilebilir (y)*/
+		-moz-perspective-origin: 100px 200px; 			/* (-) değerler de verilebilir (y)*/
+		-o-perspective-origin: 100px 200px; 			/* (-) değerler de verilebilir (y)*/
+		-ms-perspective-origin: 100px 200px; 			/* (-) değerler de verilebilir (y)*/
+		perspective-origin: 100px 200px; 				/* (-) değerler de verilebilir (y)*/
+	}
+	.IcEleman{
+		position: absolute;
+		padding: 50px;
+		border: 1px solid blue;
+		background-color: yellow;
+		-webkit-transform: rotateX(45deg);
+		-moz-transform: rotateX(45deg);
+		-o-transform: rotateX(45deg);
+		-ms-transform: rotateX(45deg);
+		transform: rotateX(45deg);
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<div class="AnaEleman">
+		<div class="IcEleman">
+			Extra Eğitim
+		</div>
+	</div>
+	
+</body>
+</html>

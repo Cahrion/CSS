@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		display 	= HTML elementinin görüntülenme özelliklerini belirler.
+		Değerler 	= inline | block | inline-block | none | run-in | list-item | table | table-row | table-cell | table-caption | table-row-group | table-header-group | table-footer-group | table-column | table-column-group | inline-table | flex | inline-flex | grid | inline-grid | initial
+	
+		inline 				=	HTML elementi satır düzeyli element olarak kabul edilir ve görüntülenir. (Elemente içerik alanından fazla genişlik veya yükseklik atanmasına izin verilmez) (Varsayılan değer)
+		block 				=	HTML elementi blok düzeyli element olarak kabul edilir ve görüntülenir.
+		inline-block 		=   HTML elementi ghem satır hemde blok düzeyli element olarak kabul edilir ve görüntülenir. (Elemente içerik alanından fazla genişlik veya yükseklik atanmasına izin verir)
+		none 				= 	Değer yok. (HTML elementi görüntülenmez.)
+		run-in 				=	HTML elementi ya satır düzeyli ya da blok düzeyli element olarak kabul edilir ve görüntülenir.
+		list-item 			= 	HTML elementi liste elementi (li-ol) olarak kabul edilir ve görüntülenir.
+		table 				=	HTML elementi tablo elementi (table) olarak kabul edilir ve görüntülenir.
+		table-row 			=	HTML elementi tablo satır elementi (tr) olarak kabul edilir ve görüntülenir.
+		table-cell 			= 	HTML elementi tablo sütün elementi (td) olarak kabul edilir ve görüntülenir.
+		table-caption 		= 	HTML elementi tablo kısa başlık elementi (caption) olarak kabul edilir ve görüntülenir.
+		table-row-group		= 	HTML elementi tablo gövde elementi (tbody) olarak kabul edilir ve görüntülenir.
+		table-header-group 	= 	HTML elementi tablo içi başlık elementi (thead) olarak kabul edilir ve görüntülenir.
+		table-footer-group 	= 	HTML elementi tablo içi altlık elementi (tfoot) olarak kabul edilir ve görüntülenir.
+		table-column 	 	=	HTML elementi tablo içi sütün ortak özellikleri belirleme elementi (col) olarak kabul edilir ve görüntülenir.
+		table-column-group 	=	HTML elementi tablo içi sütün ortak özellikleri belirleme grubu elementi (colgroup) olarak kabul edilir ve görüntülenir.
+		inline-table 	 	= 	HTML elementi satır düzeyli tablo elementi olarak kabul edilir ve görüntülenir.
+		flex 		 	 	=	HTML elementi blok düzeyli esnek element olarak kabul edilir ve görüntülenir.
+		inline-flex 	 	= 	HTML elementi satır düzeyli esnek element olarak kabul edilir ve görüntülenir.
+		grid 			 	=	HTML elementi blok düzeyli ızgara element olarak kabul edilir ve görüntülenir.
+		inline-grid 	 	=	HTML elementi satır düzeyli ızgara element olarak kabul edilir ve görüntülenir.
+		initial	  			=	HTML elementi varsayılan biçimlendirme değerine döner.
+	
+	*/
+	div#Tablomuz{
+		width: 1014px;
+		height: 125px;
+		display: table;
+		border: 1px double grey;
+		padding: 2px;
+	}
+	div#TablomuzunHeaderi{
+		display: table-header-group;
+		text-align: center;
+		background-color: #CCCCCC;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	div.TabloSatiri{
+		display: table-row;
+		line-height: 19px;
+	}
+	div.TabloSutunlari{
+		display: table-cell;
+		border:1px solid white;
+		font-size: 15px;
+		padding: 5px;
+	}
+	div#TablomuzunBodysi{
+		display: table-row-group;
+	}
+	div#TablomuzunFootu{
+		display: table-footer-group;
+	}
+	div#Tablobasligi{
+		display: table-caption;
+		text-align: center;
+	}
+	div#TabloSutunOzellikgrubu{
+		display: table-column-group;
+		background-color: yellow;
+	}
+	div[name="TabloTutarAlani"], div[name="TabloToplamTutarAlani"]{
+		text-align: right;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	div[name="TabloToplamTutarAlani"]{
+		color: red;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="Tablomuz">
+		<div id="TabloSutunOzellikgrubu">
+			<div style="width: 100;display: table-column;"></div>
+			<div style="width: 150;display: table-column;"></div>
+			<div style="width: 200;display: table-column;"></div>
+			<div style="width: 250;display: table-column;"></div>
+			<div style="width: 300;display: table-column;"></div>
+		</div>
+		
+		
+		<div id="Tablobasligi">Satış Listesi</div>
+		<div id="TablomuzunHeaderi">
+			<div class="TabloSatiri">
+				<div class="TabloSutunlari">İsim</div>
+				<div class="TabloSutunlari">Soyisim</div>
+				<div class="TabloSutunlari">Cinsiyet</div>
+				<div class="TabloSutunlari">Yaşadığı Şehir</div>
+				<div class="TabloSutunlari">Harcadığı Tutar</div>
+			</div>
+		</div>
+		
+		<div id="TablomuzunBodysi">
+			<div class="TabloSatiri">
+				<div class="TabloSutunlari">Volkan</div>
+				<div class="TabloSutunlari">Alakent</div>
+				<div class="TabloSutunlari">Erkek</div>
+				<div class="TabloSutunlari">İstanbul</div>
+				<div name="TabloTutarAlani" class="TabloSutunlari">30.50</div>
+			</div>
+			<div class="TabloSatiri">
+				<div class="TabloSutunlari">Hakan</div>
+				<div class="TabloSutunlari">Alakent</div>
+				<div class="TabloSutunlari">Erkek</div>
+				<div class="TabloSutunlari">Ankara</div>
+				<div name="TabloTutarAlani" class="TabloSutunlari">100.00</div>
+			</div>
+			<div class="TabloSatiri">
+				<div class="TabloSutunlari">Onur</div>
+				<div class="TabloSutunlari">Tatlı</div>
+				<div class="TabloSutunlari">Erkek</div>
+				<div class="TabloSutunlari">İzmir</div>
+				<div name="TabloTutarAlani" class="TabloSutunlari">63.25</div>
+			</div>
+		</div>
+		
+		<div id="TablomuzunFootu">
+			<div class="TabloSatiri">
+				<div class="TabloSutunlari"></div>
+				<div class="TabloSutunlari"></div>
+				<div class="TabloSutunlari"></div>
+				<div class="TabloSutunlari"></div>
+				<div name="TabloToplamTutarAlani" class="TabloSutunlari">193.75</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

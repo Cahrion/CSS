@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		overflow-x	= HTML elementinin x ekseni baz alınarak boyutlandırılmış alanına sığmayacak kadar büyük olan içeriğin taşma özelliklerini belirler.
+		Değerler 	= visible | hidden | scroll | auto | initial | inherit
+		visible 	= Görünür.
+		hidden  	= Gizli.
+		scroll 	 	= Kaydırma.
+		auto		= Otomatik değer alır.
+		initial		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 500px;
+		height: 200px;
+		border: thick solid red;
+	}
+	div.tasma{
+		width: 800px;
+		height: 100px;
+		border: 4px double red;
+	}
+	div#varsayilan{
+		overflow-x: visible; /* Varsayilan değer. */
+	}
+	div#hidden{
+		overflow-x: hidden; /* Gizler. */
+	}
+	div#scroll{
+		overflow-x: scroll; /* Her zaman scroll çıkar. */
+	}
+	div#auto{
+		overflow-x: auto; /* Her zaman scroll çıkarmaz eğer gerekliyse çıkarır. */
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<!-- Varsayilan -->
+	<div id="varsayilan">
+		<div class="tasma"></div>
+	</div>	
+	<br>
+	<!-- Hidden -->
+	<div id="hidden">
+		<div class="tasma"></div>
+	</div>	
+	<br>
+	<!-- Scroll -->
+	<div id="scroll">
+		<div class="tasma"></div>
+	</div>	
+	<br>
+	<!-- auto -->
+	<div id="auto">
+		<div class="tasma"></div>
+	</div>
+
+</body>
+</html>

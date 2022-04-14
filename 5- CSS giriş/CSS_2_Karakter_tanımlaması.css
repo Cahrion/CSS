@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+/* Charset tanımlarında her zaman en üstteki veri varsayılır.*/
+/* En üstte kullanılır. */
+/* Harici odsyada charset tanımlaması gerekmektedir.*/
+
+body{
+	background-color: aqua;
+}

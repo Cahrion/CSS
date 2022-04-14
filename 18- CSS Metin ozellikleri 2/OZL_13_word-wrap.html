@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		word-wrap			= HTML elementinin boyutlandırılmış alanına sığmayacak kadar büyük kelimenin satır kırılma özelliklerini belirler.
+		Değerler			= normal | break-word | initial | inherit 
+		normal				= Normal
+		break-word 			= Kelimeyi kırar.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 150px;
+		border: thin solid red;
+		margin-bottom: 10px;
+	}
+	div.normal{
+		word-wrap: normal; /* Varsayılan değer */
+	}
+	div.break_word{
+		word-wrap: break-word; /* Kırdı ve düzenledi */
+	}
+	#inherit{
+		word-wrap: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="normal">
+		Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<div class="break_word">
+		Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<div class="break_word" style="word-wrap: initial;">
+		Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+	</div>
+	<br><br>
+	<div class="break_word">
+		<div id="inherit">
+			Extra Eğitim - Volkan Alakent GörselEğitimSetleriSerisi A'dan Z'ye CSS Görsel Eğitim Seti
+		</div>
+	</div>
+
+</body>
+</html>

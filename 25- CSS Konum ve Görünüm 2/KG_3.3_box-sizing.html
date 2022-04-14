@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		box-sizing 		= HTML elementinin genişlik ve yükseklik değerlerinin ne şekilde hesaplanması gerektiğini belirler.
+		Değerler 		= content-box | border-box | initial | inherit
+		content-box 	= İçerik kutusu.
+		border-box 		= Kenarlık kutusu.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 550px;
+		height: 760px;
+		border: 10px solid red;
+		padding: 25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		box-sizing:border-box; /* Varsayılan değer. */
+	}
+	p{
+		width: 400px;
+		height: 150px;
+		border: 10px solid blue;
+		padding: 20px;
+		
+	}
+	#deneme{
+		-webkit-box-sizing:inherit;
+		-moz-box-sizing:inherit;
+		-o-box-sizing:inherit;
+		-ms-box-sizing:inherit;
+		box-sizing:inherit; 	
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<div>
+		<p>Extra Eğitim - Volkan Alakent</p>
+		<p id="deneme">Extra Eğitim - Volkan Alakent</p>
+		<p>Extra Eğitim - Volkan Alakent</p>
+	</div>
+	
+</body>
+</html>

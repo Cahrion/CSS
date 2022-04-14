@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	flex-basis	 	= Esnek kutuların içerisindeki element veya elementlerin başlangıç uzunluğu değerlerini belirler.
+		Değerler 		= auto | number | initial
+		auto 			= Otomatik değer alır.
+		number 			= Rakam.
+		initial		 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 500px;
+		height: 100px;
+		border: thin solid grey;
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		-webkit-flex-basis: auto; 	/* varsayilan değer */
+		-moz-flex-basis: auto; 		/* varsayilan değer */
+		-o-flex-basis: auto; 		/* varsayilan değer */
+		-ms-flex-basis: auto; 		/* varsayilan değer */
+		flex-basis: auto; 			/* varsayilan değer */
+	}
+	.IcElemanlariki{
+		border: thin solid black;
+		-webkit-flex-basis: 150px;
+		-moz-flex-basis: 150px;
+		-o-flex-basis: 150px;
+		-ms-flex-basis: 150px;
+		flex-basis: 150px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">| A |</div>
+		<div class="IcElemanlariki">| B |</div>
+		<div class="IcElemanlar">| C |</div>
+		<div class="IcElemanlariki">| D |</div>
+		<div class="IcElemanlar">| E |</div>
+	</div>
+</body>
+</html>

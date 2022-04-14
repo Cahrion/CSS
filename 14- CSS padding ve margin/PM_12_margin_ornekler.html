@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	div{
+		width: 83px;
+		height: 18px;
+		border: double;
+		margin: 0px; /* Bazı tutarsız tarayıcılarda sıkıntı cıkabiliyor. */
+		/*margin: 100px;*/
+		margin-top: 100px;
+		margin-right: 100px;
+		margin-bottom: 100px;
+		margin-left: 100px;
+	}
+	div#ozel{
+		width: 83px;
+		height: 18px;
+		border: double;
+		/* Tek başına ortalamaz ama ikisi aynı anda kullanıldığında ortalama  işlemi gerçekleşir. */
+		margin-right: auto;
+		margin-left: auto;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<hr>
+	<div>Icabi Kırgız</div>
+	<hr>
+	<div id="ozel">Icabi Kırgız</div>
+	<hr>
+</body>
+</html>

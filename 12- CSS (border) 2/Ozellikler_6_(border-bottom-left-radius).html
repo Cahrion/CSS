@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		border-bottom-left-radius 	= HTML elementinin sağ alt kenarlık / çerçeve koşelerinin yuvarlıklarını belirler.
+		Değerleri					= length & initial & inherit 
+		length 						= Uzunluk değeri.
+		%	 						= Yüzde değeri.
+		initial 					= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 					= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	p#bir{
+		border: 2px double red; 
+		width: 150px;
+		height: 150px;
+		/* Prefix */
+		-webkit-border-bottom-left-radius: 10px;		/* 10px bir kırılma olur. */
+		-moz-border-bottom-left-radius: 10px;			/* 10px bir kırılma olur. */
+		-o-border-bottom-left-radius: 10px;			/* 10px bir kırılma olur. */
+		-ms-border-bottom-left-radius: 10px;			/* 10px bir kırılma olur. */
+		/* 10:03:2021 */
+		border-bottom-left-radius: 10px;		/* 10px bir kırılma olur. (sağ)*/
+	}	
+	p#iki{
+		border: 2px double red;  	
+		width: 150px;
+		height: 150px;
+		/* Prefix */
+		-webkit-border-bottom-left-radius: 10px 20px;		/* sağdan-sola (10px) yukardan aşağıya (20px) */
+		-moz-border-bottom-left-radius: 10px 20px;		/* sağdan-sola (10px) yukardan aşağıya (20px) */
+		-o-border-bottom-left-radius: 10px 20px;			/* sağdan-sola (10px) yukardan aşağıya (20px) */
+		-ms-border-bottom-left-radius: 10px 20px;		/* sağdan-sola (10px) yukardan aşağıya (20px) */
+		/* 10:03:2021 */
+		border-bottom-left-radius: 10px 20px;		/* sağdan-sola (10px) yukardan aşağıya (20px) */
+	}	
+	p#uc{
+		border: 2px double red;  	
+		width: 150px;
+		height: 150px;
+		/* Prefix */
+		-webkit-border-bottom-left-radius: 30%;		/* 20px bir kırılma olur. */
+		-moz-border-bottom-left-radius: 30%;			/* 20px bir kırılma olur. */
+		-o-border-bottom-left-radius: 30%;				/* 20px bir kırılma olur. */
+		-ms-border-bottom-left-radius: 30%;			/* 20px bir kırılma olur. */
+		/* 10:03:2021 */
+		border-bottom-left-radius: 30%;		/* 20% bir kırılma olur. */			
+	}		
+	p#dort{
+		border: 2px double red;  	
+		width: 150px;
+		height: 150px;
+		/* Prefix */
+		-webkit-border-bottom-left-radius: 30% 40%;		/* sağdan-sola (30%) yukardan aşağıya (40%) */
+		-moz-border-bottom-left-radius: 30% 40%;			/* sağdan-sola (30%) yukardan aşağıya (40%) */
+		-o-border-bottom-left-radius: 30% 40%;			/* sağdan-sola (30%) yukardan aşağıya (40%) */
+		-ms-border-bottom-left-radius: 30% 40%;			/* sağdan-sola (30%) yukardan aşağıya (40%) */
+		/* 10:03:2021 */
+		border-bottom-left-radius: 30% 40%;		/* sağdan-sola (30%) yukardan aşağıya (40%) */
+	}	
+	p#bes{
+		border: 2px double red;  	
+		width: 150px;
+		height: 150px;
+		/* Prefix */
+		-webkit-border-bottom-left-radius: 30px 40%;		/* sağdan-sola (30px) yukardan aşağıya (40%) */
+		-moz-border-bottom-left-radius: 30px 40%;			/* sağdan-sola (30px) yukardan aşağıya (40%) */
+		-o-border-bottom-left-radius: 30px 40%;			/* sağdan-sola (30px) yukardan aşağıya (40%) */
+		-ms-border-bottom-left-radius: 30px 40%;			/* sağdan-sola (30px) yukardan aşağıya (40%) */
+		/* 10:03:2021 */
+		border-bottom-left-radius: 30px 40%;		/* sağdan-sola (30px) yukardan aşağıya (40%) */
+	}	
+	p.alti{
+		border: 2px double red;  	
+		width: 150px;
+		height: 150px;		
+		border-bottom-left-radius: 30px; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		border: 2px double red;  	
+		width: 150px;
+		height: 150px;		
+		border-bottom-left-radius: 30px;					
+		padding: 5px;
+	}
+	p#yedi{
+		width: 120px;
+		height: 120px;
+		border: 2px double red;  
+		/* Prefix */
+		-webkit-border-bottom-left-radius: inherit;		/* inherit üstekinin boyutunu alır.*/
+		-moz-border-bottom-left-radius: inherit;			/* inherit üstekinin boyutunu alır.*/
+		-o-border-bottom-left-radius: inherit;			/* inherit üstekinin boyutunu alır.*/
+		-ms-border-bottom-left-radius: inherit;			/* inherit üstekinin boyutunu alır.*/
+		/* 10:03:2021 */
+		border-radius: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir"></p>
+	<p id="iki"></p>
+	<p id="uc"></p>
+	<p id="dort"></p>
+	<p id="bes"></p>
+	<p id="sekiz"></p>
+	<p class="alti"></p>
+	<p class="alti" style="border-bottom-left-radius:initial"></p>
+	<div>
+		<p id="yedi"></p>
+	</div>
+	
+</body>
+</html>

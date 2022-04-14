@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		float 		= HTML elementinin bulunduğu konumdan kayma özelliklerini belirler.
+		Değerler 	= none | left | right | initial | inherit
+		none 		= Değer yok.
+		left 		= Sola kay.
+		right 		= Sağa kay.
+		initial		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır.
+	
+	*/
+	div{
+		margin: 2px;
+	}
+	#alan{
+		float: right;
+	}
+	p{
+		width: 100px;
+		border: 1px solid blue;
+		margin: 2px;
+		float: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="alan">
+		<p>Extra Eğitim 1</p>
+		<p>Extra Eğitim 2 </p>
+		<p>Extra Eğitim 3</p>
+		<p>Extra Eğitim 4</p>
+		<p>Extra Eğitim 5</p>
+	</div>
+</body>
+</html>

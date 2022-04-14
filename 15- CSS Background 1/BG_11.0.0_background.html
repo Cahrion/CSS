@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		background   = HTML elementinin arkaplan özelliğini veya özelliklerini belirler.
+		Değerler 	 = color / image / repeat / position / size / attachment / origin / clip / initial / inherit 	
+		color   	 = 	Renk.			
+		image  		 =	Resim.
+		repeat  	 =	Tekrar et.
+		position 	 =	Pozisyon.
+		size  	  	 =	Boyut.
+		attachment   =	Sayfa hareketine göre davranış
+		origin 	  	 =	Resmin başlangış konumu
+		clip 	  	 =	Rengin başlangış konumu
+		initial	 	 =	HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	 =	HTML elementi üst elementinini biçimlendirme değerini alır.
+	*/
+	div{
+		padding: 3px;
+		margin: 4px;
+		border: 2px solid purple;
+	}
+	div#bir{
+		background: blue;
+	}
+	div#iki{
+		background: url("Dokuman/Logo.png");
+	}
+	div#uc{
+		background: url("Dokuman/Logo.png") no-repeat;
+	}
+	div#dort{
+		background: url("Dokuman/Logo.png") no-repeat center top; 
+	}
+	div#bes{
+		background: url("Dokuman/Logo.png") no-repeat center top/200px; 
+	}/* Tire işareti kaçış işareti olarak genişlik ve yukseklik değerleri girilir .*/
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="bir">Icabi kırgız</div>
+	<div id="iki">Icabi kırgız</div>
+	<div id="uc">Icabi kırgız</div>
+	<div id="dort">Icabi kırgız</div>
+	<div id="bes">Icabi kırgız</div>
+		
+	
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-stroke 	= Metne eklenecek olan dış çizgisinin özelliklerini belirler.
+		Degerleri 		= length | initial | inherit | color
+		length			= Uzunluk değeri
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+		color 			= Renk.
+	*/
+	div{
+		margin-bottom: 10px;
+	}
+	.length{
+		-webkit-text-stroke: 1px;
+		-moz-text-stroke: 1px;
+		-o-text-stroke: 1px;
+		-ms-text-stroke: 1px;
+		text-stroke: 1px;
+	}
+	.length2{
+		color: red;
+		-webkit-text-stroke: 1px;
+		-moz-text-stroke: 1px;
+		-o-text-stroke: 1px;
+		-ms-text-stroke: 1px;
+		text-stroke: 1px;
+	}
+	.color{
+		font-size: 40px;
+		-webkit-text-stroke: 1px red;
+		-moz-text-stroke: 1px red;
+		-o-text-stroke: 1px red;
+		-ms-text-stroke: 1px red;
+		text-stroke: 1px red;
+	}
+	.color2{
+		font-size: 40px;
+		-webkit-text-stroke: 1px blue;
+		-moz-text-stroke: 1px blue;
+		-o-text-stroke: 1px blue;
+		-ms-text-stroke: 1px blue;
+		text-stroke: 1px blue;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>Özellik kullanılmayan cümle</div>
+	<div class="length">Özellik kullanılan cümle</div>
+	<div class="length2">Varsayılan renk metnin rengidir.</div>
+	<div class="color">Yazı rengi siyah ama dış yerler kırmızı</div>
+	<div class="color2">Yazı rengi siyah ama dış yerler kırmızı</div>
+</body>
+</html>

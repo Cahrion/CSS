@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		transform-origin 	= HTML elementinin dönüştürme sonrasındaki konum özelliklerini belirler.
+		Parametreler 		= x | y | z 
+		Varsayılan	 		= 50% | 50% | 0 
+		Değerler 			= length / % / initial
+		length 				= Uzunluk değeri.
+		%	 				= Yüzde değeri.
+		initial 			= HTML elementi varsayılan biçimlendirme değeriner döner.
+	*/
+	div{
+		width: 87px;
+		background-color: blue;
+		color: white;
+		border: 1px solid black;
+		padding: 50px;
+		margin: 200px;
+		transform: perspective(1000px) rotate(45deg) translateZ(200px);
+		-webkit-transform-origin: 100px 1000px 0; 	
+		-moz-transform-origin: 100px 1000px 0; 		
+		-o-transform-origin: 100px 1000px 0; 		
+		-ms-transform-origin: 100px 1000px 0; 		
+		-webkit-transform-origin: 100px 1000px 0; 	
+	}
+	#initial{
+		-webkit-transform-origin: initial; 	
+		-moz-transform-origin: initial; 		
+		-o-transform-origin: initial; 		
+		-ms-transform-origin: initial; 		
+		-webkit-transform-origin: initial; 	
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	
+	<div>Extra Eğitim</div>	
+	<br><br>
+	<div id="initial">Extra Eğitim</div>	
+	
+</body>
+</html>

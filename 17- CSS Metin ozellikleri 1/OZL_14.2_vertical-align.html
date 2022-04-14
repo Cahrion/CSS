@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		vertical-align  = Metnin son satırının ve metnin justify değeri atanmış olan satırlarının yatay hizalama özelliklerini belirler.
+		Değerler 		= baseline | length | % | sub | super | top | text-top | middle | bottom | text-bottom | initial | inherit
+		baseline	 	= Alt koşeden başlar.
+		length	 		= Uzuluk değeri
+		%	 			= Yüzde değeri
+		sub	 			= Alt simge
+		super	 		= Üst simge
+		top				= En üstten.
+		text-top		= Metnin veya içeriğin üst hizasından.
+		middle 			= Ortadan.
+		text-bottom 	= Metnin veya içeriğin alt hizasından
+		bottom 			= En alttan.
+		initial 		= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		width: 750px;
+		height: auto;
+		border: 1px solid blue;
+		margin-bottom: 20px;
+		vertical-align: 25px;
+	}
+	.length{
+		vertical-align: 50px;
+	}
+	.inherit{
+		vertical-align: inherit; /* (vertical-align: 25px;) */
+	}
+	
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>
+		<span>CSS - </span><span class="length">Normal yazı</span><hr>	
+		<span>CSS - </span><span class="length" style="vertical-align: initial;">Düzenlenmiş hal</span>
+	</div>
+	<div>
+		<span class="inherit">Üstteki verinin aynısını alır. (vertical-align: 25px;)</span>
+	</div>
+</body>
+</html>

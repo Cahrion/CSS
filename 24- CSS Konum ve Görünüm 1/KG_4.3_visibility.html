@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		visibility 	= HTML elementinin görüntülenme ve gizlenme özelliklerini belirler.
+		Değerler 	= visible | hidden | collapse | initial | inherit
+		visible 	= Görünür. (Element gösterilir.)
+		hidden 		= Gizli. (Element gösterilmez ve elementin kapladığı alan değerleri korunarak boş bir alan oluşur.)
+		collapse 	= Bitişik. (Element gösterilmez ve elementin kapladığı alan değerleri korunarak boş bir alan oluşur. Fakat element bir tablo elementi ise kapladığı alan korunmaz.)
+		initial 	= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 	= HTML elementi üst elementinin biçimlendirme değerini alır. ( Gereksiz )
+	*/
+	div{
+		width: 500px;
+		height: 200px;
+		border: 2px solid red;
+		margin: 10px;
+	}
+	.hedef{
+		visibility: collapse;
+	}
+	.inherit{
+		visibility: inherit;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>Extra Eğitim - Volkan Alakent 1</div>
+	<div class="hedef">Extra Eğitim - Volkan Alakent 2</div>
+	<div class="hedef" style="visibility: initial;">Extra Eğitim - Volkan Alakent 3</div>
+	<div class="hedef">
+		Extra Eğitim - Volkan Alakent 3
+		<table class="inherit">
+			<tr>
+				<td>İsim</td>
+				<td>Soyisim</td>
+			</tr>
+			<tr>
+				<td>Volkan</td>
+				<td>Alakent</td>
+			</tr>
+			<tr>
+				<td>Hakan</td>
+				<td>Alakent</td>
+			</tr>
+		</table>
+	</div>
+	<div>Extra Eğitim - Volkan Alakent 3</div>
+		
+	
+</body>
+</html>

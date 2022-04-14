@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		text-stroke-color	= Metne eklenecek olan dış çizgisi rengini belirler.
+		Degerleri 			= color | initial | inherit
+		color				= Renk.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	div{
+		margin-bottom: 10px;
+		font-size: 40px;
+	}
+	.yapi{
+		-webkit-text-stroke: 2px;
+		-moz-text-stroke: 2px;
+		-o-text-stroke: 2px;
+		-ms-text-stroke: 2px;
+		text-stroke: 2px;
+		-webkit-text-stroke-color: gray;
+		-moz-text-stroke-color: gray;
+		-o-text-stroke-color: gray;
+		-ms-text-stroke-color: gray;
+		text-stroke-color: gray;
+	}
+	#initial{
+		-webkit-text-stroke-color: initial;
+		-moz-text-stroke-color: initial;
+		-o-text-stroke-color: initial;
+		-ms-text-stroke-color: initial;
+		text-stroke-color: initial;
+		/* Eğer üst elementi varsa kaldırma işlemi bir işe yaramaz. */
+	}
+	div#inherit{		
+		-webkit-text-stroke-color: inherit;
+		-moz-text-stroke-color: inherit;
+		-o-text-stroke-color: inherit;
+		-ms-text-stroke-color: inherit;
+		text-stroke-color: inherit;
+	}
+	
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="yapi">Yapı</div>
+	<div id="initial" class="yapi" >Yeniden varsayılana döndürülmüş</div>
+	
+	<div class="yapi">
+		Üst bilgi dekorasyonu
+		<div id="inherit">Bu değer üstten aldığı bilgiyi taşır.</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		outline-width 		= HTML elementinin anahat genişliğimi belirler.
+		Değerler  			= length & initial & inherit & thin & medium & thick
+		length 				= uzunluk değeri. 
+		thin  				= Ince.
+		medium 				= Orta. (Varsayılan değer.)
+		thick 				= Kalın.
+		initial 			= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 			= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	p#bir{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-width: 2px;
+	}	
+	p#iki{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-width: thin; 	/* İnce bir kenarlık çizer. */
+	}	
+	p#uc{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-width: medium; /* Orta bir kenarlık çizer. */
+	}	
+	p#dort{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-width: thick; 	/* Kalın bir kenarlık çizer. */
+	}
+	p.bes{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-width: thick; /* initial (mantıken eskiye dönme anlamına gelir) bu yüzden dolayı ilk değiştirilmiş sonra düzgün gösterilir.*/
+	}
+	div{
+		width: 1000px;
+		height: 100px;
+		outline: 4px solid red;
+		outline-width: thin;
+		padding: 5px;
+	}
+	p#alti{
+		width: 1000px;
+		height: 50px;
+		outline: 4px solid red;
+		outline-width: inherit; /* inherit üstekinin boyutunu alır.*/
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+
+	<p id="bir">Extra Eğitim - Volkan Alakent</p>
+	<p id="iki">Extra Eğitim - Volkan Alakent</p>
+	<p id="uc">Extra Eğitim - Volkan Alakent</p>
+	<p id="dort">Extra Eğitim - Volkan Alakent</p>
+	<p class="bes">Extra Eğitim - Volkan Alakent</p>
+	<p class="bes" style="outline-width:initial">Extra Eğitim - Volkan Alakent</p>
+	<div>
+		<p id="alti">Extra Eğitim - Volkan Alakent</p>
+	</div>
+	
+	<!-- BILGI:
+	
+		border parametresi gibi her yöne belli oranlarda genişlik verme outline parametresinde yoktur.
+	-->
+	
+</body>
+</html>

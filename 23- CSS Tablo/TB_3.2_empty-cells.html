@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		empty-cells 	= HTML'in table (tablo) elementinde bulunan ve içeriği boş hücrelerin görüntülenme özelliklerini belirler.
+		Değerler		= show | hide | initial | inherit
+		show	 		= Göster.
+		hide	 		= Gizle.
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	table{
+		empty-cells: hide;
+	}
+	th, td{
+		border: 2px solid red;
+	}
+	#inherit{
+		empty-cells: inherit;
+	}
+	#initial{
+		empty-cells: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<table class="length">
+		<tr>
+			<th>İsim</th>
+			<th>Soyisim</th>
+			<th>Dersler</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td>Alakent</td>
+			<td>
+				<table id="inherit">
+					<tr>
+						<td>HTML</td>
+						<td></td>
+						<td></td>
+						<td>PHP</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>Hakan</td>
+			<td>Alakent</td>
+			<td>
+				<table id="initial">
+					<tr>
+						<td>HTML</td>
+						<td></td>
+						<td></td>
+						<td>PHP</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

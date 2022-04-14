@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	flex-direction 	= Esnek kutuların dizilim yönü özelliklerini belirler.
+		Değerler 		= row | row-reverse | column | column-reverse | initial
+		row 			= Satır.
+		row-reverse		= Ters satır.
+		column 			= Sütun.
+		column-reverse 	= Ters sütün.
+		initial		 	= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	#AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 300px;
+		height: 300px;
+		border: thin solid grey;
+		-webkit-flex-direction: row; /* Varsayılan değer */
+		-moz-flex-direction: row; 	 /* Varsayılan değer */
+		-o-flex-direction: row; 	 /* Varsayılan değer */
+		-ms-flex-direction: row; 	 /* Varsayılan değer */
+		flex-direction: row; 		 /* Varsayılan değer */
+	}
+	#AnaElemaniki{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 300px;
+		height: 300px;
+		border: thin solid grey;
+		-webkit-flex-direction: row-reverse; 
+		-moz-flex-direction: row-reverse; 	 
+		-o-flex-direction: row-reverse; 	 
+		-ms-flex-direction: row-reverse; 	 
+		flex-direction: row-reverse; 		 
+	}
+	.IcElemanlar{
+		width: 50px;
+		height: 50px;
+		border: thin solid black;
+		
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div id="AnaEleman">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlar">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlar">D</div>
+	</div>
+	<br>
+	<div id="AnaElemaniki">
+		<div class="IcElemanlar">A</div>
+		<div class="IcElemanlar">B</div>
+		<div class="IcElemanlar">C</div>
+		<div class="IcElemanlar">D</div>
+	</div>
+</body>
+</html>

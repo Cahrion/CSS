@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		border-collapse = HTML table (tablo) elementinin kenarlık / çerçeve birleştirme durumunu belirler.
+		Değerler		= separate | collapse | initial | inherit
+		separate 		= Ayrı kenarlık / çerçeve (Varsayılan değer)
+		collapse 		= Bitişik kenarlık / çerçeve 
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+		inherit 		= HTML elementi üst elementinin biçimlendirme değerini alır.
+	*/
+	table{
+		border:  2px dashed blue;
+	}
+	.collapse{
+		border-collapse: collapse; 
+	}
+	th, td{
+		border: 2px solid red;
+	}
+	#inherit{
+		border-collapse: inherit;
+	}
+	#initial{
+		border-collapse: initial;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<table class="collapse">
+		<tr>
+			<th>1</th>
+			<th>1</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</table>	
+	<br><br>
+	<table class="collapse" style="border-collapse: initial;">
+		<tr>
+			<th>2</th>
+			<th>2</th>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2</td>
+		</tr>
+	</table>
+	<br><br>
+
+	<table class="collapse">
+		<tr>
+			<th>3</th>
+			<th>3</th>
+			<th>Dersler</th>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>
+				<table id="inherit">
+					<tr>
+						<td>HTML</td>
+						<td>CSS</td>
+						<td>JAVASCRIPT</td>
+						<td>PHP</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3</td>
+			<td>
+				<table id="initial">
+					<tr>
+						<td>HTML</td>
+						<td>CSS</td>
+						<td>JAVASCRIPT</td>
+						<td>PHP</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

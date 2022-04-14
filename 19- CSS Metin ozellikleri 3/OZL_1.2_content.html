@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 
+		content				= before veya after sahte elementi ile birlikte üretilecek olan içeriği metne eklemek için kullanılır.
+		Değerler			= normal | none | string | open-quote | close-quote | no-open-quote | no-close-quote | url | attr | counter | initial 
+		normal				= Normal.
+		none				= Kelimeyi  harflerden kırar.
+		string				= İçeriğe yeni bir dizi ekler.
+		open-quote			= İçeriğe açılış tırnak işareti ekler.
+		close-quote			= İçeriğe kapanış tırnak işareti ekler.
+		no-open-quote		= İçeriğin açılış tırnak işaretini kaldırır.
+		no-close-quote		= İçeriğin kapanış tırnak işaretini kaldırır.
+		url					= İçeriğe medya dosyası ekler.
+		attr				= İçeriğin bulunduğu elementin belirtilecek olan herhangi bir özellik bilgisine erişerek değerini ekler.
+		counter				= Belirtilecek olan herhangi bir elementin sayaç bilgisine erişerek değerini ekler.
+		initial 			= HTML elementinin varsayılan biçimlendirme değerine döner.
+	*/
+	div{
+		border: 2px solid red;
+	}
+	a::before{
+		content: attr(href) " : "; 
+	}
+	a::after{
+		content: " | " attr(target); 
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div>
+		<a href="https://www.extraegitim.com" target="_top">Icabi Kırgız</a><br>
+		<a href="https://www.google.com.tr" target="_blank">Icabi Kırgız</a><br>
+		<a href="https://www.yandex.com.tr" target="_blank">Icabi Kırgız</a><br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/* 	justify-content	= Esnek kutu içerisinde bulunan elementlerin tüm alanı kaplamadığında elementlerin arasındaki hizalama özelliklerini belirler.
+		Değerler 		= flex-start | flex-end | space-between | space-around | center | initial
+		flex-start 		= Esnek başlangıç.
+		flex-end 		= Esnek bitiş.
+		space-between 	= Boşluk arasında.
+		space-around 	= Boşluk etrafında.
+		center 			= Orta.
+		initial	 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaEleman{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 1500px;
+		height: 50px;
+		border: thin solid red;
+		-webkit-justify-content: center;
+		-moz-justify-content: center;
+		-o-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+	}
+	.AnaElemaniki{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -o-flex;
+		display: -ms-flex;
+		display: flex;
+		width: 1500px;
+		height: 50px;
+		border: thin solid red;
+		-webkit-justify-content: space-around; 	
+		-moz-justify-content: space-around; 		
+		-o-justify-content: space-around; 		
+		-ms-justify-content: space-around; 		
+		justify-content: space-around; 	
+	}
+	.IcElemanlar{
+		border: thin solid black;
+		width: 100px;
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaEleman">
+		<div class="IcElemanlar">1</div>
+		<div class="IcElemanlar">2</div>
+		<div class="IcElemanlar">3</div>
+		<div class="IcElemanlar">4</div>
+		<div class="IcElemanlar">5</div>
+	</div>
+	<br>
+	<div class="AnaElemaniki">
+		<div class="IcElemanlar">1</div>
+		<div class="IcElemanlar">2</div>
+		<div class="IcElemanlar">3</div>
+		<div class="IcElemanlar">4</div>
+		<div class="IcElemanlar">5</div>
+	</div>
+</body>
+</html>

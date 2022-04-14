@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+<title>CSS / İcabi Kırgız</title>
+<!-- Style -->
+<style>
+	/*
+		transform 		= HTML elementinin 2D veya 3D dönüştürme özelliklerini belirler.
+		Değerler 		= none / translate() / translate3d() / translateX() / translateY() / translateZ() / skew() / skewX / skewY / scale() / scale3d() / scaleX() / scaleY() / scaleZ() / rotate() / rotate3d() / rotateX / rotateY() / rotateZ() / perspective() / matrix() / matrix3d() / initial
+		none 			= Değer yok.
+		translate() 	= HTML elementinin x ve y ekseni doğrultusunda konumunu değiştirir.
+		translate3d() 	= HTML elementinin x, y ve z ekseni doğrultusunda konumunu değiştirir.
+		translateX() 	= HTML elementinin x ekseni doğrultusunda konumunu değiştirir.
+		translateY() 	= HTML elementinin y ekseni doğrultusunda konumunu değiştirir.
+		translateZ() 	= HTML elementinin z ekseni doğrultusunda konumunu değiştirir.
+		skew() 			= HTML elementinin x ve y ekseni doğrultusunda eğer.
+		skewX() 		= HTML elementinin x ekseni doğrultusunda eğer.
+		skewY() 		= HTML elementinin y ekseni doğrultusunda eğer.
+		scale() 		= HTML elementinin x ve y ekseni doğrultusunda boyutunu değiştirir.
+		scale3d() 		= HTML elementinin x, y ve z ekseni doğrultusunda boyutunu değiştirir.
+		scaleX() 		= HTML elementinin x ekseni doğrultusunda boyutunu değiştirir.
+		scaleY() 		= HTML elementinin y ekseni doğrultusunda boyutunu değiştirir.
+		scaleZ() 		= HTML elementinin z ekseni doğrultusunda boyutunu değiştirir.
+		rotate() 		= HTML elementinin saat yönü doğrultusunda döndürür.
+		rotate3d() 		= HTML elementinin x, y ve z ekseni doğrultusunda döndürür.
+		rotateX() 		= HTML elementinin x ekseni doğrultusunda döndürür.
+		rotateY() 		= HTML elementinin y ekseni doğrultusunda döndürür.
+		rotateZ() 		= HTML elementinin z ekseni doğrultusunda döndürür.
+		perspective() 	= HTML elementinin perspektif görünüşünü belirler.
+		matrix() 		= HTML elementine 6 farklı dönüşüm özelliği belirler. (scaleX, skewY, skewX(), scaleY(), translateX(), translateY())
+		matrix3d() 		= HTML elementine 4x4 dönüşüm özelliği belirler. (https://www.codepen.io/fta/pen/ifnqH)
+		initial 		= HTML elementi varsayılan biçimlendirme değerine döner.
+	*/
+	.AnaElaman{
+		perspective: 1000px;
+	}
+	#Zar{
+		font-size: 150px;
+		width: 130px;
+		margin: 97.5px;
+		transform-style: preserve-3d;
+		transform: rotateZ(-40deg) rotateY(32deg);
+	}
+	.Yuz{
+		position: absolute;
+		width: 130px;
+		height: 130px;
+		background-color: rgba(0,0,0,0.6);
+		border: 1px solid rgba(255,0,4,0.5);
+		color: white;
+		text-align: center;
+		line-height: 130px;
+	}
+	.birli{
+		transform: translateZ(65px);
+	}
+	.ikili{
+		transform: rotateX(-90deg) translateZ(65px);
+	}
+	.uclu{
+		transform: rotateY(-90deg) translateZ(65px);
+	}
+	.dortlu{
+		transform: rotateY(90deg) translateZ(65px);
+	}
+	.besli{
+		transform: rotateX(90deg) translateZ(65px);
+	}
+	.alti{
+		transform: rotateX(-180deg) translateZ(65px);
+	}
+</style>
+</head>
+	<!-- Body -->
+<body>
+	<div class="AnaElaman">
+		<div id="Zar">
+			<div class="Yuz birli">1</div>
+			<div class="Yuz ikili">2</div>
+			<div class="Yuz uclu">3</div>
+			<div class="Yuz dortlu">4</div>
+			<div class="Yuz besli">5</div>
+			<div class="Yuz altili">6</div>
+		</div>
+	</div>
+</body>
+</html>
